@@ -1,5 +1,5 @@
 ---
-name: review
+name: fiction:review
 description: Review the current or most recent chapter. Checks coherence, cheesiness, consistency, pace, tone, and character. Suggests specific rewrites.
 ---
 

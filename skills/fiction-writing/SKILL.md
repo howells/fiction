@@ -1,0 +1,142 @@
+---
+name: fiction-writing
+description: This skill should be used when the user asks to "write a chapter", "write prose", "continue the story", "develop a character", "review my chapter", "critique my manuscript", "plan my novel", "outline my book", "check for consistency", or mentions fiction writing, novels, short stories, scenes, or narrative craft.
+---
+
+# Fiction Writing
+
+A complete system for writing fiction—from initial concept through final draft.
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/fiction:load` | Load project into context (characters, world, chapters) |
+| `/fiction:plan` | Design story architecture (premise, theme, ending) |
+| `/fiction:outline` | Create chapter and scene breakdown |
+| `/fiction:character` | Develop a character document |
+| `/fiction:review` | Review current chapter (iterative feedback) |
+| `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
+| `/fiction:whatnext` | See project status and next steps |
+| `/fiction:status` | Quick project status |
+
+## Natural Language Triggers
+
+Beyond commands, respond to requests like:
+
+- "Write chapter 8"
+- "Continue from where we left off"
+- "This scene isn't working—help me fix it"
+- "Develop the antagonist's backstory"
+- "Check this chapter for consistency issues"
+
+## Agents
+
+Select the appropriate agent based on task:
+
+| Agent | Use Case | Model |
+|-------|----------|-------|
+| `writer` | Writing prose, chapters, scenes | opus |
+| `architect` | Story structure, premise, ending | opus |
+| `outliner` | Chapter breakdown, scene beats | sonnet |
+| `character-developer` | Character documents | opus |
+| `chapter-reviewer` | Iterative chapter review | sonnet |
+| `critique` | Full manuscript review | opus |
+| `continuity` | Consistency checking | haiku |
+| `whatnext` | Project navigation | haiku |
+| `scene-analyzer` | Scene diagnosis | sonnet |
+| `voice-analyzer` | POV/tense checking | haiku |
+| `world-builder` | Settings, systems | sonnet |
+
+## Craft Reference Files
+
+Consult reference files for craft guidance:
+
+| Problem | Reference |
+|---------|-----------|
+| Story feels aimless | `references/story-structure.md` |
+| Scene drags | `references/scene-structure.md` |
+| Flat characters | `references/character.md` |
+| Stilted dialogue | `references/dialogue.md` |
+| Prose lacks rhythm | `references/prose-style.md` |
+| Pacing issues | `references/pacing.md` |
+| Weak opening | `references/openings.md` |
+| Unsatisfying ending | `references/endings.md` |
+| Genre expectations | `references/genre-conventions.md` |
+| Common mistakes | `references/anti-patterns.md` |
+
+## Project Structure
+
+Detect and work with these project structures:
+
+### Standalone Novel
+
+```
+/my-novel
+├── README.md           # Overview, status, key decisions
+├── characters/         # Character documents
+├── world/              # Setting documents
+├── craft/              # Tone guide
+├── chapters/           # Chapter files
+└── themes.md           # Theme document
+```
+
+### Multi-Book Series
+
+```
+/my-series
+├── README.md           # Series overview
+├── series/             # Series-level material
+│   ├── characters/
+│   ├── world/
+│   └── ...
+└── book-n-title/       # Individual books
+    └── chapters/
+```
+
+## Core Principles
+
+Apply these principles when writing or reviewing:
+
+1. **Story = Character + Change** — Plot is what happens; story is what it means.
+2. **Scene Economy** — Every scene must do at least two things.
+3. **Specificity Creates Universality** — Concrete details create resonance.
+4. **Earned Moments** — Plant before harvest.
+5. **Trust the Reader** — Show, don't tell. Imply, don't explain.
+
+## Decision Guides
+
+### POV Selection
+- **First person**: Deep intimacy, unreliable narrator possible
+- **Third limited**: Balance of intimacy and flexibility, most common
+- **Third omniscient**: God's-eye view, good for epic scope
+
+### Tense Selection
+- **Past tense**: Traditional, invisible, readers expect it
+- **Present tense**: Immediacy, urgency
+
+### Scene vs. Summary
+- **Scene**: Crucial moments, turning points, high emotion
+- **Summary**: Routine events, transitions
+- **Rule**: If it matters, show it.
+
+## Workflow
+
+### New Project
+1. Copy from `templates/standalone-novel/` or `templates/series/`
+2. Fill in README with project details
+3. Run `/fiction:plan` → `/fiction:character` → `/fiction:outline`
+
+### Existing Project
+1. Run `/fiction:load` to ingest the project into context
+2. Run `/fiction:whatnext` to see suggestions for what to work on
+
+### Writing Loop
+1. Write chapter (invoke `writer` agent)
+2. Run `/fiction:review` for iterative feedback
+3. Apply suggested revisions
+4. Repeat until chapter complete
+5. Run continuity check periodically
+
+### Completion
+When manuscript is complete, run `/fiction:critique` for full literary review.

@@ -1,5 +1,5 @@
 ---
-name: outline
+name: fiction:outline
 description: Create chapter and scene breakdown. Use after architecture is established.
 ---
 

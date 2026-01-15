@@ -1,5 +1,5 @@
 ---
-name: status
+name: fiction:status
 description: Quick view of project status without suggestions.
 ---
 
