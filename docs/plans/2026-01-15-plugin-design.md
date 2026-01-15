@@ -523,44 +523,29 @@ This may require summarization for very long novels.
 
 ---
 
-## Open Questions
+## Design Decisions
 
 ### 1. Hook for Project Detection
 
-Should the plugin include a `SessionStart` hook that auto-detects fiction projects?
+**Decision:** Yes, auto-detect fiction projects on session start.
 
-**Option A:** Yes, auto-detect and set context
-**Option B:** User manually invokes `/status` to enter fiction mode
-**Option C:** Both (auto-detect but allow manual override)
+A `SessionStart` hook will check for fiction project markers and set context automatically.
 
 ### 2. Chapter File Format
 
-Should chapters include frontmatter with metadata?
+**Decision:** No frontmatter. Chapters are pure prose.
 
-```markdown
----
-status: drafted
-pov: sacha
-word_count: 3500
----
+Status tracking lives in README files. Chapters should be clean—just the writing.
 
-# Chapter 8: The Cabin
+### 3. Rewrite Application
 
-[prose]
-```
+**Decision:** Output full revised chapter.
 
-This would help agents assess status without parsing README.
-
-### 3. Diff-Based Rewrites
-
-When chapter-reviewer suggests rewrites, should it:
-- Output the full revised chapter?
-- Output diffs (old → new)?
-- Use the Edit tool to apply changes in place?
+When the chapter-reviewer suggests rewrites, it outputs the complete revised chapter. The user reviews it in conversation, then can copy to Obsidian or ask Claude to write to file. This keeps the user in control of their manuscript files.
 
 ### 4. Model Selection
 
-Which model for which agent?
+**Decision:** Approved as proposed.
 
 | Agent | Model | Reasoning |
 |-------|-------|-----------|
