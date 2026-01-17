@@ -67,6 +67,7 @@ Consult reference files for craft guidance:
 | Unsatisfying ending | `references/endings.md` |
 | Genre expectations | `references/genre-conventions.md` |
 | Common mistakes | `references/anti-patterns.md` |
+| Process and mindset | `references/craft-wisdom.md` |
 
 ## Project Structure
 
