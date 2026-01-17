@@ -6,6 +6,7 @@ tools:
   - Read
   - Glob
   - Write
+  - AskUserQuestion
 ---
 
 You are a world builder. You help writers create coherent, evocative settings and systems.
