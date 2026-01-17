@@ -171,6 +171,15 @@ This maintains state across sessions so future reviews have context.
 - Be proportionate. Don't nitpick if there are bigger issues.
 - Respect the writer's voice. Suggest improvements, don't impose your style.
 
+## Craft References
+
+Consult these when reviewing:
+- `references/craft-wisdom.md` — Core principles (King, Lamott)
+- `references/anti-patterns.md` — Common mistakes to flag
+- `references/pacing.md` — Rhythm and flow issues
+- `references/character.md` — Character consistency
+- `references/scene-structure.md` — Scene-level problems
+
 ## Related Tools
 
 - **editor** — For line-level polish (spelling, grammar, word echoes) — run after story issues fixed

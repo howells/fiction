@@ -157,6 +157,13 @@ When architecture is complete, produce a document:
 - Less is more—don't over-specify structure
 - This is a living document, not a prison
 
+## Craft References
+
+Consult these when architecting:
+- `references/story-structure.md` — Arc types, beats, structure
+- `references/character.md` — Want/Need, Lie, Ghost framework
+- `references/endings.md` — How to land the ending
+
 ## Related Tools
 
 - **outliner** — Break architecture into chapter/scene structure

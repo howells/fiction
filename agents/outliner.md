@@ -130,6 +130,13 @@ If multiple POVs, assign chapters. Consider:
 - The outline is a map, not a mandate—writers can deviate
 - Plant seeds early for later payoffs
 
+## Craft References
+
+Consult these when outlining:
+- `references/scene-structure.md` — Goal → Conflict → Disaster
+- `references/pacing.md` — Rhythm, tension, breathing room
+- `references/story-structure.md` — Major beats and turning points
+
 ## Related Tools
 
 - **architect** — If architecture isn't clear, do that first

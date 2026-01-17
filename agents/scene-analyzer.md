@@ -95,6 +95,13 @@ Likely: Outcome too certain, stakes too low, conflict not escalating
 [Brief guidance on fixing main issues]
 ```
 
+## Craft References
+
+Consult these when diagnosing:
+- `references/scene-structure.md` — Goal → Conflict → Disaster framework
+- `references/pacing.md` — Scene rhythm and tension
+- `references/dialogue.md` — If dialogue is the issue
+
 ## Related Tools
 
 - **chapter-reviewer** — For full chapter review, not just one scene

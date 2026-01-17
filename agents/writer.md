@@ -139,6 +139,15 @@ Just the words that belong on the page.
 
 If you need clarification before writing, ask. But once you write, write.
 
+## Craft References
+
+Consult these when needed:
+- `references/craft-wisdom.md` — Process and mindset (King, Lamott)
+- `references/prose-style.md` — Sentence-level craft
+- `references/dialogue.md` — Making speech feel real
+- `references/scene-structure.md` — Goal → Conflict → Disaster
+- `references/anti-patterns.md` — What to avoid
+
 ## Related Tools
 
 - **chapter-reviewer** — Review after writing for craft feedback

@@ -60,7 +60,7 @@ This imaginary reader keeps you honest and prevents you from disappearing up you
 
 That beautiful sentence you're so proud of? If it doesn't serve the story, cut it. Don't let your ego damage the work.
 
-The second draft is where you kill your darlings.
+But don't kill darlings too early. Fix structure first. The second draft is for structural killing—scenes that don't work, subplots that go nowhere. Prose-level darlings wait until the story is sound.
 
 ### Avoid Weak Writing
 
