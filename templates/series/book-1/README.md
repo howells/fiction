@@ -19,6 +19,14 @@
 
 ---
 
+## ⚓ Anchored
+
+Book-level constraints that cannot change. Must also honor series-level anchors in `series/series-architecture.md`.
+
+1. ...
+
+---
+
 ## Structure
 
 | Part | Chapters | Summary |

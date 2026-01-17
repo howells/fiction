@@ -5,6 +5,24 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-17
+
+### Added
+
+- **⚓ Anchored convention** — Mark immutable constraints in any document with `## ⚓ Anchored` section. Review agents enforce these as non-negotiable rules.
+- **`/fiction:reconcile` command** — Audit projects against current plugin conventions, identify gaps, and scaffold missing pieces.
+- **`progress.md` state file** — Persistent review state across sessions. Tracks chapter reviews, continuity checks, and open issues.
+- **Notes authority system** — Review agents now distinguish between anchored constraints (story must change) and evolved notes (notes may need updating).
+- **Enhanced trope detection** — Chapter reviewer now checks for common trope red flags and LLM-generated slop patterns.
+- **Cross-references between agents** — Review agents now reference related tools for different types of issues.
+
+### Changed
+
+- Chapter reviewer and continuity agents now update `progress.md` after reviews
+- Continuity report format now includes `Anchored:` and `Action:` fields
+- Templates updated with `## ⚓ Anchored` sections and `progress.md`
+- Project structure documentation updated in skill file
+
 ## [1.0.0] - 2026-01-17
 
 ### Added

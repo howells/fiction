@@ -19,6 +19,7 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
 | `/fiction:whatnext` | See project status and next steps |
 | `/fiction:status` | Quick project status |
+| `/fiction:reconcile` | Audit project against current conventions, offer updates |
 
 ## Natural Language Triggers
 
@@ -73,7 +74,8 @@ Detect and work with these project structures:
 
 ```
 /my-novel
-├── README.md           # Overview, status, key decisions
+├── README.md           # Overview, status, key decisions, ⚓ anchored
+├── progress.md         # Review state (updated by review commands)
 ├── characters/         # Character documents
 ├── world/              # Setting documents
 ├── craft/              # Tone guide
@@ -87,10 +89,13 @@ Detect and work with these project structures:
 /my-series
 ├── README.md           # Series overview
 ├── series/             # Series-level material
+│   ├── series-architecture.md  # ⚓ Anchored series constraints
+│   ├── progress.md     # Series-level review state
 │   ├── characters/
 │   ├── world/
 │   └── ...
 └── book-n-title/       # Individual books
+    ├── progress.md     # Book-level review state
     └── chapters/
 ```
 
@@ -130,6 +135,10 @@ Apply these principles when writing or reviewing:
 ### Existing Project
 1. Run `/fiction:load` to ingest the project into context
 2. Run `/fiction:whatnext` to see suggestions for what to work on
+
+### After Plugin Updates
+1. Run `/fiction:reconcile` to audit project against current conventions
+2. Review recommendations and apply updates as desired
 
 ### Writing Loop
 1. Write chapter (invoke `writer` agent)

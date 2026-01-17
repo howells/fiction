@@ -35,7 +35,20 @@ The complete series bible.
 
 [How does the series end? Be specific.]
 
-## Key Decisions (Do Not Undo)
+## ⚓ Anchored
 
-1. [Decision that must be preserved]
+Items here are **immutable series constraints**. Individual books must conform to these—they cannot be overridden by story evolution. Use sparingly for truly foundational series elements.
+
+[Examples: magic system rules, series ending, character identities, world history that cannot change]
+
+1. [Constraint that must be preserved]
+2. [Another constraint]
+
+---
+
+## Key Decisions
+
+[Decisions that should be preserved but may evolve if the story demands. Unlike anchored items, these can be updated if the prose discovers something better.]
+
+1. [Decision]
 2. [Another decision]
