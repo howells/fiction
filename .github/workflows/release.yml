@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate plugin
+        run: .husky/validate-plugin.sh
+
+      - name: Bump version and release
+        run: |
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Get current version from plugin.json (source of truth)
+          PLUGIN_JSON=".claude-plugin/plugin.json"
+          MARKETPLACE_JSON=".claude-plugin/marketplace.json"
+
+          current_version=$(jq -r '.version' "$PLUGIN_JSON")
+
+          # Parse and bump patch version
+          IFS='.' read -r major minor patch <<< "$current_version"
+          new_patch=$((patch + 1))
+          new_version="$major.$minor.$new_patch"
+
+          # Update version files using jq
+          jq --arg v "$new_version" '.version = $v' "$PLUGIN_JSON" > tmp.json && mv tmp.json "$PLUGIN_JSON"
+          jq --arg v "$new_version" '.metadata.version = $v | .plugins[0].version = $v' "$MARKETPLACE_JSON" > tmp.json && mv tmp.json "$MARKETPLACE_JSON"
+
+          # Commit version bump
+          git add "$PLUGIN_JSON" "$MARKETPLACE_JSON"
+          git commit -m "chore: bump version to $new_version [skip ci]"
+          git push
+
+          # Create and push tag
+          git tag "v$new_version"
+          git push --tags
+
+          # Get commit message for release notes
+          COMMIT_MSG=$(git log -1 --skip=1 --pretty=format:"%s" HEAD)
+
+          echo "VERSION=$new_version" >> $GITHUB_ENV
+          echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ env.VERSION }}
+          name: v${{ env.VERSION }}
+          body: ${{ env.COMMIT_MSG }}
+          generate_release_notes: false
