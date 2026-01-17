@@ -134,16 +134,6 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 | Genre expectations | `genre-conventions.md` |
 | Common mistakes | `anti-patterns.md` |
 
-## Publishing Prep
-
-### Title Generation
-
-`/fiction:naming` generates title candidates and searches to verify they're not already taken.
-
-### Cover Art
-
-`/fiction:cover` reads your project and produces prompts for image generation (GPT Image 1.5, Midjourney, etc.). Optimized for Kindle dimensions. No text by default—add titles in post-production.
-
 ---
 
 ## For Nerds
