@@ -5,6 +5,22 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-01-17
+
+### Added
+
+- **Craft References sections** — All relevant agents now link to reference documentation
+- **No orphan references** — All 13 reference files are now linked from at least 2 agents
+
+### Changed
+
+- critique agent: Added references to story-structure, character, endings, pacing, craft-wisdom
+- editor agent: Added references to prose-style, revision-editing, anti-patterns, dialogue
+- architect agent: Added length-forms, genre-conventions references
+- chapter-reviewer agent: Added revision-editing, openings references
+- outliner agent: Added length-forms reference
+- writer agent: Added openings, genre-conventions references
+
 ## [1.2.0] - 2026-01-17
 
 ### Added
