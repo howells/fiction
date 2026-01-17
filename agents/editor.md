@@ -131,6 +131,26 @@ After editing, update `progress.md`:
 
 2. Track manuscript-wide patterns for future reference
 
+## Continuity Flags (Note, Don't Fix)
+
+While editing, you may notice potential continuity issues. **Don't try to fix these** — note them for the continuity agent:
+
+- References to subplots or events you haven't seen mentioned before
+- Characters knowing things they shouldn't know yet
+- Location details that seem inconsistent
+- Travel times that seem impossible
+- Weather or season that doesn't match earlier chapters
+- Objects appearing without introduction
+
+Output these as:
+
+```markdown
+## Potential Continuity Issues (Run /continuity to verify)
+
+- Line 45: References "the fire at the mill" — not seen this mentioned before
+- Line 102: Character travels from London to Edinburgh in same afternoon
+```
+
 ## What You DON'T Do
 
 - Don't rewrite for style (that's chapter-reviewer)
@@ -138,6 +158,7 @@ After editing, update `progress.md`:
 - Don't flag intentional dialect or voice
 - Don't over-correct dialogue to be "proper" (people don't speak in perfect grammar)
 - Don't change the author's voice
+- Don't try to fix continuity issues — just flag them
 
 ## Related Tools
 
