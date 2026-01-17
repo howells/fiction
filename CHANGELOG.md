@@ -5,6 +5,23 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-01-17
+
+### Added
+
+- **Parallel agent processing for large manuscripts** — ~20× speedup for multi-chapter operations
+- **Large Manuscript Efficiency guide** in SKILL.md with speedup estimates
+- `/fiction:edit all` and `/fiction:review all` now support range syntax (e.g., `3-7`)
+
+### Changed
+
+- edit command: Documents parallel agent spawning for batch processing
+- review command: Documents parallel chapter-reviewer deployment
+- continuity agent: Two-phase approach (parallel fact extraction + sequential comparison)
+- critique agent: Parallel chapter analysis with unified synthesis
+- chapter-reviewer: Added parallel processing mode documentation
+- editor agent: Optimized single chapter mode for parallel spawning
+
 ## [1.2.1] - 2026-01-17
 
 ### Added
