@@ -5,6 +5,13 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-01-17
+
+### Changed
+
+- `/fiction:whatnext` now checks for missing plugin conventions and suggests `/fiction:reconcile` when needed
+- Status table includes "Plugin conventions" row
+
 ## [1.1.0] - 2026-01-17
 
 ### Added
