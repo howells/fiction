@@ -1,5 +1,4 @@
 ---
-name: new
 description: Start a new fiction project from scratch. Interactive wizard guides you through discovery, architecture, characters, world, and outline.
 allowed-tools:
   - Read
