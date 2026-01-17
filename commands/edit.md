@@ -21,6 +21,22 @@ Run the editor agent to polish your manuscript at the line level.
 /fiction:edit 3-7                # Edit chapters 3 through 7
 ```
 
+## Parallel Processing (Important for Large Manuscripts)
+
+When editing multiple chapters ("all" or a range), **spawn editor agents in parallel** for efficiency:
+
+1. Identify all chapters to process
+2. Launch one editor agent per chapter simultaneously using the Task tool
+3. Each agent processes its chapter independently
+4. After all complete, aggregate manuscript-wide patterns from all reports
+5. Update `progress.md` with combined findings
+
+**Example parallel approach for `/fiction:edit all` with 20 chapters:**
+- Spawn 20 editor agents in a single message (one Task call per chapter)
+- Agents run concurrently, each producing its own report
+- Main conversation aggregates: common crutch words, repeated issues across chapters
+- Total time ≈ time for 1 chapter instead of 20×
+
 ## What It Catches
 
 - **Spelling & typos** — Including wrong-word errors (their/there)

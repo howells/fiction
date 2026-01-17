@@ -100,6 +100,29 @@ Read the complete manuscript:
 2. Project README (for context, intent)
 3. Craft/tone guide if exists
 
+## Efficient Reading for Large Manuscripts
+
+For manuscripts with 20+ chapters, consider parallel reading with note aggregation:
+
+### Phase 1: Parallel Chapter Analysis
+Spawn agents (one per chapter or per section) to note:
+- Prose style observations (specific quotes)
+- Pacing assessment for that section
+- Character moments (what works, what doesn't)
+- Structural observations
+- Thematic elements present
+
+Each agent returns structured notes, not critique prose.
+
+### Phase 2: Unified Critique
+With all chapter notes collected:
+- Synthesize observations into coherent review
+- Identify patterns across sections
+- Select the most illustrative quotes
+- Write the final 1000-1500 word critique
+
+**This approach is faster for very long manuscripts** while preserving the unified voice of the final critique. The synthesis phase requires the full picture, but fact-gathering can be parallelized.
+
 ## Spoiler Policy
 
 Avoid spoilers. Discuss qualities without revealing major plot turns or the ending.

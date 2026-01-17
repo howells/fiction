@@ -78,6 +78,15 @@ Gather context:
 
 Use tools as needed to find these files.
 
+## Parallel Processing Mode
+
+When spawned as one of multiple parallel review agents:
+- Context may be passed to you directly (don't re-read if provided)
+- Focus on your assigned chapter only
+- Return a complete report that can be aggregated
+- Skip the "would you like me to apply rewrites" question (parent will coordinate)
+- Keep output structured for easy aggregation
+
 ## Notes Authority: Anchored vs. Evolved
 
 **Important:** Planning documents (character sheets, outlines, world docs) may have been superseded by the actual prose. Stories evolve during writing—the author discovers things that weren't in the plan.

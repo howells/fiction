@@ -152,3 +152,35 @@ Apply these principles when writing or reviewing:
 
 ### Completion
 When manuscript is complete, run `/fiction:critique` for full literary review.
+
+## Large Manuscript Efficiency (50k+ Words)
+
+For novels with 15-25+ chapters, use parallel agent deployment to dramatically reduce processing time:
+
+### Parallel-Capable Tasks
+
+| Task | Approach | Speedup |
+|------|----------|---------|
+| **Editing all chapters** | Spawn one editor agent per chapter | ~20× for 20 chapters |
+| **Reviewing all chapters** | Spawn one chapter-reviewer per chapter | ~20× |
+| **Continuity checking** | Phase 1: parallel fact extraction; Phase 2: comparison | ~3-4× |
+| **Full critique** | Parallel chapter analysis, then unified synthesis | ~2-3× |
+
+### How It Works
+
+When using commands like `/fiction:edit all` or `/fiction:review all`:
+1. Identify all chapters to process
+2. **Launch agents in parallel** using the Task tool (one call per chapter, same message)
+3. Agents run concurrently, each returning structured output
+4. Main conversation aggregates results and updates `progress.md`
+
+### Sequential Tasks
+
+Some tasks must remain sequential:
+- **Writing** — Each chapter builds on the previous
+- **Outlining** — Structure depends on what comes before
+- **Architecture** — Single coherent vision needed
+
+### Memory Note
+
+Parallel agents don't share memory. Pass necessary context (character docs, tone guide) to each agent explicitly.

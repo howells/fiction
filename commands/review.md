@@ -1,12 +1,12 @@
 ---
-description: Review the current or most recent chapter. Checks coherence, cheesiness, consistency, pace, tone, and character. Suggests specific rewrites.
+description: Review chapters for coherence, cheesiness, consistency, pace, tone, and character. Suggests specific rewrites.
 ---
 
-Review the current chapter using the chapter-reviewer agent.
+Review chapters using the chapter-reviewer agent.
 
 ## What This Does
 
-1. Identifies the current or most recently written chapter
+1. Identifies the chapter(s) to review
 2. Gathers necessary context (character docs, previous chapter, project tone)
 3. Runs a thorough review checking:
    - Coherence
@@ -21,12 +21,33 @@ Review the current chapter using the chapter-reviewer agent.
 ## Usage
 
 ```
-/review                    # Review most recent chapter
-/review chapter 5          # Review specific chapter
-/review chapters/08.md     # Review specific file
+/fiction:review                    # Review most recent chapter
+/fiction:review 5                  # Review chapter 5
+/fiction:review all                # Review all drafted chapters
+/fiction:review 3-7                # Review chapters 3 through 7
+/fiction:review chapters/08.md     # Review specific file
 ```
 
-## How It Works
+## Parallel Processing (Important for Large Manuscripts)
+
+When reviewing multiple chapters ("all" or a range), **spawn chapter-reviewer agents in parallel** for efficiency:
+
+1. Identify all chapters to review
+2. Load shared context once (character docs, tone guide, project README)
+3. Launch one chapter-reviewer agent per chapter using the Task tool
+4. Pass shared context + specific chapter + previous chapter to each agent
+5. Each agent reviews independently, produces verdict + issues
+6. Aggregate results: compile verdicts, flag cross-chapter patterns
+7. Update `progress.md` with all review results
+
+**Example parallel approach for `/fiction:review all` with 20 chapters:**
+- Spawn 20 chapter-reviewer agents in a single message
+- Each receives: its chapter, previous chapter (for continuity), shared context
+- Agents run concurrently
+- Main conversation aggregates verdicts and highlights patterns
+- Total time ≈ time for 1-2 chapters instead of 20×
+
+## How It Works (Single Chapter)
 
 If no chapter is specified:
 1. Check conversation history for recently written/discussed chapter

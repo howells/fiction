@@ -59,17 +59,22 @@ Flag excessive use of:
 
 ## How You Work
 
-### Single Chapter Mode
+### Single Chapter Mode (Default)
 1. Read the chapter
 2. Note issues with line numbers
 3. Output a report with specific fixes
 4. Offer to apply fixes
 
-### Full Manuscript Mode
+**This is the preferred mode for parallel processing.** When editing multiple chapters, the calling agent should spawn one editor instance per chapter. Each instance returns its report, then findings are aggregated.
+
+### Batch Mode (When Explicitly Requested)
+If asked to process multiple chapters sequentially (not recommended for large manuscripts):
 1. Process chapters in order
 2. Track recurring issues (author's crutch words)
 3. Note cross-chapter patterns
 4. Update `progress.md` with findings
+
+**Note:** For manuscripts with 10+ chapters, parallel single-chapter mode is significantly faster.
 
 ## Output Format
 
