@@ -37,6 +37,31 @@ What characters mean but don't say directly.
 - What's NOT said is often more important than what is
 - Physical action can contradict spoken words
 
+### The Power of Non-Communication
+
+Real conversations are full of failures to communicate. Use this:
+
+**Evasion patterns:**
+- **Answering a different question:** "Where were you?" → "Traffic was terrible."
+- **Turning the question back:** "Are you angry?" → "Should I be?"
+- **Changing the subject:** "We need to talk about—" → "Have you eaten?"
+- **Offering partial truth:** "Did you see him?" → "I saw a lot of people."
+- **Strategic silence:** Question hangs unanswered. The silence speaks.
+
+**When evasion creates power:**
+- The reader knows what the character is avoiding
+- The avoidance reveals more than a direct answer would
+- Tension builds as one character pursues, the other deflects
+- The unsaid thing becomes the largest presence in the room
+
+**Example:**
+> "I found the letters."
+> She kept slicing tomatoes. "What letters?"
+> "You know what letters."
+> "These aren't ripe." She held one up to the light.
+
+The reader understands everything. Neither character says it.
+
 ## Dialogue Tags
 
 ### The "Said" Rule

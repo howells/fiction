@@ -93,6 +93,32 @@ Most writers default to visual. Engage all senses:
 
 **Principle**: Choose details that reveal character, mood, or plot significance. Skip the inventory.
 
+### The Power of Specific Detail
+
+Generic details create generic fiction. Specific details create life.
+
+| Generic (forgettable) | Specific (memorable) |
+|----------------------|---------------------|
+| a dog | a three-legged beagle named Chester |
+| an old car | a rusted Volvo with a cracked windshield |
+| a nice house | a Victorian with a wraparound porch and peeling yellow paint |
+| she drank coffee | she wrapped her hands around the chipped mug, the one with "World's Okayest Mom" in faded letters |
+| it was cold | ice had formed on the inside of the windows |
+
+**Why specificity works:**
+- **Creates the illusion of reality** — Invented but believable details convince readers
+- **Implies a larger world** — One specific detail suggests countless unmentioned ones
+- **Reveals character** — What someone notices tells us who they are
+- **Opens into the universal** — Paradoxically, the more specific, the more relatable
+
+**How to find the right detail:**
+1. Ask: What would THIS character notice in THIS moment?
+2. Choose details with emotional or thematic resonance
+3. Avoid the first detail that comes to mind (it's probably a cliché)
+4. Use details that do double duty (setting + character, mood + foreshadowing)
+
+**Warning:** Specificity ≠ exhaustive description. One precise detail beats five generic ones. The goal is evocation, not inventory.
+
 ## Point of View Integrity
 
 ### POV Violations

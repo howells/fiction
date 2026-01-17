@@ -114,6 +114,44 @@ If you need external rewards to write, you'll quit. Write because you must.
 
 ---
 
+## When to Break the Rules
+
+Every rule in this document can be broken. The question is whether you're breaking it *intentionally* and *for effect*.
+
+### Rules That Can Be Broken (and when)
+
+| Rule | Break it when... |
+|------|------------------|
+| Show, don't tell | You need to compress time, or the emotion isn't important enough to earn a scene |
+| Active voice | Passive creates mystery ("She was being watched") or emphasizes the receiver |
+| Avoid adverbs | The adverb genuinely adds meaning the verb can't carry |
+| Strong verbs | "Said" is better than attention-seeking dialogue tags |
+| Avoid filter words | You need psychic distance, or the filtering IS the point |
+| Short sentences for impact | A long sentence builds to a revelation more effectively |
+| Kill your darlings | The darling genuinely serves the story and you can defend why |
+
+### How to Know You're Breaking a Rule Intentionally
+
+1. **You can articulate why** — Not "it feels right" but a specific craft reason
+2. **You tried the "correct" way first** — and it didn't work as well
+3. **The violation creates an effect** — not just variation
+4. **It serves the story** — not your ego or cleverness
+
+### The Dangerous Exceptions
+
+Some rules exist for very good reasons. Break with extreme caution:
+
+- **POV violations** — Almost never work. Readers feel cheated.
+- **Tense inconsistency** — Confuses readers badly.
+- **Head-hopping** — Destroys immersion.
+- **Deus ex machina** — Readers feel betrayed.
+
+### The Master's Privilege
+
+Writers who've mastered the rules can break them effectively. Writers who haven't look like amateurs. Learn the rules first. Internalize them. Then, occasionally, deliberately, break them.
+
+---
+
 ## Summary: The Core Rules
 
 1. **Show up every day** — same time, same place
