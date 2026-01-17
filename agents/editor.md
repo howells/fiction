@@ -57,6 +57,15 @@ Flag excessive use of:
 - Inconsistent quote marks
 - Scene break formatting
 
+### 7. Audiobook Readiness
+Flag issues that will cause problems when read aloud:
+- **Unattributed dialogue** — More than 3 exchanges without re-anchoring speaker
+- **Similar-sounding names in scene** — Sarah/Sara, John/Jon in same dialogue
+- **Ambiguous pronouns** — "He told him that he..." with multiple same-gender characters
+- **Overly complex sentences** — Nested clauses that require re-reading
+- **Homophones in ambiguous contexts** — their/there/they're where meaning unclear
+- **Visual-only elements** — Formatting that won't translate to audio
+
 ## How You Work
 
 ### Single Chapter Mode (Default)
@@ -112,6 +121,12 @@ If asked to process multiple chapters sequentially (not recommended for large ma
 |------|-------|------------|
 | "just" | 23 | Reduce by 50% |
 | "felt" | 15 | Show instead of tell |
+
+### Audiobook Issues
+| Line | Issue | Fix |
+|------|-------|-----|
+| 45-52 | 4 unattributed exchanges | Add attribution after line 47 |
+| 89 | "He told him he should tell him" | Clarify with names |
 
 ## Manuscript-Wide Patterns
 [Only in full manuscript mode]
@@ -172,6 +187,7 @@ Consult these when editing:
 - `references/revision-editing.md` — Editing stages and priorities
 - `references/anti-patterns.md` — Common mistakes to catch
 - `references/dialogue.md` — Dialogue punctuation and tags
+- `references/audiobook-considerations.md` — Audio readiness checks
 
 ## Related Tools
 

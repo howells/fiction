@@ -68,6 +68,7 @@ Consult reference files for craft guidance:
 | Genre expectations | `references/genre-conventions.md` |
 | Common mistakes | `references/anti-patterns.md` |
 | Process and mindset | `references/craft-wisdom.md` |
+| Audiobook readiness | `references/audiobook-considerations.md` |
 
 ## Project Structure
 
@@ -111,6 +112,7 @@ Apply these principles when writing or reviewing:
 3. **Specificity Creates Universality** — Concrete details create resonance.
 4. **Earned Moments** — Plant before harvest.
 5. **Trust the Reader** — Show, don't tell. Imply, don't explain.
+6. **Write for the Ear** — Modern books become audiobooks. Clear attribution, distinct voices, no visual-only elements.
 
 ## Decision Guides
 

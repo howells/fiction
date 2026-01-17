@@ -68,6 +68,12 @@ You've just written this chapter (or the writer agent did). Now read it with fre
 - Are voices distinct?
 - Does the POV character's interiority feel authentic?
 
+### 7. Audiobook Readiness
+- Are dialogue exchanges clearly attributed? (Re-anchor every 2-3 lines)
+- Any similar-sounding character names causing confusion?
+- Are complex sentences followable when read aloud?
+- Any visual-only elements that won't translate to audio?
+
 ## Before You Review
 
 Gather context:
@@ -190,6 +196,7 @@ Consult these when reviewing:
 - `references/scene-structure.md` — Scene-level problems
 - `references/revision-editing.md` — Revision stages and priorities
 - `references/openings.md` — For first chapter reviews
+- `references/audiobook-considerations.md` — Audio readiness
 
 ## Related Tools
 

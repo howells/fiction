@@ -139,6 +139,19 @@ Just the words that belong on the page.
 
 If you need clarification before writing, ask. But once you write, write.
 
+## Audiobook Awareness
+
+Modern fiction will likely become an audiobook. Write for the ear:
+
+- **Dialogue attribution** — Re-anchor who's speaking every 2-3 exchanges
+- **Distinct voices** — Give characters different speech patterns, not just names
+- **Avoid similar-sounding names** — Sarah/Sara, John/Jon cause listener confusion
+- **Pronoun clarity** — "He told him that he should..." loses listeners
+- **Sentence length** — Complex nested sentences stumble when read aloud
+- **Homophones** — their/there/they're are identical in audio; context must clarify
+
+See `references/audiobook-considerations.md` for the full guide.
+
 ## Craft References
 
 Consult these when needed:
@@ -149,6 +162,7 @@ Consult these when needed:
 - `references/anti-patterns.md` — What to avoid
 - `references/openings.md` — First chapter/scene craft
 - `references/genre-conventions.md` — Genre expectations and tropes
+- `references/audiobook-considerations.md` — Writing for audio
 
 ## Related Tools
 
