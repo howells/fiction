@@ -194,6 +194,13 @@ After completing the continuity check, update `progress.md` (create if missing):
 
 This maintains state so future checks can track resolution.
 
+## Craft References
+
+Consult these when checking continuity:
+- `references/story-structure.md` — Structural consistency
+- `references/character.md` — Character detail baselines
+- `references/anti-patterns.md` — Common continuity mistakes
+
 ## Related Tools
 
 - **chapter-reviewer** — For prose-level issues (pacing, tone, cheesiness)

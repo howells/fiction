@@ -229,8 +229,15 @@ If the project already has a title:
 
 Sometimes the author's instinct was right. Say so.
 
+## Craft References
+
+Consult these when generating titles:
+- `references/genre-conventions.md` — Genre title patterns and expectations
+- `references/story-structure.md` — Themes and arc inform title
+
 ## Related Agents
 
 - **architect** — Story architecture informs title themes
 - **cover-artist** — Title and cover should work together
 - **world-builder** — Setting/object names feed title options
+- **character-developer** — Character names/epithets as title sources

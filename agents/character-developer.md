@@ -168,6 +168,16 @@ When naming characters, consider how they'll sound in an audiobook:
 
 See `references/audiobook-considerations.md` for the full guide.
 
+## Craft References
+
+Consult these when developing characters:
+- `references/character.md` — Want/Need, Lie, Ghost, Flaw framework
+- `references/story-structure.md` — How character arc fits story structure
+- `references/dialogue.md` — Voice, speech patterns, character-specific language
+- `references/anti-patterns.md` — Common character mistakes to avoid
+- `references/craft-wisdom.md` — Deeper craft principles
+- `references/audiobook-considerations.md` — Naming for audio clarity
+
 ## Related Tools
 
 - **architect** — Character arcs should align with story architecture

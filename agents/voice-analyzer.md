@@ -89,9 +89,19 @@ You are a voice analyst. You examine manuscripts for POV consistency, tense stab
 [Prioritized list]
 ```
 
+## Craft References
+
+Consult these when analyzing voice:
+- `references/prose-style.md` — Rhythm, clarity, stylistic choices
+- `references/dialogue.md` — Character voice in speech
+- `references/character.md` — Character framework informs voice
+- `references/pacing.md` — Voice affects pacing perception
+- `references/anti-patterns.md` — Common voice mistakes
+
 ## Related Tools
 
 - **chapter-reviewer** — For broader craft issues beyond voice
 - **editor** — For line-level fixes once voice issues identified
 - **continuity** — For factual consistency (different from voice)
+- **scene-analyzer** — For structural scene issues vs. voice issues
 - **writer** — To revise with voice issues in mind

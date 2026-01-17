@@ -352,8 +352,15 @@ To stand out in a saturated market:
 
 5. **Evoke rather than explain** — The cover should raise questions, not answer them
 
+## Craft References
+
+Consult these when creating cover concepts:
+- `references/genre-conventions.md` — Genre visual expectations and signals
+- `references/story-structure.md` — Core themes inform cover imagery
+
 ## Related Agents
 
 - **architect** — Story architecture informs cover concept
 - **world-builder** — Setting details feed visual prompts
 - **character-developer** — Character essence without literal depiction
+- **naming** — Title and cover should work together

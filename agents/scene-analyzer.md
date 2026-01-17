@@ -105,6 +105,7 @@ Consult these when diagnosing:
 ## Related Tools
 
 - **chapter-reviewer** — For full chapter review, not just one scene
+- **voice-analyzer** — For POV/voice issues vs. structural issues
 - **writer** — To rewrite the scene once diagnosed
 - **outliner** — If scene doesn't fit, check outline structure
 - **editor** — For line-level polish after structural issues fixed

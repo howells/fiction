@@ -135,9 +135,17 @@ Ask:
 - **Specificity:** One vivid detail beats ten generic ones
 - **Restraint:** Don't explain everything
 
+## Craft References
+
+Consult these when building worlds:
+- `references/story-structure.md` — World serves story structure
+- `references/genre-conventions.md` — Genre expectations for worldbuilding
+- `references/anti-patterns.md` — Overbuilding and infodumping traps
+
 ## Related Tools
 
 - **architect** — World building supports architecture, do that first
 - **character-developer** — Characters inhabit the world
 - **continuity** — Check world details stay consistent across chapters
 - **writer** — Use world docs as reference when writing
+- **naming** — World elements feed title options

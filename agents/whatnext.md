@@ -124,5 +124,6 @@ Based on project state, suggest these tools:
 - **editor** — For line-level polish
 - **continuity** — After multiple chapters, check consistency
 - **critique** — When manuscript complete
+- **naming** — Generate and validate book title options
 - **cover-artist** — Generate cover art prompts for image generation
 - **reconcile** — If plugin conventions outdated
