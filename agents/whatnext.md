@@ -17,8 +17,19 @@ Read:
 - Project README (status, structure, completion markers)
 - Chapter list (what's drafted vs. outlined)
 - Any REVISION-PLAN.md or similar
+- `progress.md` if it exists (review state from previous sessions)
 
-### 2. Identify Status
+### 2. Check Plugin Conventions
+
+Look for signs the project needs `/fiction:reconcile`:
+- Missing `progress.md` file
+- README missing `## ⚓ Anchored` section
+- No craft/tone.md file
+- Characters mentioned but no character files
+
+If any are missing, include reconcile in suggestions.
+
+### 3. Identify Status
 
 - **Architecture:** Complete / In Progress / Not Started
 - **Outline:** Complete / In Progress / Not Started
@@ -26,7 +37,7 @@ Read:
 - **Chapters drafted:** X of Y
 - **Revision state:** First draft / Revising / Complete
 
-### 3. Suggest Next Steps
+### 4. Suggest Next Steps
 
 **If early stage:**
 - Complete architecture
@@ -62,6 +73,7 @@ Read:
 | Characters | [X] of [Y] complete |
 | Chapters | [X] of [Y] drafted |
 | Revision | First draft / In revision / Complete |
+| Plugin conventions | Up to date / Needs reconcile |
 
 ## Recent Activity
 [What was last worked on, if discernible]
