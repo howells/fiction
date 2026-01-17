@@ -55,6 +55,17 @@ Select the appropriate agent based on task:
 | `cover-artist` | Book cover art prompts | opus |
 | `naming` | Book title generation and validation | opus |
 
+### Guest Critics
+
+Summon a specific voice for manuscript review:
+
+| Agent | Voice | Best For |
+|-------|-------|----------|
+| `stephen-king` | Direct, no-BS, story-focused | Commercial fiction, horror, thriller |
+| `ursula-le-guin` | Thoughtful, world as meaning | Fantasy, science fiction |
+| `james-wood` | Deeply literate, sentence-level | Literary fiction |
+| `roxane-gay` | Culturally aware, emotionally honest | Contemporary fiction |
+
 ## Craft Reference Files
 
 Consult reference files for craft guidance:
