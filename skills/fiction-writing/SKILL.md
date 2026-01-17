@@ -21,6 +21,7 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:status` | Quick project status |
 | `/fiction:reconcile` | Audit project against current conventions, offer updates |
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
+| `/fiction:cover` | Generate cover art prompts for image generation |
 
 ## Natural Language Triggers
 
@@ -50,6 +51,7 @@ Select the appropriate agent based on task:
 | `scene-analyzer` | Scene diagnosis | sonnet |
 | `voice-analyzer` | POV/tense checking | haiku |
 | `world-builder` | Settings, systems | sonnet |
+| `cover-artist` | Book cover art prompts | opus |
 
 ## Craft Reference Files
 

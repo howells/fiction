@@ -5,6 +5,21 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-01-17
+
+### Added
+
+- **`cover-artist` agent** — Generate book cover art prompts optimized for image generation models (Midjourney, DALL-E, etc.)
+- **`/fiction:cover` command** — Read project materials and produce 3-5 cover concepts with ready-to-use prompts
+- Kindle dimension compliance (2560 × 1600, 1.6:1 aspect ratio)
+- Best practices for image gen prompts: style specification, composition, color palettes, negative prompts
+- Cut-through strategy guidance for standing out in crowded marketplaces
+- No text by default approach (AI struggles with typography)
+
+### Changed
+
+- **whatnext agent** — Now provides ONE clear recommendation plus 3 concrete steps instead of multiple options. Reduces decision fatigue and increases momentum.
+
 ## [1.4.0] - 2026-01-17
 
 ### Added

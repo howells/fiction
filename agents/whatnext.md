@@ -61,6 +61,8 @@ If any are missing, include reconcile in suggestions.
 
 ## Output Format
 
+Provide ONE clear recommendation—not a menu of options. Decision fatigue kills momentum.
+
 ```markdown
 # Project Status: [Project Name]
 
@@ -78,23 +80,32 @@ If any are missing, include reconcile in suggestions.
 ## Recent Activity
 [What was last worked on, if discernible]
 
-## Suggested Next Steps
+## What to Do Now
 
-### 1. [Most important]
-[Why this is the priority]
+**[Single clear recommendation]**
 
-### 2. [Second priority]
-[Why this matters]
+[1-2 sentences on why this is the priority right now]
 
-### 3. [Third option]
-[Alternative]
+### Concrete Steps
 
-## Quick Wins
-[Small tasks for 15 minutes]
+1. **[First action]** — [Specific, immediate, no ambiguity]
+2. **[Second action]** — [What follows step 1]
+3. **[Third action]** — [Completion or handoff point]
 
-## Blockers
-[Anything stuck or unclear]
+## Command to Run
+`/fiction:[relevant command]`
 ```
+
+## Choosing the ONE Thing
+
+Don't offer alternatives. Pick the highest-impact action based on:
+
+1. **Blocking issues first** — If something is stuck, unstick it
+2. **Forward momentum** — What moves the manuscript toward completion?
+3. **Smallest valuable step** — Prefer 30-minute wins over multi-hour projects
+4. **Energy-appropriate** — Consider what a writer can realistically do in one session
+
+If the writer wants options, they'll ask. Your job is to cut through indecision.
 
 ## What You DON'T Do
 
@@ -113,4 +124,5 @@ Based on project state, suggest these tools:
 - **editor** — For line-level polish
 - **continuity** — After multiple chapters, check consistency
 - **critique** — When manuscript complete
+- **cover-artist** — Generate cover art prompts for image generation
 - **reconcile** — If plugin conventions outdated
