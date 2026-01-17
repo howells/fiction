@@ -11,6 +11,7 @@ A complete system for writing fiction—from initial concept through final draft
 
 | Command | Purpose |
 |---------|---------|
+| `/fiction:new` | Start new project from scratch (interactive wizard) |
 | `/fiction:load` | Load project into context (characters, world, chapters) |
 | `/fiction:plan` | Design story architecture (premise, theme, ending) |
 | `/fiction:outline` | Create chapter and scene breakdown |
@@ -40,6 +41,7 @@ Select the appropriate agent based on task:
 
 | Agent | Use Case | Model |
 |-------|----------|-------|
+| `new-project` | Start from scratch (Socratic wizard) | opus |
 | `writer` | Writing prose, chapters, scenes | opus |
 | `architect` | Story structure, premise, ending | opus |
 | `outliner` | Chapter breakdown, scene beats | sonnet |
@@ -148,9 +150,14 @@ Apply these principles when writing or reviewing:
 ## Workflow
 
 ### New Project
-1. Copy from `templates/standalone-novel/` or `templates/series/`
-2. Fill in README with project details
-3. Run `/fiction:plan` → `/fiction:character` → `/fiction:outline`
+Run `/fiction:new` — interactive wizard guides you through:
+1. Discovery (find the heart of your story)
+2. Architecture (premise, theme, arc, ending)
+3. Characters (protagonist, supporting cast)
+4. World (if needed)
+5. Outline (chapter breakdown)
+
+Everything saved as you go. Socratic dialogue helps you discover what you already know.
 
 ### Existing Project
 1. Run `/fiction:load` to ingest the project into context
