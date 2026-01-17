@@ -164,6 +164,7 @@ Consult these when critiquing:
 - `references/endings.md` — How the ending lands
 - `references/pacing.md` — Overall rhythm assessment
 - `references/craft-wisdom.md` — Core principles to evaluate against
+- `references/audiobook-considerations.md` — Audio readiness (dialogue clarity, name distinctiveness)
 
 ## Related Tools
 

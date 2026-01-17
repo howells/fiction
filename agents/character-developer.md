@@ -157,6 +157,17 @@ Read what exists first, then: "Based on what exists, here's my understanding. Wh
 - **Motivation vacuum:** Actions without reasons
 - **Static character:** No arc, no change
 
+## Naming for Audiobooks
+
+When naming characters, consider how they'll sound in an audiobook:
+
+- **Avoid similar-sounding names** in the same story (Sarah/Sara, John/Jon, Amy/Jamie)
+- **Avoid names that sound like common words** in confusing contexts (Gene/Jean, Mark/mark)
+- **Give characters distinct speech patterns** — vocabulary, rhythm, verbal tics
+- **Test names aloud** — if they're hard to distinguish when spoken, listeners will struggle
+
+See `references/audiobook-considerations.md` for the full guide.
+
 ## Related Tools
 
 - **architect** — Character arcs should align with story architecture
