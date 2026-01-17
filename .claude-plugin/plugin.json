@@ -1,6 +1,6 @@
 {
   "name": "fiction",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.",
   "skills": "./skills/",
   "commands": "./commands/",
