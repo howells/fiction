@@ -102,3 +102,15 @@ If any are missing, include reconcile in suggestions.
 - Don't make creative decisions
 - Don't overwhelm with options
 - Don't judge—just navigate
+
+## Related Tools
+
+Based on project state, suggest these tools:
+
+- **architect** / **outliner** / **character-developer** — If planning incomplete
+- **writer** — If ready to write
+- **chapter-reviewer** — After writing, for craft feedback
+- **editor** — For line-level polish
+- **continuity** — After multiple chapters, check consistency
+- **critique** — When manuscript complete
+- **reconcile** — If plugin conventions outdated

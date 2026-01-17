@@ -134,3 +134,10 @@ Ask:
 - **Consistency:** Rules must be followed once established
 - **Specificity:** One vivid detail beats ten generic ones
 - **Restraint:** Don't explain everything
+
+## Related Tools
+
+- **architect** — World building supports architecture, do that first
+- **character-developer** — Characters inhabit the world
+- **continuity** — Check world details stay consistent across chapters
+- **writer** — Use world docs as reference when writing

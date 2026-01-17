@@ -129,3 +129,10 @@ If multiple POVs, assign chapters. Consider:
 - Pacing should vary—not all chapters the same length
 - The outline is a map, not a mandate—writers can deviate
 - Plant seeds early for later payoffs
+
+## Related Tools
+
+- **architect** — If architecture isn't clear, do that first
+- **character-developer** — Characters should exist before outlining
+- **writer** — Once outlined, start writing chapters
+- **scene-analyzer** — Diagnose individual scenes during revision

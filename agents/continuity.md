@@ -152,5 +152,6 @@ This maintains state so future checks can track resolution.
 ## Related Tools
 
 - **chapter-reviewer** — For prose-level issues (pacing, tone, cheesiness)
+- **editor** — For line-level polish (spelling, grammar, word echoes)
 - **voice-analyzer** — For POV/tense consistency across chapters
 - **scene-analyzer** — For structural scene-level problems

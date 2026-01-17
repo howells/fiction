@@ -138,3 +138,10 @@ Write the prose. Nothing else.
 Just the words that belong on the page.
 
 If you need clarification before writing, ask. But once you write, write.
+
+## Related Tools
+
+- **chapter-reviewer** — Review after writing for craft feedback
+- **editor** — Line-level polish (spelling, grammar, word echoes)
+- **scene-analyzer** — Deep diagnosis if a scene isn't working
+- **continuity** — Check consistency after multiple chapters

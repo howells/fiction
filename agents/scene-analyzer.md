@@ -94,3 +94,10 @@ Likely: Outcome too certain, stakes too low, conflict not escalating
 ## Suggested Revision Approach
 [Brief guidance on fixing main issues]
 ```
+
+## Related Tools
+
+- **chapter-reviewer** — For full chapter review, not just one scene
+- **writer** — To rewrite the scene once diagnosed
+- **outliner** — If scene doesn't fit, check outline structure
+- **editor** — For line-level polish after structural issues fixed

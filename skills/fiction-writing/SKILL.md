@@ -20,6 +20,7 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:whatnext` | See project status and next steps |
 | `/fiction:status` | Quick project status |
 | `/fiction:reconcile` | Audit project against current conventions, offer updates |
+| `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
 
 ## Natural Language Triggers
 
@@ -42,6 +43,7 @@ Select the appropriate agent based on task:
 | `outliner` | Chapter breakdown, scene beats | sonnet |
 | `character-developer` | Character documents | opus |
 | `chapter-reviewer` | Iterative chapter review | sonnet |
+| `editor` | Line-level polish (spelling, grammar, echoes) | sonnet |
 | `critique` | Full manuscript review | opus |
 | `continuity` | Consistency checking | haiku |
 | `whatnext` | Project navigation | haiku |

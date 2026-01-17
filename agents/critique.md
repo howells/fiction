@@ -132,3 +132,10 @@ Avoid spoilers. Discuss qualities without revealing major plot turns or the endi
 - Be fair. Evaluate by the work's own aims.
 - Be specific. Vague praise and criticism are useless.
 - Be a reader first. How does this feel to read?
+
+## Related Tools
+
+- **chapter-reviewer** — Iterative chapter feedback (during drafting)
+- **editor** — Line-level polish before final critique
+- **continuity** — Consistency checking (run before critique)
+- **voice-analyzer** — POV/tense analysis

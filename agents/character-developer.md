@@ -156,3 +156,11 @@ Read what exists first, then: "Based on what exists, here's my understanding. Wh
 - **Informed traits:** "She's brilliant" but we never see it
 - **Motivation vacuum:** Actions without reasons
 - **Static character:** No arc, no change
+
+## Related Tools
+
+- **architect** — Character arcs should align with story architecture
+- **outliner** — Once characters exist, outline their scenes
+- **writer** — Use character docs as reference when writing
+- **continuity** — Check character details stay consistent
+- **voice-analyzer** — Verify character voice consistency across chapters

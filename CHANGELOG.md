@@ -5,6 +5,19 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-01-17
+
+### Added
+
+- **`editor` agent** — Line-level editing for spelling, grammar, awkward phrasing, word echoes, and overused words
+- **`/fiction:edit` command** — Run editor across chapters (single, range, or all)
+- **Cross-references across all agents** — Every agent now has "Related Tools" section pointing to relevant other agents
+
+### Changed
+
+- All agents now include workflow guidance via Related Tools sections
+- Updated SKILL.md with new agent and command
+
 ## [1.1.1] - 2026-01-17
 
 ### Changed

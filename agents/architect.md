@@ -156,3 +156,10 @@ When architecture is complete, produce a document:
 - Tone references should triangulate, not imitate
 - Less is more—don't over-specify structure
 - This is a living document, not a prison
+
+## Related Tools
+
+- **outliner** — Break architecture into chapter/scene structure
+- **character-developer** — Deep character work after architecture
+- **world-builder** — Develop settings and systems
+- **writer** — Once architecture is complete, start writing

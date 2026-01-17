@@ -88,3 +88,10 @@ You are a voice analyst. You examine manuscripts for POV consistency, tense stab
 ## Recommendations
 [Prioritized list]
 ```
+
+## Related Tools
+
+- **chapter-reviewer** — For broader craft issues beyond voice
+- **editor** — For line-level fixes once voice issues identified
+- **continuity** — For factual consistency (different from voice)
+- **writer** — To revise with voice issues in mind

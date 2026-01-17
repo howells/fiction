@@ -173,6 +173,7 @@ This maintains state across sessions so future reviews have context.
 
 ## Related Tools
 
+- **editor** — For line-level polish (spelling, grammar, word echoes) — run after story issues fixed
 - **continuity** — For cross-chapter consistency issues (timeline, facts, details)
 - **voice-analyzer** — For systematic POV/tense analysis across multiple chapters
 - **scene-analyzer** — For deep structural diagnosis of individual scenes
