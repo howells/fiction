@@ -5,6 +5,17 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-01-17
+
+### Added
+
+- **`naming` agent** — Generate and validate book title options
+- **`/fiction:naming` command** — Produces 8-12 title candidates using proven naming strategies
+- Availability checking via web search (verifies titles aren't already taken)
+- 10 naming strategies: Object, Place, Character, Theme, [Noun] of [Noun], [Person] + [Location], Contradiction, Alliterative, Cultural Echo
+- Genre fit evaluation (title signals match reader expectations)
+- Series title pattern suggestions
+
 ## [1.5.0] - 2026-01-17
 
 ### Added
