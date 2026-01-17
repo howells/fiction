@@ -5,6 +5,21 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-01-17
+
+### Added
+
+- **Audiobook readiness guidance** — Comprehensive reference for writing audio-friendly prose
+- **`references/audiobook-considerations.md`** — Full guide covering dialogue attribution, similar-sounding names, pronoun clarity, sentence complexity, visual elements, homophones
+- **6th Core Principle** — "Write for the Ear" added to SKILL.md
+- **Audiobook checks** in writer, editor, and chapter-reviewer agents
+
+### Changed
+
+- writer agent: Added Audiobook Awareness section with key guidelines
+- editor agent: Added Audiobook Readiness as 7th check category
+- chapter-reviewer: Added audiobook readiness to review criteria
+
 ## [1.3.0] - 2026-01-17
 
 ### Added
