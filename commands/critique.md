@@ -1,5 +1,4 @@
 ---
-name: fiction:critique
 description: Get a full literary critique of your completed manuscript. NYT/New Yorker style.
 ---
 

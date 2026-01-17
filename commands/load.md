@@ -1,5 +1,4 @@
 ---
-name: fiction:load
 description: Load a fiction project into context. Read structure, characters, world, and chapters to understand the story.
 ---
 

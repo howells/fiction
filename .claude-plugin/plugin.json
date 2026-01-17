@@ -4,5 +4,19 @@
   "description": "Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.",
   "skills": "./skills/",
   "commands": "./commands/",
-  "agents": "./agents/"
+  "author": {
+    "name": "Daniel Howells",
+    "url": "https://github.com/howells"
+  },
+  "repository": "https://github.com/howells/fiction-writing",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "fiction",
+    "novels",
+    "creative",
+    "literary",
+    "prose",
+    "chapters"
+  ]
 }

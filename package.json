@@ -1,0 +1,13 @@
+{
+  "name": "fiction-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fiction writing plugin for Claude Code",
+  "scripts": {
+    "push": "./scripts/push.sh",
+    "release": "node scripts/release.js",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major"
+  }
+}

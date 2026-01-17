@@ -1,0 +1,32 @@
+{
+  "name": "howells-fiction",
+  "owner": {
+    "name": "Daniel Howells"
+  },
+  "metadata": {
+    "description": "Write complete novels with Claude",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "fiction",
+      "source": "./",
+      "description": "Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Howells"
+      },
+      "repository": "https://github.com/howells/fiction-writing",
+      "license": "MIT",
+      "keywords": [
+        "writing",
+        "fiction",
+        "novels",
+        "creative",
+        "literary",
+        "prose",
+        "chapters"
+      ]
+    }
+  ]
+}

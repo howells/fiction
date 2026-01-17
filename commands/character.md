@@ -1,5 +1,4 @@
 ---
-name: fiction:character
 description: Create or develop a character document.
 ---
 

@@ -1,5 +1,4 @@
 ---
-name: fiction:whatnext
 description: See project status and get suggestions for what to work on next.
 ---
 
