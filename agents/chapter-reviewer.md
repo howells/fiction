@@ -179,6 +179,8 @@ Consult these when reviewing:
 - `references/pacing.md` — Rhythm and flow issues
 - `references/character.md` — Character consistency
 - `references/scene-structure.md` — Scene-level problems
+- `references/revision-editing.md` — Revision stages and priorities
+- `references/openings.md` — For first chapter reviews
 
 ## Related Tools
 

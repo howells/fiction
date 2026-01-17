@@ -136,6 +136,7 @@ Consult these when outlining:
 - `references/scene-structure.md` — Goal → Conflict → Disaster
 - `references/pacing.md` — Rhythm, tension, breathing room
 - `references/story-structure.md` — Major beats and turning points
+- `references/length-forms.md` — Novel vs novella vs short story scope
 
 ## Related Tools
 

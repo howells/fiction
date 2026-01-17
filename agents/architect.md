@@ -163,6 +163,8 @@ Consult these when architecting:
 - `references/story-structure.md` — Arc types, beats, structure
 - `references/character.md` — Want/Need, Lie, Ghost framework
 - `references/endings.md` — How to land the ending
+- `references/length-forms.md` — Novel vs novella scope decisions
+- `references/genre-conventions.md` — Genre expectations to honor or subvert
 
 ## Related Tools
 

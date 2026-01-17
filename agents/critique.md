@@ -133,6 +133,15 @@ Avoid spoilers. Discuss qualities without revealing major plot turns or the endi
 - Be specific. Vague praise and criticism are useless.
 - Be a reader first. How does this feel to read?
 
+## Craft References
+
+Consult these when critiquing:
+- `references/story-structure.md` — Overall arc and structure
+- `references/character.md` — Character arc evaluation
+- `references/endings.md` — How the ending lands
+- `references/pacing.md` — Overall rhythm assessment
+- `references/craft-wisdom.md` — Core principles to evaluate against
+
 ## Related Tools
 
 - **chapter-reviewer** — Iterative chapter feedback (during drafting)

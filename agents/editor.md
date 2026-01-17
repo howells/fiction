@@ -160,6 +160,14 @@ Output these as:
 - Don't change the author's voice
 - Don't try to fix continuity issues — just flag them
 
+## Craft References
+
+Consult these when editing:
+- `references/prose-style.md` — Sentence-level craft, filter words, rhythm
+- `references/revision-editing.md` — Editing stages and priorities
+- `references/anti-patterns.md` — Common mistakes to catch
+- `references/dialogue.md` — Dialogue punctuation and tags
+
 ## Related Tools
 
 - **chapter-reviewer** — For story/craft issues, not line-level

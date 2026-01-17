@@ -147,6 +147,8 @@ Consult these when needed:
 - `references/dialogue.md` — Making speech feel real
 - `references/scene-structure.md` — Goal → Conflict → Disaster
 - `references/anti-patterns.md` — What to avoid
+- `references/openings.md` — First chapter/scene craft
+- `references/genre-conventions.md` — Genre expectations and tropes
 
 ## Related Tools
 
