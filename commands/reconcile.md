@@ -29,6 +29,11 @@ Check for expected directories and files:
 - [ ] `craft/tone.md` — Voice guidance
 - [ ] `themes.md` — Thematic content
 
+**Build & Cover:**
+- [ ] `builds/` — EPUB build outputs (date-organized)
+- [ ] `covers/` — Cover artwork iterations
+- [ ] `epub.css` — EPUB styling (if building)
+
 ### 3. Audit File Content
 
 For each existing file, check for expected sections:
@@ -61,6 +66,8 @@ Output a reconciliation report:
 ✓ characters/ directory (X characters)
 ✗ craft/tone.md — missing
 ✓ themes.md exists
+✗ builds/ — missing (create with `/fiction:build`)
+✗ covers/ — missing (create for cover artwork)
 
 ### Content Audit
 

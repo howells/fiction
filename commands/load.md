@@ -46,7 +46,17 @@ For each chapter in `chapters/`:
 - Note approximate word count
 - Identify which chapters are drafted vs. outlined
 
-### 6. Output Understanding
+### 6. Check Builds & Covers
+
+**builds/** — If present, note:
+- Most recent build date
+- Latest epub filename
+
+**covers/** — If present, note:
+- Number of cover iterations
+- Whether a final `cover.png` exists
+
+### 7. Output Understanding
 
 After reading, output a summary:
 
@@ -60,6 +70,9 @@ After reading, output a summary:
 **Characters:**
 - [Protagonist] — [brief description]
 - [Other key characters]
+
+**Builds:** [Latest: builds/2026-01-18/name.epub] or [No builds yet]
+**Covers:** [X iterations, final cover ready] or [No covers yet]
 
 **Current state:** [Where the story is, what was last worked on]
 

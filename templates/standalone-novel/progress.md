@@ -46,6 +46,28 @@ Tracks review state across sessions. Updated automatically by review commands.
 - [ ] World documented
 - [ ] Tone guide exists
 - [ ] ⚓ Anchored section populated
+- [ ] builds/ directory exists
+- [ ] covers/ directory exists
+
+---
+
+## Builds
+
+| Date | File | Chapters | Words | Notes |
+|------|------|----------|-------|-------|
+| — | — | — | — | — |
+
+---
+
+## Cover Progress
+
+**Status:** Not started
+**Iterations:** 0
+**Final:** —
+
+| # | File | Notes |
+|---|------|-------|
+| — | — | — |
 
 ---
 
