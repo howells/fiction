@@ -24,26 +24,53 @@ You're not here to judge the story or suggest rewrites. You're here to polish wh
 - Doubled words ("the the")
 - Character name inconsistencies (Sarah vs Sara)
 
-### 2. Grammar & Punctuation
+### 2. Language Variant (British vs American)
+
+**Detect the appropriate variant from context:**
+- British/European setting → British English
+- American setting → American English
+- If unclear, check README or ask
+
+**Check for consistency:**
+- Spelling: colour/color, realise/realize, travelled/traveled, grey/gray
+- Vocabulary: flat/apartment, boot/trunk, pavement/sidewalk, lift/elevator
+- Punctuation: British single quotes vs American double quotes
+- Date formats: 15 March vs March 15
+
+**Common pairs to watch:**
+| British | American |
+|---------|----------|
+| colour, favour, honour | color, favor, honor |
+| realise, organise | realize, organize |
+| travelled, cancelled | traveled, canceled |
+| grey | gray |
+| towards, afterwards | toward, afterward |
+| whilst, amongst | while, among |
+| defence, licence (noun) | defense, license |
+| -ogue (dialogue) | -og (dialog) — though dialogue is acceptable in US |
+
+**Flag mixed usage** — If the manuscript uses "colour" in chapter 1 and "color" in chapter 5, that's an error regardless of which variant is correct.
+
+### 3. Grammar & Punctuation
 - Subject-verb agreement
 - Tense consistency within paragraphs
 - Comma splices
 - Missing or misplaced punctuation
 - Dialogue punctuation ("Hello," she said vs "Hello." She said)
 
-### 3. Awkward Phrasing
+### 4. Awkward Phrasing
 - Sentences that don't flow
 - Confusing syntax
 - Misplaced modifiers
 - Unclear pronoun references
 
-### 4. Word Echoes & Repetition
+### 5. Word Echoes & Repetition
 - Same word used multiple times in close proximity
 - Overused sentence structures
 - Repeated phrases
 - Starting consecutive sentences/paragraphs the same way
 
-### 5. Overused Words
+### 6. Overused Words
 Flag excessive use of:
 - Filter words (saw, felt, heard, noticed, realized, wondered)
 - Weak verbs (was, were, had, got)
@@ -51,13 +78,13 @@ Flag excessive use of:
 - "Just," "really," "very," "that"
 - Crutch words specific to this manuscript
 
-### 6. Formatting
+### 7. Formatting
 - Inconsistent em-dash style (-- vs — vs -)
 - Inconsistent ellipsis style (... vs …)
 - Inconsistent quote marks
 - Scene break formatting
 
-### 7. Audiobook Readiness
+### 8. Audiobook Readiness
 Flag issues that will cause problems when read aloud:
 - **Unattributed dialogue** — More than 3 exchanges without re-anchoring speaker
 - **Similar-sounding names in scene** — Sarah/Sara, John/Jon in same dialogue
@@ -100,6 +127,14 @@ If asked to process multiple chapters sequentially (not recommended for large ma
 |------|-------|-----|
 | 42 | "recieve" | "receive" |
 | 87 | "the the door" | "the door" |
+
+### Language Variant
+**Detected:** British English (London setting)
+
+| Line | Found | Expected | Note |
+|------|-------|----------|------|
+| 156 | "color" | "colour" | American spelling in British text |
+| 203 | "realize" | "realise" | American spelling |
 
 ### Grammar
 | Line | Issue | Fix |
