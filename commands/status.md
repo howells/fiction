@@ -2,7 +2,7 @@
 description: Quick view of project status without suggestions.
 ---
 
-Display project status. Simpler than `/whatnext`—just the facts.
+Display project status. Simpler than `/fiction:next`—just the facts.
 
 ## What This Does
 

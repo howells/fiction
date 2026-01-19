@@ -32,15 +32,14 @@ claude plugins:add howells/fiction
 ### Existing Project
 
 ```bash
-/fiction:load        # Load project into context
-/fiction:whatnext    # See what to work on next
+/fiction:go          # Load project and see what to work on next
 ```
 
 ## Commands
 
 | Command | What It Does |
 |---------|--------------|
-| `/fiction:load` | Load project into context |
+| `/fiction:go` | Resume a project (load context + suggest what to do next) |
 | `/fiction:new` | Start a new fiction project from scratch |
 | `/fiction:plan` | Design story architecture (premise, theme, ending) |
 | `/fiction:outline` | Create chapter and scene breakdown |
@@ -49,11 +48,11 @@ claude plugins:add howells/fiction
 | `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
 | `/fiction:synopsis` | Generate synopsis (short/medium/long) |
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
-| `/fiction:whatnext` | Get ONE clear recommendation for what to do next |
 | `/fiction:naming` | Generate and validate book title options |
 | `/fiction:cover` | Generate cover art prompts for image generation |
 | `/fiction:build` | Build EPUB from your manuscript |
 | `/fiction:reconcile` | Update project to current plugin conventions |
+| `/fiction:next` | Get suggestion for what to work on next |
 
 ## Project Structure
 
@@ -72,42 +71,91 @@ claude plugins:add howells/fiction
 └── covers/             # Cover art iterations
 ```
 
-## The Writing Loop
+## Recommended Workflow
+
+Fiction writing isn't linear—it's iterative. Here's how to use the plugin effectively:
+
+### Phase 1: Foundation
+
+Start with `/fiction:new` for a guided project setup, or build manually:
+
+```bash
+/fiction:plan          # Define premise, theme, ending, tone
+/fiction:character     # Develop protagonist and key characters
+/fiction:outline       # Break into chapters with scene beats
+```
+
+**Don't skip this.** A weak foundation creates problems that compound with every chapter. Know your ending before you start writing.
+
+### Phase 2: First Draft
+
+Write chapters one at a time. After each chapter:
+
+```bash
+"Write chapter 3"      # Write the chapter
+/fiction:review        # Get craft-focused feedback
+# Revise based on feedback
+/fiction:review        # Review again if needed
+```
+
+The review → revise → review loop is where the real work happens. Don't move on until a chapter is solid.
+
+### Phase 3: Polish
+
+Once all chapters are drafted:
+
+```bash
+/fiction:edit          # Line-level editing (all chapters)
+/fiction:review        # Re-review after edits
+```
+
+The editor catches spelling, grammar, word echoes, and awkward phrasing. Review again afterward—editing can introduce new issues.
+
+### Phase 4: Manuscript Review
+
+When the full draft is complete:
+
+```bash
+/fiction:critique      # Full manuscript critique (NYT/New Yorker style)
+```
+
+This is a comprehensive review of the entire work: structure, character arcs, themes, pacing, prose quality. Use it to identify what needs revision before calling the manuscript done.
+
+### Phase 5: Publishing Prep
+
+When the manuscript is final:
+
+```bash
+/fiction:synopsis      # Generate query letter synopses
+/fiction:naming        # Find the right title
+/fiction:cover         # Generate cover art prompts
+/fiction:build         # Export to EPUB
+```
+
+### The Short Version
 
 ```
-Write chapter
-    ↓
-/fiction:review     # Get feedback
-    ↓
-Revise
-    ↓
-Repeat
+/fiction:new or /fiction:plan
+         ↓
+    Foundation work (characters, outline)
+         ↓
+┌──→ Write chapter
+│        ↓
+│    /fiction:review
+│        ↓
+└─── Revise (loop until solid)
+         ↓
+    /fiction:edit (all chapters)
+         ↓
+    /fiction:critique (full manuscript)
+         ↓
+    Publishing prep (synopsis, naming, cover, build)
 ```
 
-## Full Novel Workflow
+### Returning to a Project
 
-```
-/fiction:plan          # Architecture
-    ↓
-/fiction:character     # Key characters
-    ↓
-/fiction:outline       # Chapter breakdown
-    ↓
-Write chapters         # The work
-    ↓
-/fiction:review        # Per-chapter feedback
-    ↓
-/fiction:edit          # Line-level polish
-    ↓
-/fiction:critique      # Full manuscript review
-    ↓
-/fiction:synopsis      # Query letter synopsis
-    ↓
-/fiction:naming        # Finalize title
-    ↓
-/fiction:cover         # Cover art prompts
-    ↓
-/fiction:build         # Export EPUB
+```bash
+/fiction:go            # Load project and get recommendation for what to do next
 ```
 
 ## Core Principles
@@ -174,7 +222,7 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 | `voice-analyzer` | POV/tense consistency | sonnet |
 | `naming` | Title generation + availability | opus |
 | `cover-artist` | Image gen prompts | opus |
-| `whatnext` | Project navigation | haiku |
+| `next` | Project navigation | haiku |
 | `new-project` | Interactive project wizard | opus |
 | `reader-skim` | Fast fact extraction (parallel) | haiku |
 | `reader-careful` | Deep analysis with quotes (parallel) | sonnet |

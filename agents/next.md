@@ -1,5 +1,5 @@
 ---
-name: whatnext
+name: next
 description: Assess project status and suggest what to work on next. Use when you sit down and don't know where to start.
 model: haiku
 tools:

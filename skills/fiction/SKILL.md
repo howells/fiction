@@ -12,14 +12,14 @@ A complete system for writing fiction—from initial concept through final draft
 | Command | Purpose |
 |---------|---------|
 | `/fiction:new` | Start new project from scratch (interactive wizard) |
-| `/fiction:load` | Load project into context (characters, world, chapters) |
+| `/fiction:go` | Resume a project (load context + suggest what to do next) |
 | `/fiction:plan` | Design story architecture (premise, theme, ending) |
 | `/fiction:outline` | Create chapter and scene breakdown |
 | `/fiction:character` | Develop a character document |
 | `/fiction:review` | Review current chapter (iterative feedback) |
 | `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
 | `/fiction:synopsis` | Generate synopsis (long/medium/short) for pitches |
-| `/fiction:whatnext` | See project status and next steps |
+| `/fiction:next` | Get suggestion for what to work on next |
 | `/fiction:status` | Quick project status |
 | `/fiction:reconcile` | Audit project against current conventions, offer updates |
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
@@ -53,7 +53,7 @@ Select the appropriate agent based on task:
 | `critique` | Full manuscript review | opus |
 | `synopsis` | Plot synopsis for queries/pitches | opus |
 | `continuity` | Consistency checking | haiku |
-| `whatnext` | Project navigation | haiku |
+| `next` | Project navigation | haiku |
 | `scene-analyzer` | Scene diagnosis | sonnet |
 | `voice-analyzer` | POV/tense checking | haiku |
 | `world-builder` | Settings, systems | sonnet |
@@ -163,8 +163,7 @@ Run `/fiction:new` — interactive wizard guides you through:
 Everything saved as you go. Socratic dialogue helps you discover what you already know.
 
 ### Existing Project
-1. Run `/fiction:load` to ingest the project into context
-2. Run `/fiction:whatnext` to see suggestions for what to work on
+Run `/fiction:go` to load the project and see what to work on next.
 
 ### After Plugin Updates
 1. Run `/fiction:reconcile` to audit project against current conventions
