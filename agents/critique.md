@@ -7,6 +7,8 @@ tools:
   - Glob
   - Grep
   - Edit
+  - Write
+  - Task
   - AskUserQuestion
 ---
 
@@ -126,33 +128,40 @@ After the main review, include a craft observations section. Long mode: 2-3 obse
 
 ## Before You Write
 
-Read the complete manuscript:
-1. All chapters in order
-2. Project README (for context, intent)
-3. Craft/tone guide if exists
+Read project context:
+1. Project README (for context, intent)
+2. Craft/tone guide if exists
+3. Check for existing critiques in `critiques/` directory—these can inform your work, but note the manuscript may have changed significantly since they were written.
 
-## Efficient Reading for Large Manuscripts
+## Reading the Manuscript
 
-For manuscripts with 20+ chapters, consider parallel reading with note aggregation:
+**For manuscripts with 10+ chapters**, use parallel reader-careful agents:
 
-### Phase 1: Parallel Chapter Analysis
-Spawn agents (one per chapter or per section) to note:
-- Prose style observations (specific quotes)
-- Pacing assessment for that section
-- Character moments (what works, what doesn't)
-- Structural observations
-- Thematic elements present
+### Phase 1: Parallel Chapter Extraction
+Spawn one `reader-careful` agent per chapter in parallel:
+```
+Task tool with subagent_type: "fiction:reader-careful"
+prompt: "Extract careful analysis from: [chapter-path]"
+```
 
-Each agent returns structured notes, not critique prose.
+reader-careful returns structured data including:
+- Plot beats, timeline, characters, settings
+- Character arcs, relationships, themes
+- Craft observations with specific quotes
+- Prose style, dialogue quality, pacing notes
+- Voice/POV consistency, word echoes
 
 ### Phase 2: Unified Critique
-With all chapter notes collected:
+With all chapter extractions collected:
 - Synthesize observations into coherent review
-- Identify patterns across sections
-- Select the most illustrative quotes
-- Write the final 1000-1500 word critique
+- Identify patterns across chapters
+- Select the most illustrative quotes from the extractions
+- Write the final critique at the requested length
 
-**This approach is faster for very long manuscripts** while preserving the unified voice of the final critique. The synthesis phase requires the full picture, but fact-gathering can be parallelized.
+### Small Manuscripts (<10 chapters)
+Read chapters directly—spawning overhead isn't worth it for short works.
+
+**This approach is 3-4x faster for long manuscripts** while preserving the unified voice of the final critique.
 
 ## Spoiler Policy
 
@@ -221,6 +230,27 @@ Consult these when critiquing:
 - `references/pacing.md` — Overall rhythm assessment
 - `references/craft-wisdom.md` — Core principles to evaluate against
 - `references/audiobook-considerations.md` — Audio readiness (dialogue clarity, name distinctiveness)
+
+## Saving the Critique
+
+After completing the critique, save it to the critiques folder:
+
+1. **Write the critique**: Save to `critiques/critique-YYYY-MM-DD-{length}.md`
+   - Example: `critiques/critique-2026-01-19-long.md`
+   - Length is lowercase: `long`, `medium`, or `short`
+2. **Update progress.md**: Add an entry to the Critiques table:
+
+```markdown
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| 2026-01-19 | Long | critiques/critique-2026-01-19-long.md | Initial full critique |
+```
+
+Include:
+- **Date**: Today's date
+- **Length**: The mode chosen (Long/Medium/Short)
+- **File**: Relative path to the critique file
+- **Notes**: Brief description (e.g., "Initial critique", "Post-revision critique")
 
 ## After the Critique
 

@@ -26,6 +26,8 @@ Generate a synopsis of your story using the synopsis agent.
 
 ## Output
 
+Synopses are saved to `synopses/synopsis-YYYY-MM-DD-{length}.md` and tracked in `progress.md`.
+
 A plot-focused summary including:
 - Story premise and hook
 - Main character arc

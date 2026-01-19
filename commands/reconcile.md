@@ -32,6 +32,8 @@ Check for expected directories and files:
 **Build & Cover:**
 - [ ] `builds/` — EPUB build outputs (date-organized)
 - [ ] `covers/` — Cover artwork iterations
+- [ ] `critiques/` — Critique outputs (date-organized)
+- [ ] `synopses/` — Synopsis outputs (date-organized)
 - [ ] `epub.css` — EPUB styling (if building)
 
 ### 3. Audit File Content
@@ -68,6 +70,8 @@ Output a reconciliation report:
 ✓ themes.md exists
 ✗ builds/ — missing (create with `/fiction:build`)
 ✗ covers/ — missing (create for cover artwork)
+✗ critiques/ — missing (create with `/fiction:critique`)
+✗ synopses/ — missing (create with `/fiction:synopsis`)
 
 ### Content Audit
 

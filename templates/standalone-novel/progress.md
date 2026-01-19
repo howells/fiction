@@ -48,6 +48,8 @@ Tracks review state across sessions. Updated automatically by review commands.
 - [ ] ⚓ Anchored section populated
 - [ ] builds/ directory exists
 - [ ] covers/ directory exists
+- [ ] critiques/ directory exists
+- [ ] synopses/ directory exists
 
 ---
 
@@ -68,6 +70,22 @@ Tracks review state across sessions. Updated automatically by review commands.
 | # | File | Notes |
 |---|------|-------|
 | — | — | — |
+
+---
+
+## Critiques
+
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| — | — | — | — |
+
+---
+
+## Synopses
+
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| — | — | — | — |
 
 ---
 

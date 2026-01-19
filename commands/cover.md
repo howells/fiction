@@ -36,10 +36,10 @@ For each concept, you'll receive:
 
 ## Generating Images
 
-Once you have prompts, you can generate images with any AI image tool. If you have [falky](https://github.com/howells/falky) installed, you can generate images directly from the command line:
+Once you have prompts, you can generate images with any AI image tool. If you have [falcon](https://github.com/howells/falcon) installed, you can generate images directly from the command line:
 
 ```bash
-falky "your prompt here" --ar 5:8
+falcon "your prompt here" --ar 5:8
 ```
 
 ## Prompt Compatibility
@@ -62,7 +62,7 @@ The agent prioritizes:
 ## After Generation
 
 **If you chose image-only:**
-1. Generate images with your preferred AI tool (or falky)
+1. Generate images with your preferred AI tool (or falcon)
 2. Select the strongest result
 3. Add title and author name in a design tool (Canva, Photoshop, etc.)
 4. Test at thumbnail size

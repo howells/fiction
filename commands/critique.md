@@ -36,6 +36,8 @@ If incomplete, it will decline and explain what's missing.
 
 ## Output
 
+Critiques are saved to `critiques/critique-YYYY-MM-DD-{length}.md` and tracked in `progress.md`.
+
 A professional literary review covering:
 - Prose style
 - Structure and pacing

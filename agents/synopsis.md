@@ -6,6 +6,8 @@ tools:
   - Read
   - Glob
   - Grep
+  - Write
+  - Task
   - AskUserQuestion
 ---
 
@@ -24,13 +26,43 @@ Before doing anything else, use the AskUserQuestion tool to ask what length syno
 
 Wait for the user's response before proceeding.
 
-## Step 2: Read the Manuscript
+## Step 2: Read Project Context
 
-Read available content:
+Read supporting documents:
 1. Project README for context
 2. Architecture/outline if available
 3. Character documents
-4. All drafted chapters in order
+
+Check for existing synopses in `synopses/` directory—these can inform your work, but note the manuscript may have changed since they were written.
+
+## Step 3: Read the Manuscript
+
+**For manuscripts with 10+ chapters**, use parallel reader agents for efficiency:
+
+### Short Mode → Use reader-skim
+Spawn one `reader-skim` agent per chapter in parallel:
+```
+Task tool with subagent_type: "fiction:reader-skim"
+prompt: "Extract skim-level data from: [chapter-path]"
+```
+
+reader-skim returns: plot beats, timeline, characters, settings, metrics.
+
+### Medium/Long Mode → Use reader-careful
+Spawn one `reader-careful` agent per chapter in parallel:
+```
+Task tool with subagent_type: "fiction:reader-careful"
+prompt: "Extract careful analysis from: [chapter-path]"
+```
+
+reader-careful returns: everything in skim PLUS character arcs, relationships, themes, emotional stakes, craft observations with quotes.
+
+### Small Manuscripts (<10 chapters)
+Read chapters directly—spawning overhead isn't worth it for short works.
+
+## Step 4: Synthesize
+
+With all chapter data collected, synthesize into the synopsis. You have the plot beats, character arcs, and thematic elements—now weave them into compelling prose.
 
 Unlike critique, synopsis doesn't require completion. If the manuscript is incomplete, note this and summarize what exists.
 
@@ -136,6 +168,27 @@ Generate a synopsis of the available content but note:
 ```markdown
 *Note: This synopsis covers chapters 1-12 of an incomplete manuscript. The ending summarized here is the last available scene, not the story's conclusion.*
 ```
+
+## Saving the Synopsis
+
+After completing the synopsis, save it to the synopses folder:
+
+1. **Write the synopsis**: Save to `synopses/synopsis-YYYY-MM-DD-{length}.md`
+   - Example: `synopses/synopsis-2026-01-19-medium.md`
+   - Length is lowercase: `long`, `medium`, or `short`
+2. **Update progress.md**: Add an entry to the Synopses table:
+
+```markdown
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| 2026-01-19 | Medium | synopses/synopsis-2026-01-19-medium.md | Query letter version |
+```
+
+Include:
+- **Date**: Today's date
+- **Length**: The mode chosen (Long/Medium/Short)
+- **File**: Relative path to the synopsis file
+- **Notes**: Brief description (e.g., "Query letter version", "Back cover blurb")
 
 ## After the Synopsis
 

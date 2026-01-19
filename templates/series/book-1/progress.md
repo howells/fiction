@@ -44,6 +44,24 @@ Tracks review state across sessions. Updated automatically by review commands.
 - [ ] README complete
 - [ ] ⚓ Anchored section populated
 - [ ] Honors series-level anchors
+- [ ] critiques/ directory exists
+- [ ] synopses/ directory exists
+
+---
+
+## Critiques
+
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| — | — | — | — |
+
+---
+
+## Synopses
+
+| Date | Length | File | Notes |
+|------|--------|------|-------|
+| — | — | — | — |
 
 ---
 

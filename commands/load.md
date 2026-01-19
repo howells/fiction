@@ -40,13 +40,25 @@ Find and read files in `world/` directory. Note:
 
 ### 5. Scan Chapters
 
-For each chapter in `chapters/`:
+**For projects with 10+ chapters**, use parallel reader-skim agents for richer context:
+
+Spawn one `reader-skim` agent per chapter in parallel:
+```
+Task tool with subagent_type: "fiction:reader-skim"
+prompt: "Extract skim-level data from: [chapter-path]"
+```
+
+reader-skim returns: plot beats, timeline, characters, settings, word count, tone.
+
+This gives you actual plot progression, not just opening lines.
+
+**For smaller projects (<10 chapters)**, scan directly:
 - Note filename and any status markers
-- Read the first paragraph to understand where the story is
+- Read the first 1-2 paragraphs to understand where the story is
 - Note approximate word count
 - Identify which chapters are drafted vs. outlined
 
-### 6. Check Builds & Covers
+### 6. Check Builds, Covers, Critiques & Synopses
 
 **builds/** — If present, note:
 - Most recent build date
@@ -55,6 +67,14 @@ For each chapter in `chapters/`:
 **covers/** — If present, note:
 - Number of cover iterations
 - Whether a final `cover.png` exists
+
+**critiques/** — If present, note:
+- Most recent critique date
+- Number of critiques generated
+
+**synopses/** — If present, note:
+- Most recent synopsis date
+- Number of synopses generated
 
 ### 7. Output Understanding
 
@@ -73,6 +93,8 @@ After reading, output a summary:
 
 **Builds:** [Latest: builds/2026-01-18/name.epub] or [No builds yet]
 **Covers:** [X iterations, final cover ready] or [No covers yet]
+**Critiques:** [X critiques, latest: 2026-01-19] or [No critiques yet]
+**Synopses:** [X synopses, latest: 2026-01-19] or [No synopses yet]
 
 **Current state:** [Where the story is, what was last worked on]
 
