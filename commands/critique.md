@@ -6,10 +6,11 @@ Request a full manuscript critique using the critique agent.
 
 ## What This Does
 
-1. Checks if manuscript is complete
-2. If complete, reads entire manuscript
-3. Produces a 1000-1500 word literary review
-4. Includes craft observations for the writer
+1. Asks what length critique you want (long, medium, or short)
+2. Checks if manuscript is complete
+3. If complete, reads entire manuscript
+4. Produces a literary review at your chosen length
+5. Includes craft observations (long/medium modes)
 
 ## Prerequisites
 
@@ -27,6 +28,12 @@ If incomplete, it will decline and explain what's missing.
 /critique book 2           # Critique specific book in series
 ```
 
+## Length Options
+
+- **Long** — Full 1000-1500 word NYT/New Yorker style review with 2-3 craft observations
+- **Medium** — Substantive 400-600 word review with 1-2 craft observations
+- **Short** — Quick 150-250 word summary of key strengths and concerns
+
 ## Output
 
 A professional literary review covering:
@@ -35,7 +42,7 @@ A professional literary review covering:
 - Characterization
 - Emotional resonance
 - Thematic coherence
-- Plus 2-3 craft-level technical observations
+- Plus craft-level technical observations (long/medium modes)
 
 ## When to Use
 

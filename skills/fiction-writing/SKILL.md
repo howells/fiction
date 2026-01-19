@@ -1,6 +1,6 @@
 ---
 name: fiction-writing
-description: This skill should be used when the user asks to "write a chapter", "write prose", "continue the story", "develop a character", "review my chapter", "critique my manuscript", "plan my novel", "outline my book", "check for consistency", or mentions fiction writing, novels, short stories, scenes, or narrative craft.
+description: This skill should be used when the user asks to "write a chapter", "write prose", "continue the story", "develop a character", "review my chapter", "critique my manuscript", "write a synopsis", "summarize my story", "plan my novel", "outline my book", "check for consistency", or mentions fiction writing, novels, short stories, scenes, or narrative craft.
 ---
 
 # Fiction Writing
@@ -18,6 +18,7 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:character` | Develop a character document |
 | `/fiction:review` | Review current chapter (iterative feedback) |
 | `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
+| `/fiction:synopsis` | Generate synopsis (long/medium/short) for pitches |
 | `/fiction:whatnext` | See project status and next steps |
 | `/fiction:status` | Quick project status |
 | `/fiction:reconcile` | Audit project against current conventions, offer updates |
@@ -49,6 +50,7 @@ Select the appropriate agent based on task:
 | `chapter-reviewer` | Iterative chapter review | sonnet |
 | `editor` | Line-level polish (spelling, grammar, echoes) | sonnet |
 | `critique` | Full manuscript review | opus |
+| `synopsis` | Plot synopsis for queries/pitches | opus |
 | `continuity` | Consistency checking | haiku |
 | `whatnext` | Project navigation | haiku |
 | `scene-analyzer` | Scene diagnosis | sonnet |

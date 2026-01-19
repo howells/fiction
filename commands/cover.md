@@ -6,11 +6,11 @@ Generate cover art prompts for your book using the cover-artist agent.
 
 ## What This Does
 
-1. Reads your project materials (README, themes, characters, world, tone)
-2. Synthesizes the story's visual essence
-3. Produces 3-5 distinct cover concepts as image generation prompts
-4. Optimizes for Kindle dimensions (2560 × 1600, aspect ratio 1.6:1)
-5. No text by default—designed for post-production title overlay
+1. Asks whether you want image-only or text-inclusive covers
+2. Reads your project materials (README, themes, characters, world, tone)
+3. Synthesizes the story's visual essence
+4. Produces 3-5 distinct cover concepts as image generation prompts
+5. Optimizes for Kindle dimensions (2560 × 1600, aspect ratio 1.6:1)
 
 ## Usage
 
@@ -19,6 +19,13 @@ Generate cover art prompts for your book using the cover-artist agent.
 /fiction:cover /path/to/project   # Generate for specific project
 ```
 
+## Text Options
+
+You'll be asked whether to include text:
+
+- **Image only** (recommended) — Clean image with negative space for title overlay in post-production. More control over typography.
+- **Include text** — Title and author name generated as part of the image. Works well with GPT Image 1.5 and Gemini 3 Pro.
+
 ## Output
 
 For each concept, you'll receive:
@@ -26,6 +33,14 @@ For each concept, you'll receive:
 - **Prompt** — Ready to paste into Midjourney, DALL-E, or other generators
 - **Why it works** — Genre signals and design rationale
 - **Variations** — Style/mood alternatives
+
+## Generating Images
+
+Once you have prompts, you can generate images with any AI image tool. If you have [falky](https://github.com/howells/falky) installed, you can generate images directly from the command line:
+
+```bash
+falky "your prompt here" --ar 5:8
+```
 
 ## Prompt Compatibility
 
@@ -46,9 +61,17 @@ The agent prioritizes:
 
 ## After Generation
 
-1. Generate images with your preferred AI tool
+**If you chose image-only:**
+1. Generate images with your preferred AI tool (or falky)
 2. Select the strongest result
 3. Add title and author name in a design tool (Canva, Photoshop, etc.)
+4. Test at thumbnail size
+5. Upload to KDP
+
+**If you chose text-inclusive:**
+1. Generate images—inspect text carefully for errors
+2. Regenerate if any letters are wrong
+3. Minor touch-ups in design tool if needed
 4. Test at thumbnail size
 5. Upload to KDP
 
