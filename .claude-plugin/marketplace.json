@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Write complete novels with Claude",
-    "version": "1.7.0"
+    "version": "1.7.1"
   },
   "plugins": [
     {
       "name": "fiction",
       "source": "./",
       "description": "Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.",
-      "version": "1.7.0",
+      "version": "1.7.1",
       "author": {
         "name": "Daniel Howells"
       },
