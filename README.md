@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/howells/fiction/main/logo.png" alt="Fiction Plugin" width="120">
+</p>
+
 # Fiction Writing Plugin for Claude Code
 
 Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.
