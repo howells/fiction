@@ -41,15 +41,18 @@ claude plugins:add howells/fiction
 | Command | What It Does |
 |---------|--------------|
 | `/fiction:load` | Load project into context |
+| `/fiction:new` | Start a new fiction project from scratch |
 | `/fiction:plan` | Design story architecture (premise, theme, ending) |
 | `/fiction:outline` | Create chapter and scene breakdown |
 | `/fiction:character` | Develop a character document |
 | `/fiction:review` | Review current chapter |
 | `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
+| `/fiction:synopsis` | Generate synopsis (short/medium/long) |
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
 | `/fiction:whatnext` | Get ONE clear recommendation for what to do next |
 | `/fiction:naming` | Generate and validate book title options |
 | `/fiction:cover` | Generate cover art prompts for image generation |
+| `/fiction:build` | Build EPUB from your manuscript |
 | `/fiction:reconcile` | Update project to current plugin conventions |
 
 ## Project Structure
@@ -57,11 +60,16 @@ claude plugins:add howells/fiction
 ```
 /my-novel
 ├── README.md           # Overview, status, key decisions
+├── progress.md         # Session tracking, continuity state
 ├── themes.md           # Central question, thematic content
 ├── characters/         # Character documents
 ├── world/              # Setting documents
 ├── craft/              # Tone guide
-└── chapters/           # Chapter files
+├── chapters/           # Chapter files
+├── critiques/          # Saved critiques
+├── synopses/           # Saved synopses
+├── builds/             # EPUB builds
+└── covers/             # Cover art iterations
 ```
 
 ## The Writing Loop
@@ -93,9 +101,13 @@ Write chapters         # The work
     ↓
 /fiction:critique      # Full manuscript review
     ↓
+/fiction:synopsis      # Query letter synopsis
+    ↓
 /fiction:naming        # Finalize title
     ↓
 /fiction:cover         # Cover art prompts
+    ↓
+/fiction:build         # Export EPUB
 ```
 
 ## Core Principles
@@ -144,7 +156,7 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 
 ### Agents
 
-14 specialized agents, each tuned for a specific task:
+22 specialized agents, each tuned for a specific task:
 
 | Agent | Purpose | Model |
 |-------|---------|-------|
@@ -152,27 +164,44 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 | `architect` | Story structure, premise, ending | opus |
 | `outliner` | Chapter breakdown, scene beats | sonnet |
 | `character-developer` | Character documents | opus |
+| `world-builder` | Settings, systems | sonnet |
 | `chapter-reviewer` | Iterative chapter review | sonnet |
 | `editor` | Line-level polish | sonnet |
 | `critique` | Full manuscript review | opus |
+| `synopsis` | Synopsis generation (short/medium/long) | opus |
 | `continuity` | Consistency checking | haiku |
 | `scene-analyzer` | Scene diagnosis | sonnet |
-| `voice-analyzer` | POV/tense consistency | haiku |
-| `world-builder` | Settings, systems | sonnet |
+| `voice-analyzer` | POV/tense consistency | sonnet |
 | `naming` | Title generation + availability | opus |
 | `cover-artist` | Image gen prompts | opus |
 | `whatnext` | Project navigation | haiku |
+| `new-project` | Interactive project wizard | opus |
+| `reader-skim` | Fast fact extraction (parallel) | haiku |
+| `reader-careful` | Deep analysis with quotes (parallel) | sonnet |
+
+**Literary Critic Reviewers** (persona-based feedback):
+
+| Agent | Style |
+|-------|-------|
+| `james-wood` | New Yorker style, craft-focused |
+| `stephen-king` | Direct, story-first, hates adverbs |
+| `ursula-le-guin` | World-building, moral weight |
+| `roxane-gay` | Voice, representation, emotional truth |
 
 ### Large Manuscript Efficiency
 
-For 50k+ word novels, commands like `/fiction:edit all` spawn parallel agents:
+For 50k+ word novels (10+ chapters), specialized reader agents extract chapter data in parallel:
 
-| Task | Speedup |
-|------|---------|
-| Editing all chapters | ~20× for 20 chapters |
-| Reviewing all chapters | ~20× |
-| Continuity checking | ~3-4× |
-| Full critique | ~2-3× |
+| Task | Reader | Speedup |
+|------|--------|---------|
+| Synopsis generation | reader-skim / reader-careful | ~3-4× |
+| Full critique | reader-careful | ~3-4× |
+| Voice analysis | reader-careful | ~3-4× |
+| Editing all chapters | (direct parallel) | ~20× |
+| Reviewing all chapters | (direct parallel) | ~20× |
+| Continuity checking | (two-phase) | ~3-4× |
+
+Reader agents return structured data that the parent agent synthesizes into final output.
 
 ### Multi-Book Series Structure
 
@@ -184,8 +213,12 @@ For 50k+ word novels, commands like `/fiction:edit all` spawn parallel agents:
 │   ├── characters/
 │   └── world/
 └── book-1-title/
+    ├── README.md
     ├── progress.md
-    └── chapters/
+    ├── chapters/
+    ├── critiques/
+    ├── synopses/
+    └── builds/
 ```
 
 ### Cross-Reference System
@@ -194,7 +227,7 @@ All agents link to relevant craft references and related agents. No orphaned kno
 
 ---
 
-**Version:** 1.6.0 — See [CHANGELOG.md](CHANGELOG.md)
+**Version:** 1.8.0 — See [CHANGELOG.md](CHANGELOG.md)
 
 **Author:** Daniel Howells
 
