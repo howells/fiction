@@ -53,15 +53,23 @@ Look for `epub.css` in project root. If present, include in epub.
 
 ### 6. Build EPUB
 
-Use pandoc or similar to compile:
+Use pandoc to compile, with options to avoid empty pages:
 ```bash
 pandoc chapters/*.md \
   -o "builds/$(date +%Y-%m-%d)/project-name-$(date +%Y-%m-%d).epub" \
   --metadata title="Book Title" \
   --metadata author="Author Name" \
   --epub-cover-image=covers/cover.png \
-  --css=epub.css
+  --css=epub.css \
+  --epub-chapter-level=1 \
+  --toc=false
 ```
+
+**Avoiding empty pages:**
+- Use `--epub-chapter-level=1` to only break on H1 headings
+- Don't add manual page breaks in markdown
+- Check `epub.css` doesn't have aggressive `page-break-before/after` rules
+- If chapters have frontmatter (YAML), ensure no blank content between `---` markers
 
 ### 7. Create Metadata File
 
@@ -138,3 +146,32 @@ brew install pandoc
 - Check chapter breaks and styling
 - Verify cover displays correctly
 - If syncing to iCloud, builds will be available on all devices
+
+## Troubleshooting
+
+### Empty Pages
+If you see blank pages between chapters:
+1. Check for `page-break-after: always` in epub.css — remove or change to `auto`
+2. Look for double line breaks or `\newpage` in markdown files
+3. Ensure `--epub-chapter-level=1` is set (breaks only on H1)
+4. Check chapter files don't end with multiple blank lines
+
+### Recommended epub.css
+Minimal CSS that avoids empty page issues:
+```css
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+h1 {
+  page-break-before: auto;
+  margin-top: 2em;
+}
+p {
+  text-indent: 1.5em;
+  margin: 0;
+}
+p:first-of-type {
+  text-indent: 0;
+}
+```
