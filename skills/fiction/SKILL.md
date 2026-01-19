@@ -25,6 +25,7 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
 | `/fiction:cover` | Generate cover art prompts for image generation |
 | `/fiction:naming` | Generate and validate book title options |
+| `/fiction:build` | Build EPUB for reading (`--sync` preserves highlights) |
 
 ## Natural Language Triggers
 

@@ -10,22 +10,54 @@ Build an EPUB file from the current fiction project.
 2. Compiles all chapters from `chapters/` in order
 3. Applies styling from `epub.css` (if present)
 4. Includes cover image from `covers/` (if specified)
-5. Outputs to `builds/YYYY-MM-DD/project-name-YYYY-MM-DD.epub`
-6. Creates `metadata.yaml` alongside the build
+5. Sets a stable EPUB identifier (preserves highlights across builds)
+6. Outputs to `builds/` directory
 
 ## Usage
 
 ```
-/fiction:build                    # Build epub for current project
+/fiction:build                    # Build dated epub (archive mode)
+/fiction:build --sync             # Build for Apple Books sync (preserves highlights)
 /fiction:build --cover cover.png  # Include specific cover image
 /fiction:build /path/to/project   # Build specific project
 ```
+
+## Build Modes
+
+### Archive Mode (default)
+
+Outputs: `builds/YYYY-MM-DD/project-name-YYYY-MM-DD.epub`
+
+- Each build is date-stamped
+- Preserves history of versions
+- Good for milestones and backups
+
+### Sync Mode (`--sync`)
+
+Outputs: `builds/project-name.epub`
+
+- Same filename every time
+- Uses stable EPUB identifier
+- **Preserves highlights and reading position in Apple Books**
+- Ideal for reading on devices while writing
 
 ## What to Do
 
 ### 1. Find Project Root
 
-Look for README.md, chapters/ directory.
+Look for README.md, chapters/ directory. Support both flat and part-based structures:
+
+**Flat structure:**
+```
+chapters/01-chapter.md
+chapters/02-chapter.md
+```
+
+**Part-based structure:**
+```
+part-1-name/chapters/01-chapter.md
+part-2-name/chapters/10-chapter.md
+```
 
 ### 2. Gather Metadata
 
@@ -34,62 +66,82 @@ Extract from README.md:
 - **Author** — From frontmatter or infer from git config
 - **Description** — From "The Story" section or premise
 
-### 3. Collect Chapters
+### 3. Generate Identifier
+
+Create a stable identifier for the EPUB:
+```
+com.author-name.project-name
+```
+
+This identifier is what Apple Books uses to recognize "same book, updated" — preserving highlights and reading position between builds.
+
+### 4. Collect Chapters
 
 Read all markdown files from `chapters/` in order:
 - Sort by filename (01-chapter.md, 02-chapter.md, etc.)
+- For part-based projects, read parts in order (part-1, part-2, etc.)
 - Convert markdown to HTML
 - Preserve chapter breaks
 
-### 4. Check for Cover
+### 5. Check for Cover
 
 Look in `covers/` for:
 - `cover.png` or `cover.jpg` (default)
 - Or use `--cover` argument to specify
 
-### 5. Check for Styles
+### 6. Check for Styles
 
 Look for `epub.css` in project root. If present, include in epub.
 
-### 6. Build EPUB
+### 7. Build EPUB
 
-Use pandoc to compile, with options to avoid empty pages:
-```bash
-pandoc chapters/*.md \
-  -o "builds/$(date +%Y-%m-%d)/project-name-$(date +%Y-%m-%d).epub" \
-  --metadata title="Book Title" \
-  --metadata author="Author Name" \
-  --epub-cover-image=covers/cover.png \
-  --css=epub.css \
-  --epub-chapter-level=1 \
-  --toc=false
+Create a metadata file with the stable identifier:
+```yaml
+---
+title: "Book Title"
+author: "Author Name"
+identifier: "com.author-name.book-title"
+lang: en-GB
+---
 ```
 
-**Avoiding empty pages:**
-- Use `--epub-chapter-level=1` to only break on H1 headings
-- Don't add manual page breaks in markdown
-- Check `epub.css` doesn't have aggressive `page-break-before/after` rules
-- If chapters have frontmatter (YAML), ensure no blank content between `---` markers
+Use pandoc to compile:
+```bash
+pandoc chapters/*.md \
+  --metadata-file=/tmp/metadata.yaml \
+  -o "builds/project-name.epub" \
+  --epub-cover-image=covers/cover.png \
+  --css=epub.css \
+  --split-level=1 \
+  --toc \
+  --toc-depth=1
+```
 
-### 7. Create Metadata File
+**Key options:**
+- `--split-level=1` — Only break chapters on H1 headings (avoids empty pages)
+- `--toc` — Include table of contents
+- `--toc-depth=1` — Only show chapter titles in TOC
+
+### 8. Create Metadata File (Archive Mode)
 
 Write `builds/YYYY-MM-DD/metadata.yaml`:
 ```yaml
 title: "Book Title"
 author: "Author Name"
+identifier: "com.author-name.book-title"
 built: "2026-01-18T21:30:00Z"
 chapters: 18
 word_count: 75000
 cover: "cover.png"
 ```
 
-### 8. Report Build
+### 9. Report Build
 
 Output build summary:
 ```
 ## Build Complete
 
-**File:** builds/2026-01-18/project-name-2026-01-18.epub
+**File:** builds/project-name.epub
 **Size:** 8.4 MB
 **Chapters:** 18
 **Word count:** ~75,000
@@ -97,11 +149,13 @@ Output build summary:
 Cover: covers/cover.png included
 Styles: epub.css applied
 
-Ready for review or distribution.
+To open in Apple Books:
+  open -a 'Books' builds/project-name.epub
 ```
 
 ## Build Directory Structure
 
+### Archive Mode
 ```
 builds/
 ├── 2026-01-15/
@@ -112,7 +166,23 @@ builds/
     └── metadata.yaml
 ```
 
-Each build is date-stamped, preserving history of versions.
+### Sync Mode
+```
+builds/
+└── project-name.epub    # Always same file, updated in place
+```
+
+## Apple Books Sync
+
+For highlights to persist between builds:
+
+1. **Same identifier** — The `identifier` field in metadata must stay constant
+2. **Same filename** — Use `--sync` mode for consistent naming
+3. **iCloud sync enabled** — Both Mac and iPhone need Books enabled in iCloud settings
+
+**How it works:** Apple Books uses the EPUB's `dc:identifier` (stored in the OPF file) to recognize books. When you import a new build with the same identifier, it updates the existing book rather than adding a duplicate.
+
+**Caveat:** Highlights are tied to text position. Major edits (adding/removing paragraphs) may shift or orphan highlights in that area. Minor edits (typos, word changes) are fine.
 
 ## Covers Directory
 
@@ -135,8 +205,8 @@ brew install pandoc
 
 ## Tips
 
-- Run `/fiction:build` after completing a draft milestone
-- Keep dated builds to track progress
+- Use `--sync` for daily reading while writing
+- Use archive mode (default) for milestone builds
 - Test epub in Apple Books, Kindle Previewer, or Calibre
 - The `covers/` directory is for iterations; `cover.png` is what gets built
 
@@ -145,18 +215,27 @@ brew install pandoc
 - Open in Apple Books to test formatting
 - Check chapter breaks and styling
 - Verify cover displays correctly
-- If syncing to iCloud, builds will be available on all devices
+- For sync mode, delete old version in Books first if highlights don't update
 
 ## Troubleshooting
 
+### Highlights Not Persisting
+
+1. Ensure you're using `--sync` mode
+2. Check that the identifier hasn't changed
+3. Try deleting the old book from Apple Books, then importing fresh
+4. Verify iCloud sync is enabled for Books on both devices
+
 ### Empty Pages
+
 If you see blank pages between chapters:
 1. Check for `page-break-after: always` in epub.css — remove or change to `auto`
 2. Look for double line breaks or `\newpage` in markdown files
-3. Ensure `--epub-chapter-level=1` is set (breaks only on H1)
+3. Ensure `--split-level=1` is set (breaks only on H1)
 4. Check chapter files don't end with multiple blank lines
 
 ### Recommended epub.css
+
 Minimal CSS that avoids empty page issues:
 ```css
 body {
