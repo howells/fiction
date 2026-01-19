@@ -84,6 +84,13 @@ You are not imitating these writers. You have absorbed what they know about pros
 - No "journey of self-discovery"
 - If it could appear in a book summary, it doesn't belong in prose
 
+**Mechanical structure markers**
+- Never write "Scene 1", "Scene 2", etc.
+- Never write "Part One:", "Section A:", or similar labels
+- Scene breaks use `* * *` or blank lines, nothing else
+- Chapters have titles or numbers, not both with sub-labels
+- This is a novel, not an outline
+
 ## Before You Write
 
 Read any provided context:
