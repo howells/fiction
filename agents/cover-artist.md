@@ -321,24 +321,59 @@ No text in the image. The cover image should:
 
 ### If User Chose "Include Text"
 
-Generate prompts that include title and author name. Modern models (GPT Image 1.5, Ideogram 3.0, Gemini 3 Pro) handle text well.
+Generate prompts where typography feels **painted into the scene**, not dropped on top like a PowerPoint slide. The text should feel like it belongs to the same artistic reality as the image.
 
-**Text placement principles:**
-- Title in upper third, author name in lower third (classic layout)
-- Or title centered with author below
-- High contrast between text and background
-- Specify font style in prompt: "elegant serif title", "bold sans-serif author name"
+**The cardinal sin:** Text that floats disconnected from the artwork. Avoid clean, digital-looking overlays.
 
-**Prompt additions for text:**
+**Integration techniques:**
+
+1. **Environmental embedding** — Text carved into stone, written in sand, spelled in stars, formed by branches, etched in frost, painted on walls, reflected in water
+2. **Material consistency** — Text shares the texture and finish of the artwork (oil paint strokes, watercolor bleeds, ink splatter, woodgrain, fabric weave)
+3. **Light interaction** — Text catches the same light source as the scene (gilded letters glowing in sunset, neon reflecting on wet pavement, shadows falling across embossed type)
+4. **Depth placement** — Text exists at a specific depth in the composition (behind fog, emerging from mist, partially obscured by foreground elements)
+5. **Stylistic unity** — Typography matches the artistic era and medium (Art Nouveau flourishes for illustrated covers, weathered stencil for gritty thrillers, hand-lettered for whimsical)
+
+**Prompt language for integrated text:**
+
+Instead of: `Title "THE GARDEN" in elegant font at top`
+
+Write: `The title "THE GARDEN" rendered in weathered gold leaf, partially obscured by climbing vines, catching the same amber light as the greenhouse glass, letters showing age cracks consistent with the scene's decay`
+
+Or: `Title "THE GARDEN" painted in the same loose brushwork as the flowers, oil paint texture visible in the letterforms, colors pulled from the bloom palette`
+
+**Integration prompt templates:**
+
 ```
-Title "[BOOK TITLE]" in elegant serif font, upper third of image. Author name "[AUTHOR NAME]" in smaller text, lower portion. High contrast, legible at thumbnail size.
+Title "[TITLE]" appearing as [material/surface] within the scene, [how it catches light], [weathering/texture consistent with image], [spatial relationship to other elements]
+```
+
+**Genre-specific integration ideas:**
+
+- **Fantasy:** Illuminated manuscript lettering, runes carved in ancient stone, text formed by magical particles, calligraphy that appears burned or glowing
+- **Literary fiction:** Hand-lettered in the artist's own brushwork, embossed/debossed texture, text integrated into negative space of the composition
+- **Thriller:** Stenciled on concrete, scratched into metal, formed by crime scene elements, distressed and partially erased
+- **Romance:** Flowing script that echoes fabric folds, gilded lettering catching candlelight, text woven into floral elements
+- **Horror:** Text bleeding into the image, letters decaying or distorting, emerging from shadow or fog
+- **Sci-fi:** Holographic projection within the scene, digital displays, text as part of spacecraft/technology interfaces
+
+**Painterly text prompt examples:**
+
+```
+Create a book cover with title "SALT & RUIN" integrated into a stormy seascape. The title should appear carved into weathered driftwood in the foreground, letters filled with barnacles and sea salt deposits, catching the same cold grey light as the churning waves behind. Author name scratched smaller into the wood grain below. Oil painting style with visible brushwork throughout, including the typography.
+```
+
+```
+Title "THE APOTHECARY'S DAUGHTER" hand-lettered in ink that matches the botanical illustration style of the surrounding herbs and flowers, some letters intertwined with stems and leaves, watercolor pigment bleeding slightly at the edges of each letterform, author name in smaller matching script along a ribbon banner woven through the composition
 ```
 
 **Model notes for text:**
-- **GPT Image 1.5** and **Gemini 3 Pro** handle text well
-- **Midjourney** — Avoid for text-inclusive covers (unreliable)
+- **GPT Image 1.5** and **Gemini 3 Pro** — Best for integrated, painterly text. Describe the integration explicitly.
+- **Ideogram 3.0** — Excellent text rendering but tends toward clean/digital. Push hard for texture and integration in prompts.
+- **Midjourney** — Avoid for text-inclusive covers (unreliable text rendering)
 
-**Important:** Even with good models, inspect text carefully. Regenerate if any letters are wrong.
+**Legibility balance:** Integrated text must still read clearly at thumbnail size. If the integration technique obscures legibility (heavy weathering, complex backgrounds), ensure high value contrast between letterforms and their immediate surroundings.
+
+**Important:** Even with good models, inspect text carefully. Regenerate if any letters are wrong or if text looks "pasted on" rather than painted in.
 
 ## Thumbnail Test
 
