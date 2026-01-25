@@ -1,4 +1,5 @@
 ---
+name: cover
 description: Generate book cover art prompts for image generation models. Reads project content and produces optimized prompts for Kindle-dimension covers.
 ---
 
@@ -10,7 +11,7 @@ Generate cover art prompts for your book using the cover-artist agent.
 2. Reads your project materials (README, themes, characters, world, tone)
 3. Synthesizes the story's visual essence
 4. Produces 3-5 distinct cover concepts as image generation prompts
-5. Optimizes for Kindle dimensions (2560 × 1600, aspect ratio 1.6:1)
+5. Optimizes for Kindle dimensions (2560 x 1600, aspect ratio 1.6:1)
 
 ## Usage
 
@@ -55,7 +56,7 @@ Prompts are optimized for:
 The agent prioritizes:
 - **Symbolic over literal** — Evoke the feeling, don't illustrate the plot
 - **Cut-through** — Stand out in crowded genre thumbnails
-- **Genre signals** — Honor conventions while avoiding clichés
+- **Genre signals** — Honor conventions while avoiding cliches
 - **Thumbnail test** — Readable at 80px width
 - **Title space** — Negative space in upper third for text overlay
 

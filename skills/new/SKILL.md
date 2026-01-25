@@ -1,5 +1,9 @@
 ---
+name: new
 description: Start a new fiction project from scratch. Interactive wizard guides you through discovery, architecture, characters, world, and outline.
+argument-hint: "[genre or idea]"
+context: fork
+agent: fiction:new-project
 allowed-tools:
   - Read
   - Glob
@@ -9,8 +13,6 @@ allowed-tools:
   - AskUserQuestion
   - WebSearch
 ---
-
-# /fiction:new
 
 Start a new fiction project with guided, Socratic dialogue.
 
@@ -30,14 +32,12 @@ This is a conversation, not a form. The agent asks questions that help you disco
 
 Everything is saved as you go—architecture, characters, outline—so you never lose work.
 
-## Invoke
-
-Spawn the `new-project` agent:
+## Usage
 
 ```
-Use the Task tool to spawn the new-project agent with the following prompt:
-
-"Start a new fiction project with the user. Begin with Phase 1: Discovery. Be Socratic—ask questions that help them find what they already know. Use AskUserQuestion with multiple choice options to reduce blank-page paralysis. Save work as you complete each phase."
+/fiction:new               # Start the wizard
+/fiction:new thriller      # Start with a genre in mind
+/fiction:new "a story about loss and redemption"  # Start with an idea
 ```
 
-If the user provides context (genre, idea, etc.), include it in the prompt.
+If arguments provided: $ARGUMENTS

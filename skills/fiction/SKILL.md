@@ -23,6 +23,8 @@ A complete system for writing fiction—from initial concept through final draft
 | `/fiction:status` | Quick project status |
 | `/fiction:reconcile` | Audit project against current conventions, offer updates |
 | `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
+| `/fiction:language` | Verify foreign language phrases (grammar, period accuracy) |
+| `/fiction:notes` | Collect and process inline editing markers |
 | `/fiction:cover` | Generate cover art prompts for image generation |
 | `/fiction:naming` | Generate and validate book title options |
 | `/fiction:build` | Build EPUB for reading (`--sync` preserves highlights) |
@@ -59,6 +61,7 @@ Select the appropriate agent based on task:
 | `world-builder` | Settings, systems | sonnet |
 | `cover-artist` | Book cover art prompts | opus |
 | `naming` | Book title generation and validation | opus |
+| `language-checker` | Foreign phrase verification | sonnet |
 
 ### Guest Critics
 
@@ -77,18 +80,18 @@ Consult reference files for craft guidance:
 
 | Problem | Reference |
 |---------|-----------|
-| Story feels aimless | `references/story-structure.md` |
-| Scene drags | `references/scene-structure.md` |
-| Flat characters | `references/character.md` |
-| Stilted dialogue | `references/dialogue.md` |
-| Prose lacks rhythm | `references/prose-style.md` |
-| Pacing issues | `references/pacing.md` |
-| Weak opening | `references/openings.md` |
-| Unsatisfying ending | `references/endings.md` |
-| Genre expectations | `references/genre-conventions.md` |
-| Common mistakes | `references/anti-patterns.md` |
-| Process and mindset | `references/craft-wisdom.md` |
-| Audiobook readiness | `references/audiobook-considerations.md` |
+| Story feels aimless | `../references/story-structure.md` |
+| Scene drags | `../references/scene-structure.md` |
+| Flat characters | `../references/character.md` |
+| Stilted dialogue | `../references/dialogue.md` |
+| Prose lacks rhythm | `../references/prose-style.md` |
+| Pacing issues | `../references/pacing.md` |
+| Weak opening | `../references/openings.md` |
+| Unsatisfying ending | `../references/endings.md` |
+| Genre expectations | `../references/genre-conventions.md` |
+| Common mistakes | `../references/anti-patterns.md` |
+| Process and mindset | `../references/craft-wisdom.md` |
+| Audiobook readiness | `../references/audiobook-considerations.md` |
 
 ## Project Structure
 

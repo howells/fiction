@@ -1,5 +1,7 @@
 ---
+name: edit
 description: Run line-level editing across chapters. Catches spelling, grammar, awkward phrasing, and word echoes.
+argument-hint: "[chapter] [all] [3-7]"
 ---
 
 Run the editor agent to polish your manuscript at the line level.
@@ -21,6 +23,8 @@ Run the editor agent to polish your manuscript at the line level.
 /fiction:edit 3-7                # Edit chapters 3 through 7
 ```
 
+If arguments provided: $ARGUMENTS
+
 ## Parallel Processing (Important for Large Manuscripts)
 
 When editing multiple chapters ("all" or a range), **spawn editor agents in parallel** for efficiency:
@@ -35,7 +39,7 @@ When editing multiple chapters ("all" or a range), **spawn editor agents in para
 - Spawn 20 editor agents in a single message (one Task call per chapter)
 - Agents run concurrently, each producing its own report
 - Main conversation aggregates: common crutch words, repeated issues across chapters
-- Total time ≈ time for 1 chapter instead of 20×
+- Total time ~ time for 1 chapter instead of 20x
 
 ## What It Catches
 

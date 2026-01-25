@@ -1,5 +1,7 @@
 ---
+name: synopsis
 description: Generate a synopsis of your manuscript at various lengths. Great for pitches, query letters, or back cover copy.
+argument-hint: "[book N]"
 ---
 
 Generate a synopsis of your story using the synopsis agent.
@@ -23,6 +25,8 @@ Generate a synopsis of your story using the synopsis agent.
 /synopsis                  # Synopsis of current project
 /synopsis book 2           # Synopsis of specific book in series
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## Output
 

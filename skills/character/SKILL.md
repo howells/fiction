@@ -1,5 +1,9 @@
 ---
+name: character
 description: Create or develop a character document.
+argument-hint: "[name]"
+context: fork
+agent: fiction:character-developer
 ---
 
 Develop a character using the character-developer agent.
@@ -23,6 +27,8 @@ Develop a character using the character-developer agent.
 /character Sacha           # Develop specific character
 /character revise Jennifer # Revise existing character doc
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## Output
 

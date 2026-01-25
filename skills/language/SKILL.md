@@ -1,5 +1,7 @@
 ---
+name: language
 description: Verify non-English phrases in your manuscript. Checks grammar, period accuracy, dialect, and translations.
+argument-hint: "[chapter] [language-name]"
 ---
 
 Run the language-checker agent to verify all foreign language phrases in your manuscript.
@@ -23,6 +25,8 @@ Run the language-checker agent to verify all foreign language phrases in your ma
 /fiction:language 3-7                # Check chapters 3 through 7
 ```
 
+If arguments provided: $ARGUMENTS
+
 ## What It Catches
 
 - **Grammatical errors** — Spelling, agreement, conjugation, case endings
@@ -30,7 +34,7 @@ Run the language-checker agent to verify all foreign language phrases in your ma
 - **Dialect mismatches** — Stockholm Swedish used where Gotland dialect expected
 - **Register errors** — Wrong formality level (du/ni, tu/vous, du/Sie)
 - **Translation issues** — English translations that miss nuance
-- **Diacritical marks** — Missing or incorrect accents (ö, ü, é, etc.)
+- **Diacritical marks** — Missing or incorrect accents (o, u, e, etc.)
 
 ## Languages Supported
 
@@ -74,10 +78,10 @@ A report with:
 ### Issue 1: Anachronistic Phrase
 
 **Location:** Chapter 12, line 87
-**Original:** `"Det är cool"`
+**Original:** `"Det ar cool"`
 **Language:** Swedish
 **Problem:** "Cool" is a modern English loanword. Wouldn't be used in 1943 Swedish.
-**Suggested fix:** `"Det är fint"` or `"Det är bra"`
+**Suggested fix:** `"Det ar fint"` or `"Det ar bra"`
 **Severity:** Moderate
 ```
 
@@ -85,10 +89,10 @@ A report with:
 ### Issue 2: Register Mismatch
 
 **Location:** Chapter 4, line 156
-**Original:** `"Hur mår du?"`
+**Original:** `"Hur mar du?"`
 **Language:** Swedish
 **Problem:** Informal "du" form used in formal context. 1943 Swedish would use "ni" when addressing strangers.
-**Suggested fix:** `"Hur mår ni?"`
+**Suggested fix:** `"Hur mar ni?"`
 **Severity:** Moderate
 ```
 

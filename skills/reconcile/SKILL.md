@@ -1,5 +1,8 @@
 ---
+name: reconcile
 description: Audit a project against current plugin conventions and offer to update structure.
+argument-hint: "[--apply] [--report]"
+disable-model-invocation: true
 ---
 
 Reconcile an existing fiction project with the current plugin conventions. This audits your project structure, identifies gaps or outdated patterns, and offers to scaffold missing sections.
@@ -41,7 +44,7 @@ Check for expected directories and files:
 For each existing file, check for expected sections:
 
 **README.md should have:**
-- [ ] `## ⚓ Anchored` — Immutable constraints (new convention)
+- [ ] `## Anchored` — Immutable constraints (new convention)
 - [ ] `## Key Decisions` — Tracked decisions
 - [ ] `## Status` — Project status
 - [ ] `## Chapters` — Chapter list
@@ -52,7 +55,7 @@ For each existing file, check for expected sections:
 - [ ] Voice notes
 
 **For series projects, also check:**
-- [ ] `series-architecture.md` with `## ⚓ Anchored` section
+- [ ] `series-architecture.md` with `## Anchored` section
 - [ ] Book-level anchors that reference series anchors
 
 ### 4. Generate Report
@@ -63,32 +66,32 @@ Output a reconciliation report:
 ## Reconciliation Report: [Project Name]
 
 ### Structure Status
-✓ README.md exists
-✓ chapters/ directory (X chapters)
-✓ characters/ directory (X characters)
-✗ craft/tone.md — missing
-✓ themes.md exists
-✗ builds/ — missing (create with `/fiction:build`)
-✗ covers/ — missing (create for cover artwork)
-✗ critiques/ — missing (create with `/fiction:critique`)
-✗ synopses/ — missing (create with `/fiction:synopsis`)
+- README.md exists
+- chapters/ directory (X chapters)
+- characters/ directory (X characters)
+- craft/tone.md — missing
+- themes.md exists
+- builds/ — missing (create with `/fiction:build`)
+- covers/ — missing (create for cover artwork)
+- critiques/ — missing (create with `/fiction:critique`)
+- synopses/ — missing (create with `/fiction:synopsis`)
 
 ### Content Audit
 
 **README.md**
-✗ Missing `## ⚓ Anchored` section (new convention)
-✓ Has `## Key Decisions`
-✓ Has `## Status`
+- Missing `## Anchored` section (new convention)
+- Has `## Key Decisions`
+- Has `## Status`
 
 **Character: [Name]**
-✓ Has Want/Need
-✗ Missing Voice notes
+- Has Want/Need
+- Missing Voice notes
 
 [...continue for each file...]
 
 ### Recommendations
 
-1. **High priority:** Add `## ⚓ Anchored` section to README.md
+1. **High priority:** Add `## Anchored` section to README.md
 2. **Medium priority:** Create craft/tone.md for voice consistency
 3. **Low priority:** Add Voice notes to character files
 
@@ -134,10 +137,12 @@ If user approves:
 /fiction:reconcile --report     # Report only, don't offer changes
 ```
 
+If arguments provided: $ARGUMENTS
+
 ## What This Checks
 
 ### New Conventions (v2+)
-- `## ⚓ Anchored` sections for immutable constraints
+- `## Anchored` sections for immutable constraints
 - Distinction between anchored and key decisions
 - Cross-references between review tools
 

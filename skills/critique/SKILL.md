@@ -1,5 +1,7 @@
 ---
+name: critique
 description: Get a full literary critique of your completed manuscript. NYT/New Yorker style.
+argument-hint: "[book N]"
 ---
 
 Request a full manuscript critique using the critique agent.
@@ -27,6 +29,8 @@ If incomplete, it will decline and explain what's missing.
 /critique                  # Critique the current project
 /critique book 2           # Critique specific book in series
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## Length Options
 

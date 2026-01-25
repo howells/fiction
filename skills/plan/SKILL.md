@@ -1,5 +1,8 @@
 ---
+name: plan
 description: Design story architecture. Use when starting a new project or rethinking structure.
+context: fork
+agent: fiction:architect
 ---
 
 Start a story architecture session using the architect agent.
@@ -23,6 +26,8 @@ Start a story architecture session using the architect agent.
 /plan                      # Start fresh architecture session
 /plan revise               # Revise existing architecture
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## When to Use
 

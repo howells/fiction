@@ -1,4 +1,5 @@
 ---
+name: next
 description: Get suggestion for what to work on next.
 ---
 

@@ -1,5 +1,8 @@
 ---
+name: notes
 description: Collect and process inline editing notes from chapters. Finds %%NOTE:%%, %%EDIT:%%, %%CHECK:%%, and %%CUT:%% markers.
+argument-hint: "[chapter] [--process] [--clear]"
+disable-model-invocation: true
 ---
 
 Scan chapters for inline editing notes and present them for processing.
@@ -32,6 +35,8 @@ These are invisible in Obsidian's reading view but visible when editing.
 /fiction:notes --process    # Work through notes one by one
 /fiction:notes --clear      # Remove all processed notes
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## Output Format
 

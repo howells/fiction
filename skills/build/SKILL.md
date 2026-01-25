@@ -1,8 +1,16 @@
 ---
+name: build
 description: Build an EPUB from your fiction project. Compiles chapters, metadata, and optionally a cover image.
+argument-hint: "[--sync] [--cover file.png] [path]"
+disable-model-invocation: true
 ---
 
 Build an EPUB file from the current fiction project.
+
+## Build Context
+
+- Chapter count: !`ls chapters/*.md 2>/dev/null | wc -l | tr -d ' '`
+- Has cover: !`ls covers/cover.* 2>/dev/null | head -1 || echo "no cover found"`
 
 ## What This Does
 
@@ -21,6 +29,8 @@ Build an EPUB file from the current fiction project.
 /fiction:build --cover cover.png  # Include specific cover image
 /fiction:build /path/to/project   # Build specific project
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## Build Modes
 

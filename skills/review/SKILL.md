@@ -1,5 +1,7 @@
 ---
+name: review
 description: Review chapters for coherence, cheesiness, consistency, pace, tone, and character. Suggests specific rewrites.
+argument-hint: "[chapter] [all] [3-7]"
 ---
 
 Review chapters using the chapter-reviewer agent.
@@ -28,6 +30,8 @@ Review chapters using the chapter-reviewer agent.
 /fiction:review chapters/08.md     # Review specific file
 ```
 
+If arguments provided: $ARGUMENTS
+
 ## Parallel Processing (Important for Large Manuscripts)
 
 When reviewing multiple chapters ("all" or a range), **spawn chapter-reviewer agents in parallel** for efficiency:
@@ -45,7 +49,7 @@ When reviewing multiple chapters ("all" or a range), **spawn chapter-reviewer ag
 - Each receives: its chapter, previous chapter (for continuity), shared context
 - Agents run concurrently
 - Main conversation aggregates verdicts and highlights patterns
-- Total time ≈ time for 1-2 chapters instead of 20×
+- Total time ~ time for 1-2 chapters instead of 20x
 
 ## How It Works (Single Chapter)
 

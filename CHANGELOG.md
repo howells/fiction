@@ -5,6 +5,25 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0] - 2026-01-25
+
+### Changed
+
+- **Migrated all commands to skills directory** — Following Claude Code's merge of commands into skills. All 17 commands now live in `skills/` as individual directories with SKILL.md files.
+- **Shared references moved** — Reference files now at `skills/references/` (accessible to all skills)
+- **Removed commands directory** — No longer needed; `plugin.json` updated accordingly
+
+### Added
+
+- **`context: fork` for wizard skills** — `/new`, `/plan`, `/character`, `/outline` now run in isolated subagents for cleaner multi-turn conversations
+- **`disable-model-invocation` for utility skills** — `/build`, `/notes`, `/reconcile` won't auto-invoke
+- **Dynamic context injection** — `/go` and `/build` skills use `!`command`` syntax to inject project state
+- **`argument-hint` frontmatter** — Improved autocomplete hints for skills with arguments
+
+### Migration Notes
+
+If you have custom commands in your project's `.claude/commands/`, they continue to work. Skills take precedence if both exist with the same name.
+
 ## [1.6.0] - 2026-01-17
 
 ### Added

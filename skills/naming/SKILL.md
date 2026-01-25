@@ -1,4 +1,5 @@
 ---
+name: naming
 description: Generate and validate book title options. Produces candidates using proven naming strategies and checks availability against existing books.
 ---
 
@@ -25,7 +26,7 @@ Generate title options for your book using the naming agent.
 For each recommended title:
 - **Strategy used** — Object, place, character, theme, etc.
 - **Why it works** — What makes this title effective
-- **Availability** — ✅ Clear, ⚠️ Caution, or ❌ Taken
+- **Availability** — Clear, Caution, or Taken
 - **Genre signal** — What readers will expect
 
 ## Availability Checking

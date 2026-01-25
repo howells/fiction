@@ -1,8 +1,15 @@
 ---
+name: go
 description: Resume work on a fiction project. Loads context and suggests what to do next.
+argument-hint: "[path/to/project]"
 ---
 
 Resume work on a fiction project. This loads the project into context and provides a clear recommendation for what to work on next.
+
+## Current State
+
+- Recent changes: !`git log --oneline -3 2>/dev/null || echo "not a git repo"`
+- Progress file: !`cat progress.md 2>/dev/null | head -20 || echo "no progress.md"`
 
 ## What to Do
 
@@ -82,6 +89,8 @@ Output the combined result:
 /fiction:go                    # Resume project in current directory
 /fiction:go /path/to/project   # Resume specific project
 ```
+
+If arguments provided: $ARGUMENTS
 
 ## When to Use
 
