@@ -3,6 +3,7 @@
   "version": "1.9.2",
   "description": "Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.",
   "skills": "./skills/",
+  "commands": "./commands/",
   "author": {
     "name": "Daniel Howells",
     "url": "https://github.com/howells"

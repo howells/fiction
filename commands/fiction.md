@@ -1,0 +1,5 @@
+---
+description: This skill should be used when the user asks to "write a chapter", "write prose", "continue the story", "develop a character", "review my chapter", "critique my manuscript", "write a synopsis", "summarize my story", "plan my novel", "outline my book", "check for consistency", or mentions fiction writing, novels, short stories, scenes, or narrative craft.
+---
+
+Invoke the fiction skill with any arguments provided.

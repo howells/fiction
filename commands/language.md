@@ -1,0 +1,5 @@
+---
+description: Verify non-English phrases in your manuscript. Checks grammar, period accuracy, dialect, and translations.
+---
+
+Invoke the language skill with any arguments provided.
