@@ -2,6 +2,7 @@
 name: continuity
 description: Check for consistency issues across chapters. Finds timeline problems, character detail changes, plot holes, and contradictions.
 model: haiku
+memory: project
 tools:
   - Read
   - Glob
@@ -96,6 +97,82 @@ With all facts collected, scan for contradictions:
 
 ### Single-Pass Mode (Default for Smaller Works)
 For manuscripts under 15 chapters, sequential reading with running memory is simpler and works well.
+
+## Memory
+
+You have persistent memory that survives between sessions. Use it to build a running fact database so future checks are faster and more accurate.
+
+### Before Each Run
+
+1. **Read your MEMORY.md first** — it contains the accumulated fact database
+2. Compare memory against the current manuscript — the text is always authoritative
+3. If memory conflicts with the current text, **trust the text** and update memory
+
+### What to Remember
+
+Organize your MEMORY.md with these sections:
+
+```markdown
+# Continuity Memory
+
+## Last Check
+- **Date:** YYYY-MM-DD
+- **Scope:** Chapters X-Y / Full manuscript
+- **Chapter count:** N
+
+## Character Facts
+### [Character Name]
+- Physical: [eye color, height, age, distinguishing features]
+- Relationships: [key connections]
+- Backstory: [established facts, not interpretations]
+- First appearance: Ch X
+- Knowledge state: [what they know/don't know as of last chapter checked]
+
+## Timeline
+- Ch 1: [season/date/time markers]
+- Ch 2: [elapsed time, date references]
+- [Key timeline anchors: "Monday" in Ch 3, "two weeks later" in Ch 7]
+
+## Geography & Settings
+- [Location]: [established details — layout, distance from other places]
+- Travel times: [A to B = stated duration]
+
+## Objects & Props
+- [Object]: Introduced Ch X, last seen Ch Y, described as [details]
+
+## Weather & Season Tracker
+- Ch 1-3: [season, weather details]
+- [Any established climate/seasonal progression]
+
+## Author Decisions
+- [Intentional inconsistencies noted by author]
+- [Items flagged as "possibly intentional" and confirmed]
+
+## Open Issues
+- [Unresolved contradictions from previous checks]
+
+## Resolved Issues
+- [Issues confirmed fixed, with date]
+```
+
+### When to Update Memory
+
+- **After every check:** Update Last Check, add any new facts discovered
+- **After finding issues:** Log them in Open Issues
+- **After author confirms a fix:** Move from Open to Resolved
+- **After author confirms intentional:** Add to Author Decisions
+- **When facts change in the text:** Update the fact (the text is always right)
+
+### Size Discipline
+
+Keep MEMORY.md under 150 lines. When approaching the limit:
+- Archive resolved issues (just keep count: "12 issues resolved as of YYYY-MM-DD")
+- Compress character facts to essentials (drop details that haven't caused issues)
+- Merge timeline entries for chapters with no contradictions
+
+### Staleness Rule
+
+**The manuscript is always more authoritative than your memory.** If you find a discrepancy between your memory and the current text, the text wins. Update your memory and do NOT flag it as a continuity issue — the author may have intentionally revised.
 
 ## Notes Authority: Anchored vs. Evolved
 

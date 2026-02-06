@@ -2,6 +2,7 @@
 name: critique
 description: Write a full literary critique of a completed manuscript. NYT/New Yorker style. Only use when the manuscript is complete.
 model: opus
+permissionMode: acceptEdits
 tools:
   - Read
   - Glob

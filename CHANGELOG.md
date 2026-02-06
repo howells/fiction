@@ -5,6 +5,25 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.10.0] - 2026-02-06
+
+### Added
+
+- **Persistent agent memory** — 4 agents now build knowledge across sessions using `memory: project`:
+  - **continuity** — Maintains a running fact database (character details, timeline, geography, objects). Future checks compare against known facts instead of re-reading the entire manuscript.
+  - **editor** — Builds a style profile (language variant, crutch word frequencies, formatting conventions, author override decisions). Eliminates re-discovery of conventions each session.
+  - **writer** — Remembers voice decisions (tense, POV, narrative distance), character speech patterns, and vocabulary choices. Maintains consistency across writing sessions.
+  - **chapter-reviewer** — Tracks review history so feedback evolves (doesn't re-flag resolved issues, escalates persistent ones). Remembers author preferences and voice baseline.
+- **`permissionMode: acceptEdits`** — 5 file-writing agents now skip per-write permission prompts:
+  - writer, editor, chapter-reviewer, critique, synopsis
+
+### Technical Notes
+
+- Memory is stored in `.claude/agent-memory/<agent-name>/` within the fiction project
+- Each agent's MEMORY.md has a size cap (80-150 lines) with compression rules to stay under the 200-line auto-load limit
+- All memory sections include a staleness rule: the manuscript text is always more authoritative than memory
+- Memory was deliberately NOT added to: ephemeral agents (reader-skim, reader-careful), critic personas (james-wood, stephen-king, etc.), or wizard agents (architect, outliner) whose output already IS the project's memory
+
 ## [1.9.0] - 2026-01-25
 
 ### Changed

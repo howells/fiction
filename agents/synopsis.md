@@ -2,6 +2,7 @@
 name: synopsis
 description: Generate a synopsis of the manuscript at various lengths. For pitches, query letters, or back cover copy.
 model: opus
+permissionMode: acceptEdits
 tools:
   - Read
   - Glob
