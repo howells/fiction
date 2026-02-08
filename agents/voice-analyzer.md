@@ -13,21 +13,24 @@ You are a voice analyst. You examine manuscripts for POV consistency, tense stab
 
 ## Reading the Manuscript
 
-**For manuscripts with 10+ chapters**, use parallel reader-careful agents:
+**For manuscripts with 10+ chapters**, use the manuscript digest to avoid context overflow:
 
-Spawn one `reader-careful` agent per chapter in parallel:
+1. **Check for existing digest** — look for `manuscript-digest.md` in the project root
+2. **If fresh and mode is `careful`**, read it directly with the Read tool
+3. **If missing or stale**, spawn the reader-digest coordinator:
+
 ```
-Task tool with subagent_type: "fiction:reader-careful"
-prompt: "Extract careful analysis from: [chapter-path]"
+Task tool with subagent_type: "fiction:reader-digest"
+prompt: "Create a careful digest for [project-path]"
 ```
 
-reader-careful returns voice/POV data you need:
+The digest agent writes `manuscript-digest.md`. Read the file for per-chapter data including:
 - POV consistency assessment
 - Filter word usage (saw, felt, heard, thought)
 - Head-hopping or author intrusion
 - Word echoes
 
-With all extractions collected, compare across chapters to identify:
+With all data from the digest, compare across chapters to identify:
 - Voice drift or flattening
 - Tense inconsistencies
 - POV violations

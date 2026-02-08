@@ -73,27 +73,29 @@ You are a continuity checker. You read manuscripts looking for inconsistencies t
 
 ## Efficient Processing for Large Manuscripts
 
-For manuscripts with 15+ chapters, use a two-phase approach:
+For manuscripts with 15+ chapters, use the manuscript digest:
 
-### Phase 1: Parallel Fact Extraction
-Spawn parallel agents (one per chapter) to extract:
-- Character physical descriptions mentioned
-- Timeline markers (dates, days of week, seasons)
-- Location descriptions and travel
-- Objects introduced or used
-- Weather/time of day
-- Character knowledge state
+### Phase 1: Get the Digest
 
-Each agent outputs structured data, not prose analysis.
+1. **Check for existing digest** — look for `manuscript-digest.md` in the project root
+2. **If fresh**, read it directly with the Read tool
+3. **If missing or stale**, spawn the reader-digest coordinator:
+
+```
+Task tool with subagent_type: "fiction:reader-digest"
+prompt: "Create a skim digest for [project-path]"
+```
+
+The digest agent handles all parallel reading internally and writes `manuscript-digest.md`. Read the file for per-chapter data.
 
 ### Phase 2: Sequential Comparison
-With all facts collected, scan for contradictions:
+With all facts from the digest, scan for contradictions:
 - Compare physical descriptions across chapters
 - Verify timeline consistency
 - Check travel times against geography
 - Track object locations
 
-**This approach is ~3-4× faster for large manuscripts** because Phase 1 (80% of the work) is parallelized.
+**Important:** The digest gives you structured data per chapter. For specific details you need to verify, use Grep to check exact wording in the chapter files.
 
 ### Single-Pass Mode (Default for Smaller Works)
 For manuscripts under 15 chapters, sequential reading with running memory is simpler and works well.

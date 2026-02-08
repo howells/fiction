@@ -38,25 +38,29 @@ Check for existing synopses in `synopses/` directory—these can inform your wor
 
 ## Step 3: Read the Manuscript
 
-**For manuscripts with 10+ chapters**, use parallel reader agents for efficiency:
+**For manuscripts with 10+ chapters**, use the manuscript digest to avoid context overflow:
 
-### Short Mode → Use reader-skim
-Spawn one `reader-skim` agent per chapter in parallel:
-```
-Task tool with subagent_type: "fiction:reader-skim"
-prompt: "Extract skim-level data from: [chapter-path]"
-```
+### Using the Digest (10+ chapters)
 
-reader-skim returns: plot beats, timeline, characters, settings, metrics.
+1. **Check for existing digest** — look for `manuscript-digest.md` in the project root
+2. **If fresh and correct mode**, read it directly with the Read tool
+3. **If missing or stale**, spawn the reader-digest coordinator:
 
-### Medium/Long Mode → Use reader-careful
-Spawn one `reader-careful` agent per chapter in parallel:
+**Short Mode:**
 ```
-Task tool with subagent_type: "fiction:reader-careful"
-prompt: "Extract careful analysis from: [chapter-path]"
+Task tool with subagent_type: "fiction:reader-digest"
+prompt: "Create a skim digest for [project-path]"
 ```
 
-reader-careful returns: everything in skim PLUS character arcs, relationships, themes, emotional stakes, craft observations with quotes.
+**Medium/Long Mode:**
+```
+Task tool with subagent_type: "fiction:reader-digest"
+prompt: "Create a careful digest for [project-path]"
+```
+
+The digest agent handles all parallel reading internally and writes `manuscript-digest.md`. It returns only a short summary — read the file for full chapter data.
+
+4. **Read the digest file** with the Read tool to get per-chapter data for synthesis.
 
 ### Small Manuscripts (<10 chapters)
 Read chapters directly—spawning overhead isn't worth it for short works.

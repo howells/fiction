@@ -136,24 +136,25 @@ Read project context:
 
 ## Reading the Manuscript
 
-**For manuscripts with 10+ chapters**, use parallel reader-careful agents:
+**For manuscripts with 10+ chapters**, use the manuscript digest to avoid context overflow:
 
-### Phase 1: Parallel Chapter Extraction
-Spawn one `reader-careful` agent per chapter in parallel:
+### Phase 1: Get the Digest
+
+1. **Check for existing digest** — look for `manuscript-digest.md` in the project root
+2. **If fresh and mode is `careful`**, read it directly with the Read tool
+3. **If missing or stale**, spawn the reader-digest coordinator:
+
 ```
-Task tool with subagent_type: "fiction:reader-careful"
-prompt: "Extract careful analysis from: [chapter-path]"
+Task tool with subagent_type: "fiction:reader-digest"
+prompt: "Create a careful digest for [project-path]"
 ```
 
-reader-careful returns structured data including:
-- Plot beats, timeline, characters, settings
-- Character arcs, relationships, themes
-- Craft observations with specific quotes
-- Prose style, dialogue quality, pacing notes
-- Voice/POV consistency, word echoes
+The digest agent handles all parallel reading internally and writes `manuscript-digest.md`. It returns only a short summary — read the file for full chapter data.
+
+4. **Read the digest file** with the Read tool to get per-chapter data.
 
 ### Phase 2: Unified Critique
-With all chapter extractions collected:
+With all chapter data from the digest:
 - Synthesize observations into coherent review
 - Identify patterns across chapters
 - Select the most illustrative quotes from the extractions
@@ -161,8 +162,6 @@ With all chapter extractions collected:
 
 ### Small Manuscripts (<10 chapters)
 Read chapters directly—spawning overhead isn't worth it for short works.
-
-**This approach is 3-4x faster for long manuscripts** while preserving the unified voice of the final critique.
 
 ## Spoiler Policy
 

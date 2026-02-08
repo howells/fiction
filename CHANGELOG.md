@@ -5,10 +5,16 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.10.0] - 2026-02-06
+## [1.10.0] - 2026-02-08
 
 ### Added
 
+- **Manuscript digest layer** — New `reader-digest` coordinator agent that prevents context overflow when reading large manuscripts:
+  - Spawns parallel reader agents in its own context window, writes results to `manuscript-digest.md`
+  - Returns only a short summary to the parent agent — no more context blowouts on 15+ chapter books
+  - Built-in caching: checks digest freshness against chapter file timestamps, skips re-reading if nothing changed
+  - Supports both `skim` and `careful` modes
+  - Updated 5 consuming agents to use digest: **synopsis**, **critique**, **continuity**, **voice-analyzer**, and the **go** skill
 - **Persistent agent memory** — 4 agents now build knowledge across sessions using `memory: project`:
   - **continuity** — Maintains a running fact database (character details, timeline, geography, objects). Future checks compare against known facts instead of re-reading the entire manuscript.
   - **editor** — Builds a style profile (language variant, crutch word frequencies, formatting conventions, author override decisions). Eliminates re-discovery of conventions each session.

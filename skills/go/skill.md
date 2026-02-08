@@ -27,7 +27,15 @@ Resume work on a fiction project. This loads the project into context and provid
 **Read World Documents** — All files in world/
 
 **Scan Chapters:**
-- For 10+ chapters: spawn parallel reader-skim agents
+- For 10+ chapters: use the manuscript digest
+  1. Check for `manuscript-digest.md` in the project root
+  2. If fresh, read it directly — no agents needed
+  3. If missing or stale, spawn reader-digest:
+     ```
+     Task tool with subagent_type: "fiction:reader-digest"
+     prompt: "Create a skim digest for [project-path]"
+     ```
+  4. Then read the digest file for chapter data
 - For smaller projects: scan directly (first 1-2 paragraphs, word counts, status)
 
 **Check Supporting Directories:**
