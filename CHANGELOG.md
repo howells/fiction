@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add manuscript digest layer to prevent context overflow
+- Add persistent memory and acceptEdits to key agents
+
+## [1.10.0] - 2026-02-08
+
+### Added
+
 - **Manuscript digest layer** — New `reader-digest` coordinator agent that prevents context overflow when reading large manuscripts:
   - Spawns parallel reader agents in its own context window, writes results to `manuscript-digest.md`
   - Returns only a short summary to the parent agent — no more context blowouts on 15+ chapter books
