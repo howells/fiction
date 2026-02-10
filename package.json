@@ -1,6 +1,6 @@
 {
   "name": "fiction-plugin",
-  "version": "1.10.5",
+  "version": "1.10.6",
   "private": true,
   "description": "Fiction writing plugin for Claude Code",
   "scripts": {

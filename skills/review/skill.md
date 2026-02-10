@@ -32,26 +32,11 @@ Review chapters using the chapter-reviewer agent.
 
 If arguments provided: $ARGUMENTS
 
-## Parallel Processing (Important for Large Manuscripts)
+## Routing: Single vs. Multi-Chapter
 
-When reviewing multiple chapters ("all" or a range), **spawn chapter-reviewer agents in parallel** for efficiency:
+### Single Chapter (default, or specific chapter number/path)
 
-1. Identify all chapters to review
-2. Load shared context once (character docs, tone guide, project README)
-3. Launch one chapter-reviewer agent per chapter using the Task tool
-4. Pass shared context + specific chapter + previous chapter to each agent
-5. Each agent reviews independently, produces verdict + issues
-6. Aggregate results: compile verdicts, flag cross-chapter patterns
-7. Update `progress.md` with all review results
-
-**Example parallel approach for `/fiction:review all` with 20 chapters:**
-- Spawn 20 chapter-reviewer agents in a single message
-- Each receives: its chapter, previous chapter (for continuity), shared context
-- Agents run concurrently
-- Main conversation aggregates verdicts and highlights patterns
-- Total time ~ time for 1-2 chapters instead of 20x
-
-## How It Works (Single Chapter)
+Spawn one `chapter-reviewer` agent directly. This is the fast path — no coordinator overhead.
 
 If no chapter is specified:
 1. Check conversation history for recently written/discussed chapter
@@ -63,6 +48,37 @@ The review includes:
 - What needs work (with suggested rewrites)
 - Continuity flags
 - Verdict (ready to move on / needs revision)
+
+**After review:** ask "Would you like me to apply these rewrites and output the revised chapter?"
+
+### Multiple Chapters (`all`, range like `3-7`, or 2+ chapters)
+
+**Delegate to the `review-coordinator` agent** instead of spawning chapter-reviewers directly. This prevents context overflow on large manuscripts.
+
+1. Spawn ONE `review-coordinator` agent via Task tool:
+   ```
+   Task tool with subagent_type: "fiction:review-coordinator"
+   prompt: "Review [all / chapters 3-7] in [project path]"
+   ```
+2. The coordinator spawns parallel chapter-reviewers in its own context
+3. The coordinator writes `review-report.md` to the project root
+4. The coordinator returns an aggregate summary (verdicts, issue counts, patterns)
+
+**After coordinator returns:**
+1. Show the aggregate summary to the user
+2. Offer: "Full reviews saved to `review-report.md`. Want me to show a specific chapter's review or apply rewrites?"
+3. If the user wants details on a specific chapter, read that section from `review-report.md`
+4. If the user wants rewrites applied, spawn a chapter-reviewer for that specific chapter in interactive mode
+
+## How It Works (Single Chapter Detail)
+
+Gather context:
+1. Read the chapter being reviewed
+2. Load character docs for characters in the chapter
+3. Load project README or craft/tone guide
+4. Load previous chapter (for continuity)
+
+Spawn a single `chapter-reviewer` agent with all context. Let it review and present results interactively.
 
 ## After Review
 

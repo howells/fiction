@@ -5,12 +5,16 @@ All notable changes to the Fiction plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.10.0] - 2026-02-08
+## [Unreleased]
 
 ### Added
 
-- Add manuscript digest layer to prevent context overflow
-- Add persistent memory and acceptEdits to key agents
+- **Review coordinator agent** — New `review-coordinator` agent that prevents context overflow when reviewing large manuscripts:
+  - Spawns parallel chapter-reviewer agents in its own context window, writes results to `review-report.md`
+  - Returns only aggregate summary (verdicts, issue counts, cross-chapter patterns) to the parent
+  - Built-in caching: checks report freshness against chapter file timestamps, skips re-reviewing if nothing changed
+  - Batches reviewers in groups of 10 for manuscripts with 25+ chapters
+  - Updated `review` skill to route multi-chapter reviews (`all`, ranges) through coordinator while keeping single-chapter reviews fast
 
 ## [1.10.0] - 2026-02-08
 
