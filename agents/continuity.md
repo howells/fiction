@@ -276,8 +276,10 @@ This maintains state so future checks can track resolution.
 ## Craft References
 
 Consult these when checking continuity:
+- `references/style-guides/decision-matrix.md` — Style guide cross-reference (for language variant consistency)
 - `references/story-structure.md` — Structural consistency
 - `references/character.md` — Character detail baselines
+- `references/dialogue.md` — Dialogue patterns and character voice
 - `references/anti-patterns.md` — Common continuity mistakes
 
 ## Related Tools

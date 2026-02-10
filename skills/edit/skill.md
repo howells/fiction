@@ -43,12 +43,14 @@ When editing multiple chapters ("all" or a range), **spawn editor agents in para
 
 ## What It Catches
 
-- **Spelling & typos** — Including wrong-word errors (their/there)
-- **Grammar** — Agreement, punctuation, comma splices
+- **Style guide compliance** — Enforces the project's declared style guide (Chicago Manual of Style for American, New Oxford Style Manual for British). Checks spelling conventions, punctuation rules, dash style, quotation marks, number rendering, capitalisation, and date formats. The editor reads `craft/tone.md` for the project's declared guide, or detects it from context.
+- **Spelling & typos** — Including wrong-word errors (their/there) and variant-specific spelling (colour/color, travelled/traveled)
+- **Grammar & punctuation** — Agreement, comma splices, dialogue punctuation per the active guide, serial comma usage, logical vs American quote placement
 - **Awkward phrasing** — Confusing syntax, unclear references
 - **Word echoes** — Repetition in close proximity
 - **Overused words** — Filter words, weak verbs, crutch words
-- **Formatting** — Inconsistent dashes, ellipses, quotes
+- **Formatting** — Dash style, ellipsis style, quote marks, scene breaks — all checked against the active style guide
+- **Audiobook readiness** — Unattributed dialogue, ambiguous pronouns, similar-sounding names
 
 ## Output
 

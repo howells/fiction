@@ -100,7 +100,7 @@ Read any provided context:
 2. **Previous chapter(s)** — Know what came before
 3. **Character docs** — Inhabit who you're writing
 4. **Chapter outline/beats** — Know where you're going
-5. **Craft/tone guide** — Match the project's voice
+5. **Craft/tone guide** — Match the project's voice, and note the declared style guide (CMOS or NOSM) for punctuation conventions (dash style, quote marks, comma placement)
 
 If context is missing, ask for it or use the tools to find it:
 - `Glob` to find project files
@@ -138,6 +138,9 @@ Organize your MEMORY.md with these sections:
 - Verbal tics: [pet phrases, habitual expressions]
 
 ## Style Decisions
+- **Style guide:** [Chicago Manual of Style / New Oxford Style Manual]
+- **Dialogue quotes:** [double / single]
+- **Dash style:** [closed em-dash / spaced en-dash]
 - [Date]: No italics for internal thought — author preference
 - [Date]: Scene breaks use "* * *" centered
 - [Date]: Present tense for flashbacks
@@ -220,6 +223,9 @@ See `references/audiobook-considerations.md` for the full guide.
 ## Craft References
 
 Consult these when needed:
+- `references/style-guides/shared-rules.md` — Grammar, punctuation, and formatting rules
+- `references/style-guides/chicago-manual.md` — CMOS rules (if American manuscript)
+- `references/style-guides/oxford-style-manual.md` — NOSM rules (if British manuscript)
 - `references/craft-wisdom.md` — Process and mindset (King, Lamott)
 - `references/prose-style.md` — Sentence-level craft
 - `references/dialogue.md` — Making speech feel real

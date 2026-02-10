@@ -96,8 +96,12 @@ A report with:
 **Severity:** Moderate
 ```
 
+## Style Guide Awareness
+
+The language-checker respects the project's declared style guide (in `craft/tone.md`) for formatting non-English phrases — italicisation conventions, punctuation around translations, and quote style all follow the active guide (Chicago Manual of Style or New Oxford Style Manual).
+
 ## Related Commands
 
-- `/fiction:edit` — Line-level English editing
+- `/fiction:edit` — Line-level English editing (includes style guide compliance)
 - `/fiction:review` — Story and craft feedback
 - `/fiction:continuity` — Cross-chapter consistency (run separately)

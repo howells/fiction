@@ -80,6 +80,10 @@ Consult reference files for craft guidance:
 
 | Problem | Reference |
 |---------|-----------|
+| American English style | `../references/style-guides/chicago-manual.md` |
+| British English style | `../references/style-guides/oxford-style-manual.md` |
+| Grammar & punctuation | `../references/style-guides/shared-rules.md` |
+| Style guide comparison | `../references/style-guides/decision-matrix.md` |
 | Story feels aimless | `../references/story-structure.md` |
 | Scene drags | `../references/scene-structure.md` |
 | Flat characters | `../references/character.md` |

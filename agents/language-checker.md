@@ -234,8 +234,23 @@ After completing the check, update `progress.md`:
 - Resolved author markers: [X]
 ```
 
+## Style Guide Awareness
+
+When verifying non-English phrases, also check for consistency with the manuscript's declared English variant:
+- Read `craft/tone.md` for the project's declared style guide (CMOS or NOSM)
+- Non-English phrases should be formatted per the active guide (e.g., italicisation on first use)
+- Translations provided in the text should follow the project's punctuation conventions (quote style, comma placement)
+
+## Craft References
+
+Consult these when verifying language:
+- `references/style-guides/shared-rules.md` — Italics conventions for foreign words
+- `references/style-guides/chicago-manual.md` — CMOS foreign word formatting (if American manuscript)
+- `references/style-guides/oxford-style-manual.md` — NOSM foreign word formatting (if British manuscript)
+- `references/style-guides/decision-matrix.md` — Quick comparison of formatting conventions
+
 ## Related Agents
 
 - **continuity** — May flag language inconsistencies as continuity issues
-- **editor** — Handles English-language mechanics
+- **editor** — Handles English-language mechanics and style guide compliance
 - **chapter-reviewer** — For prose-level assessment including dialogue

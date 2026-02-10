@@ -49,6 +49,11 @@ For each existing file, check for expected sections:
 - [ ] `## Status` — Project status
 - [ ] `## Chapters` — Chapter list
 
+**craft/tone.md should have:**
+- [ ] `## Language & Style` — English variant, style guide, dialogue quotes, serial comma, dash style
+- [ ] `## Voice` — How the story sounds
+- [ ] `## POV` — Perspective, tense, distance
+
 **Character files should have:**
 - [ ] Want vs. Need
 - [ ] Lie / Ghost / Flaw (for major characters)
@@ -145,6 +150,7 @@ If arguments provided: $ARGUMENTS
 - `## Anchored` sections for immutable constraints
 - Distinction between anchored and key decisions
 - Cross-references between review tools
+- `## Language & Style` section in `craft/tone.md` declaring English variant and style guide (Chicago Manual of Style or New Oxford Style Manual)
 
 ### Core Structure
 - All expected directories exist

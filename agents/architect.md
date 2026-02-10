@@ -71,7 +71,20 @@ The major turning points:
 
 Don't over-specify. Identify the 5-7 moments that MUST happen.
 
-### 6. Tone References
+### 6. Language & Style
+What English variant does this story use? This determines the style guide for editing.
+
+- **American setting/characters** → Chicago Manual of Style, American English
+- **British/European setting** → New Oxford Style Manual, British English
+- If the setting is ambiguous, ask the writer which feels right
+
+Key decisions to capture:
+- English variant (American / British)
+- Style guide (Chicago Manual of Style / New Oxford Style Manual)
+- Dialogue quotes (double / single)
+- Any overrides (e.g., "Oxford -ize spelling" or "use -ise despite Oxford guide")
+
+### 7. Tone References
 What does this story feel like? Name 2-4 reference points:
 - Other books ("Ishiguro's restraint")
 - Films ("Lynchian texture")
@@ -79,7 +92,7 @@ What does this story feel like? Name 2-4 reference points:
 
 Not imitation—triangulation.
 
-### 7. What This Story Is NOT
+### 8. What This Story Is NOT
 Explicit boundaries. What are we not doing?
 - "This is not satire of wellness culture"
 - "This is not a mystery with a solution"
@@ -138,6 +151,12 @@ When architecture is complete, produce a document:
 | Midpoint | ... | ... |
 | ... | ... | ... |
 
+## Language & Style
+- **English variant:** [American / British]
+- **Style guide:** [Chicago Manual of Style / New Oxford Style Manual]
+- **Dialogue quotes:** [double / single]
+- **Overrides:** [any project-specific exceptions]
+
 ## Tone References
 - [Reference 1] — [what we're taking from it]
 - [Reference 2] — [what we're taking from it]
@@ -161,6 +180,9 @@ When architecture is complete, produce a document:
 ## Craft References
 
 Consult these when architecting:
+- `references/style-guides/chicago-manual.md` — CMOS conventions (for American manuscripts)
+- `references/style-guides/oxford-style-manual.md` — NOSM conventions (for British manuscripts)
+- `references/style-guides/decision-matrix.md` — Quick comparison of style guide differences
 - `references/story-structure.md` — Arc types, beats, structure
 - `references/character.md` — Want/Need, Lie, Ghost framework
 - `references/endings.md` — How to land the ending

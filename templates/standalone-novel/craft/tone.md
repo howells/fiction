@@ -1,5 +1,19 @@
 # Tone & Craft Guide
 
+## Language & Style
+
+**English variant:** [American / British]
+
+**Style guide:** [Chicago Manual of Style / New Oxford Style Manual]
+
+**Dialogue quotes:** [double / single]
+
+**Serial comma:** [yes / no]
+
+**Dash style:** [closed em-dash / spaced en-dash / spaced em-dash]
+
+**Spelling notes:** [Any project-specific overrides, e.g., "Oxford -ize spelling" or "general British -ise"]
+
 ## Voice
 
 [How should this story sound? What's the register?]

@@ -20,7 +20,7 @@ Resume work on a fiction project. This loads the project into context and provid
 **Read Core Documents:**
 - README.md — Project overview, status, key decisions
 - themes.md — Central question, thematic content
-- craft/tone.md — Voice and style guidance
+- craft/tone.md — Voice, style guidance, and Language & Style config (English variant, style guide)
 
 **Read Character Documents** — All files in characters/
 

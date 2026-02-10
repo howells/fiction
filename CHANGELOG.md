@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Style guide integration** — Comprehensive support for The Chicago Manual of Style (American) and the New Oxford Style Manual (British) in the editing pipeline:
+  - Four new reference files in `references/style-guides/`: `shared-rules.md` (common rules), `chicago-manual.md` (CMOS), `oxford-style-manual.md` (NOSM), and `decision-matrix.md` (side-by-side comparison)
+  - Covers spelling, punctuation (dash style, quotation marks, comma/period placement, serial comma, ellipsis), number rendering, capitalisation, date formats, and vocabulary
+  - Editor agent loads the appropriate guide based on the project's declared style in `craft/tone.md`, or detects from context
+  - Cross-cultural manuscript support: narrative follows project guide, dialogue follows character voice
+  - Updated `craft/tone.md` template (both standalone and series) with Language & Style section
+  - Updated architect agent output format to include Language & Style decisions
+  - Updated new-project wizard to ask about style guide during Phase 1 Discovery
+  - Editor memory now tracks style guide, dash style, quote placement convention, and spelling variant
+  - Style guide references added to 8 agents: editor, writer, chapter-reviewer, voice-analyzer, critique, continuity, language-checker, architect
+  - Style guide references added to fiction skill craft reference table, reconcile skill audit checklist, go skill, and language skill
+  - All 4 style guide files cross-reference each other and list consuming agents
+  - Reconcile skill now audits for Language & Style section in `craft/tone.md`
 - **Review coordinator agent** — New `review-coordinator` agent that prevents context overflow when reviewing large manuscripts:
   - Spawns parallel chapter-reviewer agents in its own context window, writes results to `review-report.md`
   - Returns only aggregate summary (verdicts, issue counts, cross-chapter patterns) to the parent

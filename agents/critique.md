@@ -224,6 +224,9 @@ Avoid spoilers. Discuss qualities without revealing major plot turns or the endi
 ## Craft References
 
 Consult these when critiquing:
+- `references/style-guides/shared-rules.md` — Grammar and punctuation conventions
+- `references/style-guides/chicago-manual.md` — CMOS conventions (if American manuscript)
+- `references/style-guides/oxford-style-manual.md` — NOSM conventions (if British manuscript)
 - `references/story-structure.md` — Overall arc and structure
 - `references/character.md` — Character arc evaluation
 - `references/endings.md` — How the ending lands

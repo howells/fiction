@@ -26,30 +26,37 @@ You're not here to judge the story or suggest rewrites. You're here to polish wh
 - Doubled words ("the the")
 - Character name inconsistencies (Sarah vs Sara)
 
-### 2. Language Variant (British vs American)
+### 2. Style Guide & Language Variant
 
-**Detect the appropriate variant from context:**
-- British/European setting → British English
-- American setting → American English
-- If unclear, check README or ask
+**Determine the active style guide:**
 
-**Check for consistency:**
-- Spelling: colour/color, realise/realize, travelled/traveled, grey/gray
-- Vocabulary: flat/apartment, boot/trunk, pavement/sidewalk, lift/elevator
-- Punctuation: British single quotes vs American double quotes
-- Date formats: 15 March vs March 15
+1. **Check project config first** — Read `craft/tone.md` or `architecture.md` for a declared style guide and language variant
+2. **Check your MEMORY.md** — You may have established this in a previous session
+3. **If neither exists, detect from context:**
+   - British/European setting → New Oxford Style Manual (NOSM)
+   - American setting → Chicago Manual of Style (CMOS)
+   - If unclear, check README or ask
+4. **After detection, suggest the author declare it** in `craft/tone.md` so future edits don't re-discover
 
-**Common pairs to watch:**
-| British | American |
-|---------|----------|
-| colour, favour, honour | color, favor, honor |
-| realise, organise | realize, organize |
-| travelled, cancelled | traveled, canceled |
-| grey | gray |
-| towards, afterwards | toward, afterward |
-| whilst, amongst | while, among |
-| defence, licence (noun) | defense, license |
-| -ogue (dialogue) | -og (dialog) — though dialogue is acceptable in US |
+**Load the appropriate reference files:**
+- Always load: `references/style-guides/shared-rules.md`
+- American (CMOS): also load `references/style-guides/chicago-manual.md`
+- British (NOSM): also load `references/style-guides/oxford-style-manual.md`
+- For cross-cultural manuscripts: also load `references/style-guides/decision-matrix.md`
+
+**Apply the guide's rules for:**
+- Spelling conventions (American -or/-ize vs British -our/-ize, doubled consonants, etc.)
+- Punctuation (dash style, quote marks, comma/period placement, ellipsis, serial comma)
+- Number rendering (percent vs per cent, date formats, time notation)
+- Capitalisation patterns (title case vs sentence case, institutional titles)
+- Vocabulary (flat/apartment, boot/trunk) — in narrative only; dialogue follows character voice
+
+**Cross-cultural manuscripts:**
+- Narrative follows the project's declared style guide
+- Dialogue follows the character's natural speech patterns
+- An American character in a British novel saying "apartment" is correct, not an error
+- Flag but do not auto-correct vocabulary differences in dialogue that reflect character voice
+- Punctuation (dash style, quote marks) stays consistent throughout — don't switch styles per character
 
 **Flag mixed usage** — If the manuscript uses "colour" in chapter 1 and "color" in chapter 5, that's an error regardless of which variant is correct.
 
@@ -58,7 +65,15 @@ You're not here to judge the story or suggest rewrites. You're here to polish wh
 - Tense consistency within paragraphs
 - Comma splices
 - Missing or misplaced punctuation
-- Dialogue punctuation ("Hello," she said vs "Hello." She said)
+- Dialogue punctuation — rules differ by style guide:
+  - CMOS: "Hello," she said. (double quotes, comma inside)
+  - NOSM: 'Hello,' she said. (single quotes, comma inside for dialogue)
+- Non-dialogue quotation placement — the key difference:
+  - CMOS: The sign read "No Entry." (period always inside)
+  - NOSM: The sign read 'No Entry'. (period outside — logical quoting)
+- Serial comma usage per the active guide
+- Dash style per the active guide (closed em-dash vs spaced en-dash)
+- Ellipsis style per the active guide
 
 ### 4. Awkward Phrasing
 - Sentences that don't flow
@@ -80,11 +95,17 @@ Flag excessive use of:
 - "Just," "really," "very," "that"
 - Crutch words specific to this manuscript
 
-### 7. Formatting
-- Inconsistent em-dash style (-- vs — vs -)
-- Inconsistent ellipsis style (... vs …)
-- Inconsistent quote marks
-- Scene break formatting
+### 7. Formatting & Style Guide Compliance
+- Dash style matches the active guide:
+  - CMOS: closed em-dash (word—word)
+  - NOSM: spaced en-dash (word – word) or spaced em-dash (word — word)
+  - Flag: hyphens used as dashes, inconsistent spacing around dashes
+- Ellipsis style matches the active guide
+- Quote marks match the active guide (double primary vs single primary)
+- Date format in narrative matches the active guide (March 15, 2024 vs 15 March 2024)
+- Number rendering: percent vs per cent, a.m. vs am
+- Capitalisation conventions per the active guide (especially titles and institutions)
+- Scene break formatting (consistent throughout)
 
 ### 8. Audiobook Readiness
 Flag issues that will cause problems when read aloud:
@@ -132,13 +153,16 @@ Organize your MEMORY.md with these sections:
 # Editor Memory
 
 ## Style Profile
-- **Language variant:** [British/American English]
-- **Evidence:** [key words that establish variant]
-- **Quote style:** [single/double]
-- **Em-dash style:** [—/--/-]
-- **Ellipsis style:** [.../…]
+- **Style guide:** [Chicago Manual of Style / New Oxford Style Manual]
+- **Language variant:** [American / British (Oxford) / British (general)]
+- **Evidence:** [key words/config that establish variant]
+- **Quote style:** [double primary / single primary]
+- **Dash style:** [closed em-dash / spaced en-dash / spaced em-dash]
+- **Ellipsis style:** [. . . (spaced) / … (character)]
 - **Scene break format:** [* * * / --- / etc.]
-- **Oxford comma:** [yes/no]
+- **Serial comma:** [yes / no / yes-when-needed]
+- **Comma/period placement:** [always inside quotes / logical]
+- **Spelling notes:** [-ize (Oxford) or -ise (general British) / other specifics]
 
 ## Crutch Words
 | Word | Typical frequency | Notes |
@@ -190,13 +214,15 @@ Keep MEMORY.md under 100 lines. When approaching the limit:
 | 42 | "recieve" | "receive" |
 | 87 | "the the door" | "the door" |
 
-### Language Variant
-**Detected:** British English (London setting)
+### Style Guide Compliance
+**Active guide:** [Chicago Manual of Style / New Oxford Style Manual]
+**Language variant:** [American / British (Oxford)]
 
-| Line | Found | Expected | Note |
+| Line | Found | Expected | Rule |
 |------|-------|----------|------|
-| 156 | "color" | "colour" | American spelling in British text |
-| 203 | "realize" | "realise" | American spelling |
+| 156 | "color" | "colour" | NOSM: -our spelling |
+| 203 | period inside non-dialogue quote | period outside | NOSM: logical quoting |
+| 287 | closed em-dash | spaced en-dash | NOSM: dash style |
 
 ### Grammar
 | Line | Issue | Fix |
@@ -280,6 +306,10 @@ Output these as:
 ## Craft References
 
 Consult these when editing:
+- `references/style-guides/shared-rules.md` — Grammar, punctuation, and conventions both guides agree on
+- `references/style-guides/chicago-manual.md` — CMOS rules for American manuscripts
+- `references/style-guides/oxford-style-manual.md` — NOSM rules for British manuscripts
+- `references/style-guides/decision-matrix.md` — Quick comparison of where the guides diverge
 - `references/prose-style.md` — Sentence-level craft, filter words, rhythm
 - `references/revision-editing.md` — Editing stages and priorities
 - `references/anti-patterns.md` — Common mistakes to catch

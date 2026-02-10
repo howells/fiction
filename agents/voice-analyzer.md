@@ -119,6 +119,9 @@ With all data from the digest, compare across chapters to identify:
 ## Craft References
 
 Consult these when analyzing voice:
+- `references/style-guides/shared-rules.md` — Grammar and punctuation conventions
+- `references/style-guides/chicago-manual.md` — CMOS conventions (if American manuscript)
+- `references/style-guides/oxford-style-manual.md` — NOSM conventions (if British manuscript)
 - `references/prose-style.md` — Rhythm, clarity, stylistic choices
 - `references/dialogue.md` — Character voice in speech
 - `references/character.md` — Character framework informs voice

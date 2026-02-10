@@ -101,6 +101,8 @@ Consult these when diagnosing:
 - `references/scene-structure.md` — Goal → Conflict → Disaster framework
 - `references/pacing.md` — Scene rhythm and tension
 - `references/dialogue.md` — If dialogue is the issue
+- `references/openings.md` — For diagnosing first scenes
+- `references/anti-patterns.md` — Common scene-level mistakes
 
 ## Related Tools
 

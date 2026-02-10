@@ -245,6 +245,9 @@ This maintains state across sessions so future reviews have context.
 ## Craft References
 
 Consult these when reviewing:
+- `references/style-guides/shared-rules.md` — Grammar, punctuation, and formatting rules
+- `references/style-guides/chicago-manual.md` — CMOS rules (if American manuscript)
+- `references/style-guides/oxford-style-manual.md` — NOSM rules (if British manuscript)
 - `references/craft-wisdom.md` — Core principles (King, Lamott)
 - `references/anti-patterns.md` — Common mistakes to flag
 - `references/pacing.md` — Rhythm and flow issues

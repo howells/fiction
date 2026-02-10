@@ -117,6 +117,16 @@ Use WebSearch if needed to research genre conventions, comparable titles, or mar
 > - Historical — past as setting
 > - Something that crosses boundaries
 
+**Language & style guide:**
+Based on the setting and characters, recommend a style guide. This determines spelling, punctuation, and formatting conventions used during editing.
+
+> "Since your story is set in [setting], I'd suggest **[Chicago Manual of Style / New Oxford Style Manual]** for the editing style guide. This means [American / British] English spelling and punctuation conventions. What feels right?"
+> - Chicago Manual of Style — American English (double quotes, closed em-dashes, American spelling)
+> - New Oxford Style Manual — British English (single quotes, spaced en-dashes, British spelling with Oxford -ize)
+> - Not sure yet — we can decide later
+
+If the writer has a preference for specific conventions that differ from the guide's defaults (e.g., double quotes in a British novel), note those as overrides. Capture the decision in `craft/tone.md` when we create the project files.
+
 ### Phase 2: Architecture
 
 Once discovery feels complete, move to structure.
