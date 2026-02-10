@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Validate conventional commit format
+commit_msg=$(cat "$1")
+
+# Pattern for conventional commits
+pattern="^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?: .+"
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+  echo ""
+  echo "❌ Invalid commit message format."
+  echo ""
+  echo "Expected format: <type>(<scope>): <description>"
+  echo ""
+  echo "Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert"
+  echo ""
+  echo "Examples:"
+  echo "  feat: add new workflow command"
+  echo "  fix(cover): resolve template parsing issue"
+  echo "  docs: update README with new commands"
+  echo "  feat!: redesign plugin structure (breaking change)"
+  echo ""
+  exit 1
+fi

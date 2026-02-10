@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Validate plugin structure before commit
+# Version auto-bumps via post-commit hook when plugin files change
+
+.husky/validate-plugin.sh || exit 1

@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Auto-bump patch version when plugin files change
+# Skips for non-plugin changes. Uses env var to prevent infinite loop.
+
+# Prevent re-entrancy: the amend below triggers post-commit again
+if [ "$FICTION_BUMPING_VERSION" = "1" ]; then
+  exit 0
+fi
+
+# Only bump if plugin-related files changed (not .husky/ or version files)
+changed_files=$(git diff-tree --no-commit-id --name-only -r HEAD)
+plugin_changes=$(echo "$changed_files" | grep -v '^\.husky/' | grep -v '^\.claude-plugin/plugin\.json' | grep -v '^\.claude-plugin/marketplace\.json' | grep -v '^package\.json$' || true)
+
+if [ -z "$plugin_changes" ]; then
+  exit 0
+fi
+
+PLUGIN_JSON=".claude-plugin/plugin.json"
+MARKETPLACE_JSON=".claude-plugin/marketplace.json"
+PACKAGE_JSON="package.json"
+
+current_version=$(jq -r '.version' "$PLUGIN_JSON")
+IFS='.' read -r major minor patch <<< "$current_version"
+patch=$((patch + 1))
+new_version="$major.$minor.$patch"
+
+jq --arg v "$new_version" '.version = $v' "$PLUGIN_JSON" > tmp.json && mv tmp.json "$PLUGIN_JSON"
+jq --arg v "$new_version" '.metadata.version = $v | .plugins[0].version = $v' "$MARKETPLACE_JSON" > tmp.json && mv tmp.json "$MARKETPLACE_JSON"
+jq --arg v "$new_version" '.version = $v' "$PACKAGE_JSON" > tmp.json && mv tmp.json "$PACKAGE_JSON"
+
+git add "$PLUGIN_JSON" "$MARKETPLACE_JSON" "$PACKAGE_JSON"
+FICTION_BUMPING_VERSION=1 git commit --amend --no-edit --no-verify >/dev/null 2>&1
