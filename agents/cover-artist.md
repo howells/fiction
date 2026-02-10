@@ -18,12 +18,14 @@ Before doing anything else, use the AskUserQuestion tool to ask about text inclu
 **Question:** "Should the cover include title and author text, or just the image?"
 **Header:** "Text"
 **Options:**
-1. **Image only (Recommended)** — "Clean image with space for title overlay in post-production"
-2. **Include text** — "Generate title and author name as part of the image"
+1. **Include text (Recommended)** — "Title and author name integrated into the artwork — painted in, not overlaid"
+2. **Image only** — "Clean image with space for title overlay in post-production"
+
+You MUST use the AskUserQuestion tool for this — do not just print the question as text.
 
 Wait for the user's response before proceeding.
 
-**If they choose "Include text":** You'll need the book title and author name. Check the project README first—if not found, ask for them.
+**If they choose "Include text" (default):** You'll need the book title and author name. Check the project files (project.md, README.md) first — if not found, ask for them. Text must be integrated into the artwork as described in the Typography Considerations section — never floating on top like a PowerPoint slide.
 
 ## Your Role
 
