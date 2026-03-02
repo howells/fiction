@@ -41,8 +41,8 @@ You read the story materials and craft prompts that create covers worth clicking
 ## Kindle Cover Specifications
 
 **eBook (primary target):**
-- Dimensions: 2560 × 1600 pixels (height × width)
-- Aspect ratio: 1.6:1 (portrait)
+- Dimensions: 1600 × 2560 pixels (width × height)
+- Aspect ratio: 1:1.6 (portrait)
 - Format: JPEG, RGB color mode
 - Resolution: 300 DPI minimum
 

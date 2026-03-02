@@ -11,7 +11,7 @@ Generate cover art prompts for your book using the cover-artist agent.
 2. Reads your project materials (README, themes, characters, world, tone)
 3. Synthesizes the story's visual essence
 4. Produces 3-5 distinct cover concepts as image generation prompts
-5. Optimizes for Kindle dimensions (2560 x 1600, aspect ratio 1.6:1)
+5. Optimizes for Kindle dimensions (1600 x 2560, aspect ratio 1:1.6)
 
 ## Usage
 
