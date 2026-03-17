@@ -131,6 +131,42 @@ These are not errors. Each pattern has legitimate uses. The problem is frequency
 
 **Fix:** Ask what "careful" actually means in each instance. "Careful blankness" means controlled. "Careful cursive" means precise. "Careful dance" means cautious. Use the more specific word. Each instance should earn its own adjective.
 
+### 8. The Default Atmosphere Word
+
+**Pattern:** A single word — often "quiet," "dark," "still," or "cold" — becomes the go-to modifier for every scene transition, setting description, and emotional beat.
+
+**Examples:**
+- "The flat was quiet when she arrived" — appearing near-verbatim across four consecutive chapters
+- "[Character] was quiet for a moment" — 12 times across a novel as the only way characters pause
+- "His/her voice was quiet" — 5 times, when "low," "soft," "thin," or "barely audible" would each work differently
+
+**Why it works:** Atmosphere words are invisible by design. "The flat was quiet" is unobtrusive, functional, quick. It sets a scene without drawing attention to itself.
+
+**Why it stops working:** Because it's invisible, the writer doesn't notice the repetition — but the reader's ear does. When every room is "quiet," every pause is "quiet," and every voice is "quiet," the word goes from atmosphere to drone. Worse, the writer loses access to the spectrum of silence: hush, stillness, vacancy, dead air, absence of sound, the held breath of an empty room.
+
+**Threshold:** "Quiet" (or its equivalent) more than 3 times per chapter or more than once in the same construction ("X was quiet for a moment") per 3 chapters.
+
+**Fix:** For scene transitions, vary the construction or cut it entirely — often the reader doesn't need to be told a room is quiet. For dialogue beats, replace with action (what does the character *do* during the pause?), physical description, or simply let the pause exist in the white space between lines.
+
+### 9. The Stock Expression
+
+**Pattern:** A clichéd phrase borrowed from the common stock of fiction writing, used as shorthand for an emotion or observation the prose hasn't earned.
+
+**Examples:**
+- "The smile did not reach his/her eyes"
+- "Let out a breath he/she didn't know he/she was holding"
+- "A shiver ran down her spine"
+- "His/her blood ran cold"
+- "Their eyes met across the room"
+
+**Why it was good (once, decades ago):** These phrases became clichés because they originally described something true and recognisable. The first writer who noticed that a false smile stops at the mouth was observant.
+
+**Why it never works now:** The reader has encountered this phrase thousands of times. It triggers recognition of *the phrase*, not of the emotion. The prose becomes wallpaper — the reader's eye slides past it, registering "false smile" as a unit of meaning rather than seeing the character's face.
+
+**Threshold:** Zero. These should never appear in literary fiction. Each is an opportunity for a specific, fresh observation that tells the reader something about *this* character in *this* moment.
+
+**Fix:** Look at the character. What does *their* false smile actually look like? A practised expression worn smooth from use. A smile that was only mouth. A brightness that stopped short, like a lamp under a shade. The goal is not to find a cleverer way to say the same thing — it's to actually *see* the character and describe what you see.
+
 ## When a Smell is Intentional
 
 Some novels use these patterns deliberately as voice signatures. If a manuscript *knowingly* deploys paradoxical pairings as a narrative strategy — say, a protagonist who genuinely cannot reconcile contradictions — then frequency may be appropriate. But this should be a conscious choice documented in the project's tone guide, not an emergent habit.
