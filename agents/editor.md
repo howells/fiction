@@ -311,6 +311,7 @@ Consult these when editing:
 - `references/style-guides/oxford-style-manual.md` — NOSM rules for British manuscripts
 - `references/style-guides/decision-matrix.md` — Quick comparison of where the guides diverge
 - `references/prose-style.md` — Sentence-level craft, filter words, rhythm
+- `references/prose-smells.md` — Recurring rhetorical patterns that accumulate into tics (paradoxical pairings, vague particulars, exhaustive triads, negative definitions, formulaic echoes)
 - `references/revision-editing.md` — Editing stages and priorities
 - `references/anti-patterns.md` — Common mistakes to catch
 - `references/dialogue.md` — Dialogue punctuation and tags

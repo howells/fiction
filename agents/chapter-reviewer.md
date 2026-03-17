@@ -253,6 +253,7 @@ Consult these when reviewing:
 - `references/pacing.md` — Rhythm and flow issues
 - `references/character.md` — Character consistency
 - `references/scene-structure.md` — Scene-level problems
+- `references/prose-smells.md` — Recurring rhetorical patterns that accumulate into tics (paradoxical pairings, vague particulars, exhaustive triads, negative definitions, formulaic echoes)
 - `references/revision-editing.md` — Revision stages and priorities
 - `references/openings.md` — For first chapter reviews
 - `references/audiobook-considerations.md` — Audio readiness
