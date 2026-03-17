@@ -97,6 +97,40 @@ These are not errors. Each pattern has legitimate uses. The problem is frequency
 
 **Fix:** Vary the construction in all but the strongest instance. The best version of the repeated phrase gets to stay; the others need their own language.
 
+### 6. The Thematic Word Flood
+
+**Pattern:** A word chosen for its metaphorical weight gets used so often — literally and figuratively — that the reader can no longer tell when it's doing thematic work and when it's just vocabulary.
+
+**Examples:**
+- "cold" used 12 times in a chapter: the church is cold (literal), the flat is cold (literal), "the cold you carry" (metaphor), "the cold that never left" (metaphor), "only cold" (metaphor) — by the 8th use, the reader stops feeling anything
+- "dark/darkness" blanketing every scene transition
+- "sharp" applied to wit, air, glass, memory, and pain in a single chapter
+
+**Why it works (sparingly):** A well-chosen thematic word creates resonance when it appears in both literal and figurative contexts. The reader begins to feel the word accumulate meaning.
+
+**Why it stops working:** When the word appears in every paragraph, the resonance collapses into monotony. The reader starts seeing the word instead of what the word means. Worse, the literal and metaphorical uses start to blur — is this atmosphere or theme?
+
+**Threshold:** If a word appears more than 6-8 times in a chapter, audit each instance. Keep the literal uses that are necessary for setting. Keep the 2-3 strongest metaphorical uses. Cut or replace the rest.
+
+**Fix:** Separate literal and metaphorical uses in your mind. The literal ones (the room is cold) are setting — they should be invisible. The metaphorical ones (the cold she carries) are theme — they should land with weight. If a metaphorical use is surrounded by literal uses of the same word, the metaphor drowns.
+
+### 7. The Habitual Adjective
+
+**Pattern:** A single adjective becomes the default modifier for a character trait, emotion, or quality — applied so often it stops carrying meaning.
+
+**Examples:**
+- "careful" used 7 times in a chapter: careful attention, careful blankness, careful cursive, careful dance — the word becomes wallpaper
+- "quiet" applied to every form of restraint: quiet voice, quiet room, quiet anger, quiet strength
+- "small" as the default size descriptor: small table, small flat, small life, small gesture
+
+**Why it works (once or twice):** An adjective can characterise economically. "Careful blankness" tells you about a person in two words.
+
+**Why it stops working:** When the same adjective modifies everything, it characterises nothing. It becomes the writer's default rather than a deliberate choice. The reader starts to feel that the prose has one gear.
+
+**Threshold:** No single adjective more than 3 times per chapter unless it's in dialogue (characters can have verbal tics). Watch especially for clusters — the same word 5 times in a page is always a problem.
+
+**Fix:** Ask what "careful" actually means in each instance. "Careful blankness" means controlled. "Careful cursive" means precise. "Careful dance" means cautious. Use the more specific word. Each instance should earn its own adjective.
+
 ## When a Smell is Intentional
 
 Some novels use these patterns deliberately as voice signatures. If a manuscript *knowingly* deploys paradoxical pairings as a narrative strategy — say, a protagonist who genuinely cannot reconcile contradictions — then frequency may be appropriate. But this should be a conscious choice documented in the project's tone guide, not an emergent habit.
