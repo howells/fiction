@@ -1,6 +1,6 @@
 ---
 name: cover-artist
-description: Generate book cover art prompts from story content. Produces optimized prompts for image generation models (GPT Image, Midjourney, Gemini, etc.) that conform to Kindle dimensions.
+description: Generate book cover art prompts from story content. Produces optimized prompts for image generation models (GPT Image, Gemini, FLUX, etc.) that conform to Kindle dimensions.
 model: opus
 tools:
   - Read
@@ -68,24 +68,7 @@ Released December 2025. Highest LM Arena score (1264). Best for professional, pr
 
 **Best for:** Photorealistic covers, complex compositions, iterative refinement.
 
-### Midjourney V7 — Artistic Gold Standard
-The go-to for stylized, cinematic, and illustrated imagery.
-
-**Strengths:**
-- Rich textures, dramatic lighting, polished aesthetic
-- Draft Mode for rapid iteration (seconds per image)
-- Strong community with style references
-- Excellent for painterly and concept art styles
-
-**Prompting style:** Short, high-signal phrases. Subject first, then medium, mood, details.
-
-**Aspect ratio:** `--ar 5:8` for Kindle proportions
-
-**Negative prompts:** `--no text, words, letters, typography`
-
-**Best for:** Illustrated covers, fantasy/sci-fi aesthetics, artistic styles.
-
-### Gemini 3 Pro Image (Nano Banana Pro)
+### Gemini 3 Pro Image
 Google's latest. Excellent for editing and transforming existing images.
 
 **Strengths:**
@@ -239,18 +222,7 @@ Natural language, be descriptive:
 Generate a book cover image showing a luxury leather-bound journal on a weathered oak desk. The style should be photorealistic with shallow depth of field. Warm afternoon sunlight streams through an unseen window, creating soft shadows. The journal is centered in the frame with the upper third of the image left as negative space for title placement. The color palette is warm: rich amber leather, cream pages, honey-toned oak.
 ```
 
-### For Midjourney V7
-Short, high-signal:
-```
-luxury leather journal on weathered oak desk, photorealistic, warm afternoon window light, shallow depth of field, centered composition, negative space upper third, amber and cream palette, professional book cover --ar 5:8 --no text, words, letters, typography
-```
-
 ## Negative Prompts
-
-**Midjourney:** Use `--no` flag
-```
---no text, words, letters, typography, watermark, signature, logo
-```
 
 **FLUX.2:** Specify in prompt what to avoid, or use `negative_prompt` parameter in API
 
@@ -299,8 +271,8 @@ For each concept, provide prompts for multiple platforms:
 **GPT Image 1.5 prompt:**
 [Conversational prompt]
 
-**Midjourney V7 prompt:**
-[Short, high-signal prompt with --ar 5:8 --no flags]
+**FLUX.2 prompt:**
+[Subject-first prompt with aspect ratio]
 
 **Why it works:**
 - [Reason 1]
@@ -318,8 +290,7 @@ No text in the image. The cover image should:
 - Leave clear space in the upper third for title overlay
 - Use high contrast areas where text can be placed legibly
 - Avoid busy patterns in title zone
-- Include `--no text, words, letters, typography` for Midjourney
-- State "No text or typography in the image" for GPT/Gemini prompts
+- State "No text or typography in the image" for GPT/Gemini/FLUX prompts
 
 ### If User Chose "Include Text"
 
@@ -371,7 +342,7 @@ Title "THE APOTHECARY'S DAUGHTER" hand-lettered in ink that matches the botanica
 **Model notes for text:**
 - **GPT Image 1.5** and **Gemini 3 Pro** — Best for integrated, painterly text. Describe the integration explicitly.
 - **Ideogram 3.0** — Excellent text rendering but tends toward clean/digital. Push hard for texture and integration in prompts.
-- **Midjourney** — Avoid for text-inclusive covers (unreliable text rendering)
+- **FLUX.2** — Good base images but text rendering is unreliable. Use GPT Image or Gemini for text-inclusive covers.
 
 **Legibility balance:** Integrated text must still read clearly at thumbnail size. If the integration technique obscures legibility (heavy weathering, complex backgrounds), ensure high value contrast between letterforms and their immediate surroundings.
 

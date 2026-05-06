@@ -88,7 +88,7 @@ If you have custom commands in your project's `.claude/commands/`, they continue
 
 ### Added
 
-- **`cover-artist` agent** — Generate book cover art prompts optimized for image generation models (Midjourney, DALL-E, etc.)
+- **`cover-artist` agent** — Generate book cover art prompts optimized for image generation models (GPT Image, Gemini, FLUX, etc.)
 - **`/fiction:cover` command** — Read project materials and produce 3-5 cover concepts with ready-to-use prompts
 - Kindle dimension compliance (2560 × 1600, 1.6:1 aspect ratio)
 - Best practices for image gen prompts: style specification, composition, color palettes, negative prompts

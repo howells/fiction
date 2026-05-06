@@ -31,24 +31,28 @@ You'll be asked whether to include text:
 
 For each concept, you'll receive:
 - **Approach** — The visual strategy
-- **Prompt** — Ready to paste into Midjourney, DALL-E, or other generators
+- **Prompt** — Ready to paste into GPT Image, Gemini, FLUX, or other generators
 - **Why it works** — Genre signals and design rationale
 - **Variations** — Style/mood alternatives
 
 ## Generating Images
 
-Once you have prompts, you can generate images with any AI image tool. If you have [falcon](https://github.com/howells/falcon) installed, you can generate images directly from the command line:
+Use the **motif** CLI to generate cover images directly:
 
 ```bash
-falcon "your prompt here" --ar 5:8
+motif "your prompt here" --cover          # Kindle cover: 2:3, 2K
+motif "your prompt here" --cover -m gpt   # GPT model (best for covers)
+motif "your prompt here" --cover --dry-run # Preview cost first
 ```
+
+**For illustrated books:** After generating your cover, use `/fiction:illustrate` to create a motif series from the cover and generate consistent chapter illustrations in the same style.
 
 ## Prompt Compatibility
 
 Prompts are optimized for:
-- **Midjourney V7** — Use `--ar 5:8` for Kindle proportions
-- **DALL-E 3** — Specify dimensions in prompt
-- **Stable Diffusion** — Works with standard prompt structure
+- **GPT Image 1.5** — Conversational prompts, specify dimensions
+- **Gemini 3 Pro Image** — Natural language, descriptive prompts
+- **FLUX.2 (via fal.ai / motif)** — Subject-first prompts, use `--cover` flag
 - **Other generators** — Adapt aspect ratio parameters as needed
 
 ## Design Philosophy
