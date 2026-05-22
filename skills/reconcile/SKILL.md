@@ -2,7 +2,6 @@
 name: reconcile
 description: Audit a project against current plugin conventions and offer to update structure.
 argument-hint: "[--apply] [--report]"
-disable-model-invocation: true
 ---
 
 Reconcile an existing fiction project with the current plugin conventions. This audits your project structure, identifies gaps or outdated patterns, and offers to scaffold missing sections.

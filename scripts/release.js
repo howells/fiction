@@ -12,7 +12,7 @@
  * This script will:
  * 1. Analyze commits since last tag
  * 2. Determine version bump type (or use provided type)
- * 3. Update plugin.json version
+ * 3. Update plugin and package versions
  * 4. Generate/update CHANGELOG.md
  * 5. Stage and commit the changes
  * 6. Create a git tag
@@ -24,6 +24,9 @@ const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 const PLUGIN_PATH = path.join(ROOT, '.claude-plugin', 'plugin.json');
+const CODEX_PLUGIN_PATH = path.join(ROOT, '.codex-plugin', 'plugin.json');
+const MARKETPLACE_PATH = path.join(ROOT, '.claude-plugin', 'marketplace.json');
+const PACKAGE_PATH = path.join(ROOT, 'package.json');
 const CHANGELOG_PATH = path.join(ROOT, 'CHANGELOG.md');
 
 function exec(cmd, options = {}) {
@@ -36,6 +39,14 @@ function readPlugin() {
 
 function writePlugin(data) {
   fs.writeFileSync(PLUGIN_PATH, JSON.stringify(data, null, 2) + '\n');
+}
+
+function updateJsonVersion(filePath, updater) {
+  if (!fs.existsSync(filePath)) return false;
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  updater(data);
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
+  return true;
 }
 
 function parseVersion(version) {
@@ -209,17 +220,40 @@ const newVersion = bumpVersion(currentVersion, bumpType);
 
 console.log(`\n📦 Version bump: ${currentVersion} → ${newVersion} (${bumpType})\n`);
 
-// Update plugin.json
+// Update versioned manifests
 plugin.version = newVersion;
 writePlugin(plugin);
 console.log('✓ Updated .claude-plugin/plugin.json');
+
+if (updateJsonVersion(CODEX_PLUGIN_PATH, data => {
+  data.version = newVersion;
+})) {
+  console.log('✓ Updated .codex-plugin/plugin.json');
+}
+
+if (updateJsonVersion(MARKETPLACE_PATH, data => {
+  if (data.metadata) data.metadata.version = newVersion;
+  if (Array.isArray(data.plugins)) {
+    for (const entry of data.plugins) {
+      if (entry?.name === plugin.name) entry.version = newVersion;
+    }
+  }
+})) {
+  console.log('✓ Updated .claude-plugin/marketplace.json');
+}
+
+if (updateJsonVersion(PACKAGE_PATH, data => {
+  data.version = newVersion;
+})) {
+  console.log('✓ Updated package.json');
+}
 
 // Update changelog
 generateChangelog(newVersion, commits);
 console.log('✓ Updated CHANGELOG.md');
 
 // Git operations
-exec('git add .claude-plugin/plugin.json CHANGELOG.md');
+exec('git add .claude-plugin/plugin.json .codex-plugin/plugin.json .claude-plugin/marketplace.json package.json CHANGELOG.md');
 exec(`git commit -m "chore(release): v${newVersion}"`);
 console.log('✓ Committed changes');
 

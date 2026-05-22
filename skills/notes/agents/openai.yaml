@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fiction Notes"
+  short_description: "Collect inline manuscript notes"
+  default_prompt: "Use $notes to collect and process inline editing notes in this fiction project."
+policy:
+  allow_implicit_invocation: false

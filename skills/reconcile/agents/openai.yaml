@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fiction Reconcile"
+  short_description: "Audit fiction project conventions"
+  default_prompt: "Use $reconcile to audit this fiction project against current plugin conventions."
+policy:
+  allow_implicit_invocation: false

@@ -2,7 +2,6 @@
 name: notes
 description: Collect and process inline editing notes from chapters. Finds %%NOTE:%%, %%EDIT:%%, %%CHECK:%%, and %%CUT:%% markers.
 argument-hint: "[chapter] [--process] [--clear]"
-disable-model-invocation: true
 ---
 
 Scan chapters for inline editing notes and present them for processing.

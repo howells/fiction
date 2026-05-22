@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fiction References"
+  short_description: "Internal fiction craft references"
+  default_prompt: "Use $fiction instead; references is an internal craft library."
+policy:
+  allow_implicit_invocation: false

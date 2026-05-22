@@ -1,7 +1,8 @@
 {
   "name": "fiction-plugin",
-  "version": "1.10.12",
+  "version": "1.10.13",
   "private": true,
+  "packageManager": "pnpm@9.0.0",
   "description": "Fiction writing plugin for Claude Code",
   "scripts": {
     "prepare": "husky"

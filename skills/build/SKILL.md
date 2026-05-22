@@ -2,7 +2,6 @@
 name: build
 description: Build an EPUB from your fiction project. Compiles chapters, metadata, and optionally a cover image.
 argument-hint: "[--sync] [--cover file.png] [path]"
-disable-model-invocation: true
 ---
 
 Build an EPUB file from the current fiction project.

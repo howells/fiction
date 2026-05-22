@@ -2,9 +2,9 @@
   <img src="https://raw.githubusercontent.com/howells/fiction/main/logo.png" alt="Fiction Plugin" width="120">
 </p>
 
-# Fiction Writing Plugin for Claude Code
+# Fiction Writing Plugin for Claude Code and Codex
 
-Write complete novels with Claude. Literary prose, iterative review, and craft-aware feedback.
+Write complete novels with Claude or Codex. Literary prose, iterative review, and craft-aware feedback.
 
 ## What This Is
 
@@ -17,6 +17,8 @@ This isn't a chatbot that writes generic content. It's a writing partner that un
 ```bash
 claude plugins:add howells/fiction
 ```
+
+Fiction also includes `.codex-plugin/plugin.json` for native Codex plugin hosts.
 
 ## Quick Start
 
