@@ -39,22 +39,25 @@ Fiction also includes `.codex-plugin/plugin.json` for native Codex plugin hosts.
 
 ## Commands
 
-| Command | What It Does |
-|---------|--------------|
-| `/fiction:go` | Resume a project (load context + suggest what to do next) |
-| `/fiction:new` | Start a new fiction project from scratch |
-| `/fiction:plan` | Design story architecture (premise, theme, ending) |
-| `/fiction:outline` | Create chapter and scene breakdown |
-| `/fiction:character` | Develop a character document |
-| `/fiction:review` | Review current chapter |
-| `/fiction:critique` | Full manuscript review (NYT/New Yorker style) |
-| `/fiction:synopsis` | Generate synopsis (short/medium/long) |
-| `/fiction:edit` | Line-level editing (spelling, grammar, word echoes) |
-| `/fiction:naming` | Generate and validate book title options |
-| `/fiction:cover` | Generate cover art prompts for image generation |
-| `/fiction:build` | Build EPUB from your manuscript |
-| `/fiction:reconcile` | Update project to current plugin conventions |
-| `/fiction:next` | Get suggestion for what to work on next |
+| Command              | What It Does                                              |
+| -------------------- | --------------------------------------------------------- |
+| `/fiction:go`        | Resume a project (load context + suggest what to do next) |
+| `/fiction:new`       | Start a new fiction project from scratch                  |
+| `/fiction:plan`      | Design story architecture (premise, theme, ending)        |
+| `/fiction:outline`   | Create chapter and scene breakdown                        |
+| `/fiction:character` | Develop a character document                              |
+| `/fiction:review`    | Review current chapter                                    |
+| `/fiction:critique`  | Full manuscript review (NYT/New Yorker style)             |
+| `/fiction:synopsis`  | Generate synopsis (short/medium/long)                     |
+| `/fiction:edit`      | Line-level editing (spelling, grammar, word echoes)       |
+| `/fiction:language`  | Verify non-English phrases and translations               |
+| `/fiction:naming`    | Generate and validate book title options                  |
+| `/fiction:cover`     | Generate cover art prompts for image generation           |
+| `/fiction:build`     | Build EPUB from your manuscript                           |
+| `/fiction:notes`     | Collect and process inline editing notes                  |
+| `/fiction:reconcile` | Update project to current plugin conventions              |
+| `/fiction:status`    | Show project status without suggestions                   |
+| `/fiction:next`      | Get suggestion for what to work on next                   |
 
 ## Project Structure
 
@@ -185,20 +188,20 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 
 ## Craft References
 
-14 reference documents guide the writing and review process:
+23 craft and style reference documents guide the writing and review process:
 
-| Problem | Reference |
-|---------|-----------|
-| Story feels aimless | `story-structure.md` |
-| Scene drags | `scene-structure.md` |
-| Flat characters | `character.md` |
-| Stilted dialogue | `dialogue.md` |
-| Prose lacks rhythm | `prose-style.md` |
-| Pacing issues | `pacing.md` |
-| Weak opening | `openings.md` |
-| Unsatisfying ending | `endings.md` |
-| Genre expectations | `genre-conventions.md` |
-| Common mistakes | `anti-patterns.md` |
+| Problem             | Reference              |
+| ------------------- | ---------------------- |
+| Story feels aimless | `story-structure.md`   |
+| Scene drags         | `scene-structure.md`   |
+| Flat characters     | `character.md`         |
+| Stilted dialogue    | `dialogue.md`          |
+| Prose lacks rhythm  | `prose-style.md`       |
+| Pacing issues       | `pacing.md`            |
+| Weak opening        | `openings.md`          |
+| Unsatisfying ending | `endings.md`           |
+| Genre expectations  | `genre-conventions.md` |
+| Common mistakes     | `anti-patterns.md`     |
 
 ---
 
@@ -206,50 +209,54 @@ Mark immutable decisions with `## ⚓ Anchored` in any document. Review agents t
 
 ### Agents
 
-22 specialized agents, each tuned for a specific task:
+26 specialized agents, each tuned for a specific task:
 
-| Agent | Purpose | Model |
-|-------|---------|-------|
-| `writer` | Literary prose, chapters, scenes | opus |
-| `architect` | Story structure, premise, ending | opus |
-| `outliner` | Chapter breakdown, scene beats | sonnet |
-| `character-developer` | Character documents | opus |
-| `world-builder` | Settings, systems | sonnet |
-| `chapter-reviewer` | Iterative chapter review | sonnet |
-| `editor` | Line-level polish | sonnet |
-| `critique` | Full manuscript review | opus |
-| `synopsis` | Synopsis generation (short/medium/long) | opus |
-| `continuity` | Consistency checking | haiku |
-| `scene-analyzer` | Scene diagnosis | sonnet |
-| `voice-analyzer` | POV/tense consistency | sonnet |
-| `naming` | Title generation + availability | opus |
-| `cover-artist` | Image gen prompts | opus |
-| `next` | Project navigation | haiku |
-| `new-project` | Interactive project wizard | opus |
-| `reader-skim` | Fast fact extraction (parallel) | haiku |
-| `reader-careful` | Deep analysis with quotes (parallel) | sonnet |
+| Agent                 | Purpose                                 | Model  |
+| --------------------- | --------------------------------------- | ------ |
+| `writer`              | Literary prose, chapters, scenes        | opus   |
+| `architect`           | Story structure, premise, ending        | opus   |
+| `outliner`            | Chapter breakdown, scene beats          | sonnet |
+| `character-developer` | Character documents                     | opus   |
+| `world-builder`       | Settings, systems                       | sonnet |
+| `chapter-reviewer`    | Iterative chapter review                | sonnet |
+| `editor`              | Line-level polish                       | sonnet |
+| `critique`            | Full manuscript review                  | opus   |
+| `synopsis`            | Synopsis generation (short/medium/long) | opus   |
+| `continuity`          | Consistency checking                    | haiku  |
+| `scene-analyzer`      | Scene diagnosis                         | sonnet |
+| `voice-analyzer`      | POV/tense consistency                   | sonnet |
+| `naming`              | Title generation + availability         | opus   |
+| `cover-artist`        | Image gen prompts                       | opus   |
+| `illustrator`         | Consistent chapter illustrations        | opus   |
+| `language-checker`    | Foreign-language verification           | sonnet |
+| `next`                | Project navigation                      | haiku  |
+| `new-project`         | Interactive project wizard              | opus   |
+| `reader-skim`         | Fast fact extraction (parallel)         | haiku  |
+| `reader-careful`      | Deep analysis with quotes (parallel)    | sonnet |
+| `reader-digest`       | Parallel manuscript reading             | sonnet |
+| `review-coordinator`  | Parallel chapter review                 | sonnet |
 
 **Literary Critic Reviewers** (persona-based feedback):
 
-| Agent | Style |
-|-------|-------|
-| `james-wood` | New Yorker style, craft-focused |
-| `stephen-king` | Direct, story-first, hates adverbs |
-| `ursula-le-guin` | World-building, moral weight |
-| `roxane-gay` | Voice, representation, emotional truth |
+| Agent            | Style                                  |
+| ---------------- | -------------------------------------- |
+| `james-wood`     | New Yorker style, craft-focused        |
+| `stephen-king`   | Direct, story-first, hates adverbs     |
+| `ursula-le-guin` | World-building, moral weight           |
+| `roxane-gay`     | Voice, representation, emotional truth |
 
 ### Large Manuscript Efficiency
 
 For 50k+ word novels (10+ chapters), specialized reader agents extract chapter data in parallel:
 
-| Task | Reader | Speedup |
-|------|--------|---------|
-| Synopsis generation | reader-skim / reader-careful | ~3-4× |
-| Full critique | reader-careful | ~3-4× |
-| Voice analysis | reader-careful | ~3-4× |
-| Editing all chapters | (direct parallel) | ~20× |
-| Reviewing all chapters | (direct parallel) | ~20× |
-| Continuity checking | (two-phase) | ~3-4× |
+| Task                   | Reader                       | Speedup |
+| ---------------------- | ---------------------------- | ------- |
+| Synopsis generation    | reader-skim / reader-careful | ~3-4×   |
+| Full critique          | reader-careful               | ~3-4×   |
+| Voice analysis         | reader-careful               | ~3-4×   |
+| Editing all chapters   | (direct parallel)            | ~20×    |
+| Reviewing all chapters | (direct parallel)            | ~20×    |
+| Continuity checking    | (two-phase)                  | ~3-4×   |
 
 Reader agents return structured data that the parent agent synthesizes into final output.
 
@@ -276,8 +283,6 @@ Reader agents return structured data that the parent agent synthesizes into fina
 All agents link to relevant craft references and related agents. No orphaned knowledge.
 
 ---
-
-**Version:** 1.8.0 — See [CHANGELOG.md](CHANGELOG.md)
 
 **Author:** Daniel Howells
 

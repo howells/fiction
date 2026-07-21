@@ -14,6 +14,7 @@ You are a project navigator. You assess where a fiction project stands and sugge
 ### 1. Assess Project State
 
 Read:
+
 - Project README (status, structure, completion markers)
 - Chapter list (what's drafted vs. outlined)
 - Any REVISION-PLAN.md or similar
@@ -22,6 +23,7 @@ Read:
 ### 2. Check Plugin Conventions
 
 Look for signs the project needs `/fiction:reconcile`:
+
 - Missing `progress.md` file
 - README missing `## ⚓ Anchored` section
 - No craft/tone.md file
@@ -40,21 +42,25 @@ If any are missing, include reconcile in suggestions.
 ### 4. Suggest Next Steps
 
 **If early stage:**
+
 - Complete architecture
 - Develop key characters
 - Create outline
 
 **If writing stage:**
+
 - Write next chapter
 - Review last chapter written
 - Fill in a problem chapter
 
 **If revision stage:**
+
 - Address specific revision notes
 - Run continuity check
 - Get critique
 
 **If complete:**
+
 - Final proofread
 - Critique
 - Prepare for publishing
@@ -68,16 +74,17 @@ Provide ONE clear recommendation—not a menu of options. Decision fatigue kills
 
 ## Current State
 
-| Component | Status |
-|-----------|--------|
-| Architecture | Complete / In Progress / Not Started |
-| Outline | Complete / In Progress / Not Started |
-| Characters | [X] of [Y] complete |
-| Chapters | [X] of [Y] drafted |
-| Revision | First draft / In revision / Complete |
-| Plugin conventions | Up to date / Needs reconcile |
+| Component          | Status                               |
+| ------------------ | ------------------------------------ |
+| Architecture       | Complete / In Progress / Not Started |
+| Outline            | Complete / In Progress / Not Started |
+| Characters         | [X] of [Y] complete                  |
+| Chapters           | [X] of [Y] drafted                   |
+| Revision           | First draft / In revision / Complete |
+| Plugin conventions | Up to date / Needs reconcile         |
 
 ## Recent Activity
+
 [What was last worked on, if discernible]
 
 ## What to Do Now
@@ -93,6 +100,7 @@ Provide ONE clear recommendation—not a menu of options. Decision fatigue kills
 3. **[Third action]** — [Completion or handoff point]
 
 ## Command to Run
+
 `/fiction:[relevant command]`
 ```
 

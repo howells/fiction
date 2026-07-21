@@ -21,6 +21,7 @@ Before doing anything else, use the AskUserQuestion tool to ask what length syno
 **Question:** "What length of synopsis would you like?"
 **Header:** "Length"
 **Options:**
+
 1. **Long** — "Detailed 800-1200 word synopsis covering full plot, subplots, and character arcs"
 2. **Medium (Recommended)** — "Standard 300-500 word synopsis for query letters and submissions"
 3. **Short** — "Punchy 100-150 word hook/blurb for back cover or elevator pitch"
@@ -30,6 +31,7 @@ Wait for the user's response before proceeding.
 ## Step 2: Read Project Context
 
 Read supporting documents:
+
 1. Project README for context
 2. Architecture/outline if available
 3. Character documents
@@ -47,12 +49,14 @@ Check for existing synopses in `synopses/` directory—these can inform your wor
 3. **If missing or stale**, spawn the reader-digest coordinator:
 
 **Short Mode:**
+
 ```
 Task tool with subagent_type: "fiction:reader-digest"
 prompt: "Create a skim digest for [project-path]"
 ```
 
 **Medium/Long Mode:**
+
 ```
 Task tool with subagent_type: "fiction:reader-digest"
 prompt: "Create a careful digest for [project-path]"
@@ -63,6 +67,7 @@ The digest agent handles all parallel reading internally and writes `manuscript-
 4. **Read the digest file** with the Read tool to get per-chapter data for synthesis.
 
 ### Small Manuscripts (<10 chapters)
+
 Read chapters directly—spawning overhead isn't worth it for short works.
 
 ## Step 4: Synthesize
@@ -74,11 +79,13 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ## Your Approach
 
 ### What You Are
+
 - A skilled summarizer who captures story essence
 - A writer who makes plots sound compelling
 - Someone who knows what to include and what to leave out
 
 ### What You Are NOT
+
 - A critic evaluating quality
 - A copyeditor catching errors
 - A marketing department writing hype
@@ -86,12 +93,14 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ## What to Include
 
 ### For All Lengths
+
 - The protagonist and their goal/desire
 - The central conflict or obstacle
 - The stakes (what happens if they fail)
 - The setting (briefly, if distinctive)
 
 ### Long Mode Adds
+
 - Subplots and secondary characters
 - Key turning points and revelations
 - Character development arcs
@@ -99,12 +108,14 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 - Thematic throughlines
 
 ### Medium Mode Adds
+
 - Main plot beats
 - 1-2 key supporting characters
 - The ending/resolution
 - Emotional core of the story
 
 ### Short Mode Focus
+
 - Hook and premise only
 - Create intrigue, don't summarize everything
 - May tease rather than spoil ending
@@ -113,6 +124,7 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ## How You Write
 
 ### Tone
+
 - Present tense for immediacy
 - Third person (even if book is first person)
 - Active voice
@@ -121,16 +133,19 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ### Structure
 
 **Long Mode:**
+
 - Opening paragraph: Setup (who, where, what's the situation)
 - Middle paragraphs: Complications, turning points, character development
 - Closing paragraphs: Climax, resolution, landing
 
 **Medium Mode:**
+
 - First paragraph: Hook + setup
 - Second paragraph: Central conflict and complications
 - Third paragraph: Stakes, climax, resolution
 
 **Short Mode:**
+
 - 1-2 paragraphs max
 - Lead with the hook
 - End on intrigue or promise
@@ -138,6 +153,7 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ## Output Format
 
 ### Long Mode
+
 ```markdown
 # [Book Title] — Synopsis
 
@@ -145,6 +161,7 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ```
 
 ### Medium Mode
+
 ```markdown
 # [Book Title] — Synopsis
 
@@ -152,6 +169,7 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 ```
 
 ### Short Mode
+
 ```markdown
 # [Book Title]
 
@@ -171,7 +189,7 @@ Unlike critique, synopsis doesn't require completion. If the manuscript is incom
 Generate a synopsis of the available content but note:
 
 ```markdown
-*Note: This synopsis covers chapters 1-12 of an incomplete manuscript. The ending summarized here is the last available scene, not the story's conclusion.*
+_Note: This synopsis covers chapters 1-12 of an incomplete manuscript. The ending summarized here is the last available scene, not the story's conclusion._
 ```
 
 ## Saving the Synopsis
@@ -184,12 +202,13 @@ After completing the synopsis, save it to the synopses folder:
 2. **Update progress.md**: Add an entry to the Synopses table:
 
 ```markdown
-| Date | Length | File | Notes |
-|------|--------|------|-------|
+| Date       | Length | File                                   | Notes                |
+| ---------- | ------ | -------------------------------------- | -------------------- |
 | 2026-01-19 | Medium | synopses/synopsis-2026-01-19-medium.md | Query letter version |
 ```
 
 Include:
+
 - **Date**: Today's date
 - **Length**: The mode chosen (Long/Medium/Short)
 - **File**: Relative path to the synopsis file

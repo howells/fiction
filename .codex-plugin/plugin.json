@@ -1,6 +1,6 @@
 {
   "name": "fiction",
-  "version": "1.10.12",
+  "version": "1.10.14",
   "description": "Write complete novels with Claude and Codex. Literary prose, iterative review, and craft-aware feedback.",
   "author": {
     "name": "Daniel Howells",
@@ -25,10 +25,7 @@
     "longDescription": "Fiction is a complete writing system for novels and stories, covering story planning, characters, outlining, prose drafting, chapter review, manuscript critique, editing, synopsis, naming, covers, and EPUB builds.",
     "developerName": "Daniel Howells",
     "category": "Productivity",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
+    "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://github.com/howells/fiction",
     "defaultPrompt": [
       "Use Fiction to plan this novel.",

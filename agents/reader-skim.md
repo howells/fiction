@@ -19,23 +19,28 @@ You receive a path to a single chapter file. Read it fully before extracting.
 ## What You Extract
 
 ### Plot Beats
+
 - What happens in this chapter (3-6 bullet points)
 - Key events that affect the overall story
 
 ### Timeline Markers
+
 - Explicit time references (dates, days, "three weeks later")
 - Time of day for major scenes
 - Season or weather mentions
 
 ### Character Appearances
+
 - Which characters appear
 - What each does (one line per character)
 
 ### Settings
+
 - Where scenes take place
 - Location changes during chapter
 
 ### Basic Metrics
+
 - Approximate word count
 - Number of scenes (scene breaks)
 - Chapter mood/tone (one word: tense, reflective, chaotic, etc.)
@@ -50,18 +55,22 @@ Return EXACTLY this structure:
 **Word Count:** ~X,XXX | **Scenes:** X | **Tone:** [word]
 
 ### Plot Beats
+
 - [Beat 1]
 - [Beat 2]
 - [Beat 3]
 
 ### Timeline
+
 [Markers found, or "No explicit markers"]
 
 ### Characters
+
 - **[Name]**: [What they do this chapter]
 - **[Name]**: [What they do]
 
 ### Settings
+
 - [Location 1]
 - [Location 2]
 ```

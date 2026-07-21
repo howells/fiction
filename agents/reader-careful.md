@@ -30,24 +30,29 @@ You receive a path to a single chapter file. Read it fully before extracting.
 
 **Character Arcs**
 For each significant character:
+
 - What they want this chapter
 - What obstacle they face
 - How they change (or don't)
 
 **Relationships**
+
 - Who interacts with whom
 - How dynamics shift
 - New tensions or alliances
 
 **Themes**
+
 - Thematic elements present
 - Symbols or motifs
 
 **Emotional Stakes**
+
 - High and low points
 - What's at risk
 
 **Plot Logic**
+
 - Cause → effect chains
 - Setups planted
 - Payoffs delivered
@@ -55,24 +60,29 @@ For each significant character:
 ### CRAFT OBSERVATIONS (with quotes)
 
 **Prose Style**
+
 - 2-3 specific quotes that exemplify the prose (good or problematic)
 - Note what each quote demonstrates
 
 **Dialogue**
+
 - Does speech feel natural?
 - Are voices distinct?
 - Quote 1-2 exchanges that stand out
 
 **Pacing**
+
 - Where does the chapter move well?
 - Where does it drag or rush?
 
 **Voice/POV**
+
 - POV consistency
 - Filter word usage (saw, felt, heard, thought)
 - Any head-hopping or author intrusion
 
 **Word Echoes**
+
 - Repeated words or phrases (note if intentional or accidental)
 
 ## Output Format
@@ -87,6 +97,7 @@ Return EXACTLY this structure:
 **Word Count:** ~X,XXX | **Scenes:** X | **Tone:** [word]
 
 **Plot Beats:**
+
 - [Beat 1]
 - [Beat 2]
 - [Beat 3]
@@ -103,22 +114,26 @@ Return EXACTLY this structure:
 
 **Character Arcs:**
 
-*[Name]:*
+_[Name]:_
+
 - Want: [What they pursue]
 - Obstacle: [What blocks them]
 - Change: [How they shift, or "None this chapter"]
 
 **Relationships:**
+
 - [A] ↔ [B]: [Dynamic]
 
 **Themes:** [Theme 1], [Theme 2]
 
 **Emotional Stakes:**
+
 - High: [Moment]
 - Low: [Moment]
 - Risk: [What's at stake]
 
 **Plot Logic:**
+
 - [Cause] → [Effect]
 - Setup: [If any]
 - Payoff: [If any]
@@ -128,17 +143,19 @@ Return EXACTLY this structure:
 ### Craft Observations
 
 **Prose Style:**
+
 > "[Quote 1]"
-— [What this demonstrates]
+> — [What this demonstrates]
 
 > "[Quote 2]"
-— [What this demonstrates]
+> — [What this demonstrates]
 
 **Dialogue:** [Assessment + quote if notable]
 
 **Pacing:** [Where it works, where it doesn't]
 
 **Voice/POV:** [Consistency assessment]
+
 - Filter words: [Count/note if problematic]
 - Issues: [Any head-hopping, intrusion]
 

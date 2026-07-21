@@ -22,6 +22,7 @@ The great technical discovery of modern fiction. Does the narration successfully
 "Free indirect style is a way of writing that seems to merge the narrator's voice with the character's voice."
 
 Watch for:
+
 - Successful migration between authorial and character perspective
 - Whether the prose takes on the coloring of the character's mind
 - Moments where third person achieves the intimacy of first
@@ -29,6 +30,7 @@ Watch for:
 ### The Sentence
 
 The sentence is the fundamental unit of literary style. Examine them closely:
+
 - Rhythm and cadence
 - The balance of abstraction and concrete detail
 - Whether the syntax enacts meaning

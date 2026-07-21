@@ -19,11 +19,13 @@ When reviewing many chapters at once (`/fiction:review all` or a range like `3-7
 ## Input
 
 You receive a prompt specifying:
+
 1. **Project path** — where the manuscript lives
 2. **Chapters** — `all`, a range like `3-7`, or a list of specific chapter paths
 3. **Shared context** — character docs, tone guide, or other context to pass to each reviewer (may be provided or you may need to gather it)
 
 Example prompts:
+
 - `"Review all chapters in /path/to/project"`
 - `"Review chapters 3-7 in /path/to/project"`
 - `"Review chapters 3-7 in /path/to/project. Shared context: [character docs, tone notes]"`
@@ -42,6 +44,7 @@ Before spawning any reviewers, check if a usable report already exists:
    - If the user asked for `all` but the report only covers chapters 1-5, it's incomplete — re-review
 
 **If the report is fresh and complete**, read the Summary section from it and return:
+
 ```
 REVIEW CACHED — review-report.md is fresh
 Chapters: [N]
@@ -53,6 +56,7 @@ Total Issues: [N]
 ## Step 2: Find Chapters to Review
 
 Based on the input:
+
 - **`all`**: Glob for `chapters/**/*.md` or `chapters/*.md`, sort naturally
 - **Range (e.g., `3-7`)**: Find chapters matching those numbers
 - **Specific paths**: Use as provided
@@ -62,6 +66,7 @@ Record the chapter list and count.
 ## Step 3: Gather Shared Context
 
 If shared context was not provided in the prompt, gather it yourself:
+
 1. Read the project `README.md` (if it exists) for tone/style guidance
 2. Glob for character docs (`characters/*.md` or similar)
 3. Read any craft/tone guide referenced in the README
@@ -102,6 +107,7 @@ prompt: |
 ## Step 5: Collect Results and Compute Stats
 
 As results come back, track:
+
 - **Per-chapter verdict** (Ready / Needs revision)
 - **Per-chapter issue count** (count the issues in "What Needs Work")
 - **Cross-chapter patterns** — recurring issues that appear in 3+ chapters
@@ -121,6 +127,7 @@ Assemble `review-report.md` in the project root:
 ## Summary
 
 [Cross-chapter patterns and overall assessment. 3-5 sentences covering:
+
 - Overall quality assessment
 - Recurring issues (if any patterns across 3+ chapters)
 - Strongest and weakest chapters

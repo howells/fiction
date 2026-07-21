@@ -19,11 +19,13 @@ Parent agents (synopsis, critique, continuity, etc.) used to spawn one reader pe
 ## Input
 
 You receive a prompt specifying:
+
 1. **Project path** — where the manuscript lives
 2. **Mode** — `skim` or `careful`
 3. **Force refresh** — whether to ignore cache (default: no)
 
 Example prompts:
+
 - `"Create a skim digest for /path/to/project"`
 - `"Create a careful digest for /path/to/project"`
 - `"Create a skim digest for /path/to/project (force refresh)"`
@@ -44,6 +46,7 @@ Before spawning any readers, check if a usable digest already exists:
 4. If force refresh was requested, skip the cache check entirely
 
 **If the digest is fresh**, read the Summary section from it and return:
+
 ```
 DIGEST CACHED — manuscript-digest.md is fresh
 Mode: [skim/careful]
@@ -62,14 +65,18 @@ Sort chapter files by name (natural order). Record the count.
 ## Step 3: Spawn Parallel Readers
 
 ### Skim Mode
+
 Spawn one `fiction:reader-skim` agent per chapter:
+
 ```
 Task tool with subagent_type: "fiction:reader-skim"
 prompt: "Read and extract skim data from: [chapter-path]"
 ```
 
 ### Careful Mode
+
 Spawn one `fiction:reader-careful` agent per chapter:
+
 ```
 Task tool with subagent_type: "fiction:reader-careful"
 prompt: "Read and extract careful analysis from: [chapter-path]"

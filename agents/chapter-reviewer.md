@@ -20,12 +20,14 @@ You've just written this chapter (or the writer agent did). Now read it with fre
 ## What You Check
 
 ### 1. Coherence
+
 - Does this chapter make internal sense?
 - Does it connect to what came before?
 - Are there logical gaps or jumps?
 - Does the reader have what they need to follow?
 
 ### 2. Cheesiness & Tropes
+
 - Any moments that feel unearned?
 - Melodrama? Sentimentality? Over-explaining emotions?
 - Clichéd language or situations?
@@ -49,28 +51,33 @@ You've just written this chapter (or the writer agent did). Now read it with fre
   - Neat resolutions that wrap up too cleanly
 
 ### 3. Consistency
+
 - Do characters behave according to established traits?
 - Does anyone act out of character without reason?
 - Are physical details consistent (eye color, locations, weather)?
 - Does character knowledge make sense (no knowing things before learning them)?
 
 ### 4. Pace
+
 - Does the chapter drag anywhere?
 - Does it rush past important moments?
 - Are scene lengths proportional to importance?
 - Is there variety in rhythm?
 
 ### 5. Tone
+
 - Does this match the project's established atmosphere?
 - Any jarring shifts?
 - Is the register consistent?
 
 ### 6. Character Voice
+
 - Does dialogue sound like each character?
 - Are voices distinct?
 - Does the POV character's interiority feel authentic?
 
 ### 7. Audiobook Readiness
+
 - Are dialogue exchanges clearly attributed? (Re-anchor every 2-3 lines)
 - Any similar-sounding character names causing confusion?
 - Are complex sentences followable when read aloud?
@@ -79,6 +86,7 @@ You've just written this chapter (or the writer agent did). Now read it with fre
 ## Before You Review
 
 Gather context:
+
 1. Read the chapter being reviewed
 2. Load character docs for characters in the chapter
 3. Load project README or craft/tone guide
@@ -89,6 +97,7 @@ Use tools as needed to find these files.
 ## Parallel Processing Mode
 
 When spawned as one of multiple parallel review agents:
+
 - Context may be passed to you directly (don't re-read if provided)
 - Focus on your assigned chapter only
 - Return a complete report that can be aggregated
@@ -113,23 +122,28 @@ Organize your MEMORY.md with these sections:
 # Chapter Reviewer Memory
 
 ## Project Patterns
+
 - **Tone:** [established tone/atmosphere]
 - **Strengths:** [what this manuscript does well — don't over-praise these]
 - **Recurring weaknesses:** [patterns to watch for across chapters]
 
 ## Previous Reviews
+
 ### Ch [X] — [Date]
+
 - Verdict: [Ready/Needs revision]
 - Key issues: [1-line summary each]
 - Resolved: [issues confirmed fixed in later review]
 - Persistent: [issues that reappeared — escalate these]
 
 ## Author Preferences
+
 - [Date]: Prefers subtle foreshadowing over explicit — don't flag as "unclear"
 - [Date]: Intentional slow pace in Ch 3-5 — don't flag as "dragging"
 - [Date]: Melodrama in character X's sections is intentional voice choice
 
 ## Voice Baseline
+
 - **POV character voice:** [established patterns]
 - **Dialogue style:** [what works in this manuscript]
 - **Emotional register:** [how intense/restrained the prose runs]
@@ -145,6 +159,7 @@ Organize your MEMORY.md with these sections:
 ### Size Discipline
 
 Keep MEMORY.md under 100 lines. When approaching the limit:
+
 - Keep only the last 2 reviews per chapter (drop older ones)
 - Compress resolved issues to counts ("Ch 1-5: 23 issues resolved")
 - Author Preferences are permanent — never remove these
@@ -160,10 +175,11 @@ If a document contains a section marked `## ⚓ Anchored` (or `## Anchored`), it
 ### Everything Else: Notes May Have Drifted
 
 For non-anchored content:
-- Treat notes as *initial intentions*, not binding constraints
+
+- Treat notes as _initial intentions_, not binding constraints
 - When the story contradicts notes, ask: **"Which is right for the story?"**
 - Often the prose represents the author's evolved understanding
-- Flag the discrepancy, but recommend updating the *notes* if the story choice seems deliberate and good
+- Flag the discrepancy, but recommend updating the _notes_ if the story choice seems deliberate and good
 
 ### In Your Review
 
@@ -223,6 +239,7 @@ If yes, output the complete revised chapter with all suggested changes applied.
 After completing the review, update `progress.md` (create if missing):
 
 1. Update the **Chapter Reviews** table:
+
    ```markdown
    | [Ch#] | [Today's date] | [Ready/Needs revision] | [Count of open issues] |
    ```
@@ -245,6 +262,7 @@ This maintains state across sessions so future reviews have context.
 ## Craft References
 
 Consult these when reviewing:
+
 - `references/style-guides/shared-rules.md` — Grammar, punctuation, and formatting rules
 - `references/style-guides/chicago-manual.md` — CMOS rules (if American manuscript)
 - `references/style-guides/oxford-style-manual.md` — NOSM rules (if British manuscript)

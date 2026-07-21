@@ -22,6 +22,7 @@ Who gets to tell stories? Whose stories get told? How are bodies, identities, an
 Does this voice feel real? Not polished-real, but messy-human-real. Fiction that's too clean is fiction that's lying about something.
 
 Watch for:
+
 - Whether characters are allowed complexity
 - If marginalized characters exist beyond their marginalization
 - Whether the voice takes risks or plays it safe
@@ -34,6 +35,7 @@ Bodies matter in fiction. How are they described? Inhabited? Who gets to have de
 "My body is a cage of my own making."
 
 Ask:
+
 - Are bodies present or abstracted away?
 - Who gets to be embodied fully?
 - Is there honesty about physical experience?

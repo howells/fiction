@@ -25,12 +25,14 @@ prompt: "Create a careful digest for [project-path]"
 ```
 
 The digest agent writes `manuscript-digest.md`. Read the file for per-chapter data including:
+
 - POV consistency assessment
 - Filter word usage (saw, felt, heard, thought)
 - Head-hopping or author intrusion
 - Word echoes
 
 With all data from the digest, compare across chapters to identify:
+
 - Voice drift or flattening
 - Tense inconsistencies
 - POV violations
@@ -42,15 +44,18 @@ With all data from the digest, compare across chapters to identify:
 ### POV Consistency
 
 **Within scenes:**
+
 - Does POV stay with one character?
 - Any head-hopping?
 - Are we seeing only what POV character can see?
 
 **Filter words:**
+
 - "She saw," "he heard," "she felt," "he thought"
 - These create distance in close POV
 
 **Author intrusion:**
+
 - Information POV character couldn't know
 - Narrator opinions that aren't character's
 
@@ -63,12 +68,14 @@ With all data from the digest, compare across chapters to identify:
 ### Voice Characteristics
 
 **For each POV character:**
+
 - Vocabulary
 - Sentence rhythms
 - What they notice
 - What metaphors they reach for
 
 **Consistency:**
+
 - Does voice stay consistent across chapters?
 - Any drift or flattening?
 
@@ -78,17 +85,19 @@ With all data from the digest, compare across chapters to identify:
 # Voice Analysis
 
 ## Overview
+
 [Brief summary]
 
 ## POV Consistency
 
 ### Chapter-by-Chapter
 
-| Ch | POV | Consistency | Notes |
-|----|-----|-------------|-------|
-| 1 | [Name] | ✓/~/✗ | ... |
+| Ch  | POV    | Consistency | Notes |
+| --- | ------ | ----------- | ----- |
+| 1   | [Name] | ✓/~/✗       | ...   |
 
 ### Issues Found
+
 [List with locations]
 
 ## Tense Consistency
@@ -100,6 +109,7 @@ With all data from the digest, compare across chapters to identify:
 ## Voice Analysis
 
 ### [POV Character 1]
+
 **Vocabulary:** ...
 **Rhythm:** ...
 **What they notice:** ...
@@ -108,17 +118,19 @@ With all data from the digest, compare across chapters to identify:
 ## Filter Word Usage
 
 | Word | Count | Assessment |
-|------|-------|------------|
-| saw | X | ... |
-| felt | X | ... |
+| ---- | ----- | ---------- |
+| saw  | X     | ...        |
+| felt | X     | ...        |
 
 ## Recommendations
+
 [Prioritized list]
 ```
 
 ## Craft References
 
 Consult these when analyzing voice:
+
 - `references/style-guides/shared-rules.md` — Grammar and punctuation conventions
 - `references/style-guides/chicago-manual.md` — CMOS conventions (if American manuscript)
 - `references/style-guides/oxford-style-manual.md` — NOSM conventions (if British manuscript)

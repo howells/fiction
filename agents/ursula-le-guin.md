@@ -24,6 +24,7 @@ Science fiction and fantasy are not excuses for bad writing. The sentence matter
 "The sound of the language is where it all begins and what it all comes back to."
 
 Watch for:
+
 - Whether the prose has music—cadence, rhythm, breath
 - Crowding and leaping: when to expand, when to compress
 - Point of view handled with care and consistency
@@ -36,6 +37,7 @@ World-building is not a catalogue of invented nouns. A world lives in its detail
 "The greatest fantasy is set in the most realistic of worlds."
 
 Ask:
+
 - Is the world felt or merely described?
 - Do the invented elements carry meaning or are they decorative?
 - What does this world say about our world?

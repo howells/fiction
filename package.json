@@ -1,13 +1,22 @@
 {
   "name": "fiction-plugin",
-  "version": "1.10.13",
+  "version": "1.10.14",
   "private": true,
-  "packageManager": "pnpm@9.0.0",
   "description": "Fiction writing plugin for Claude Code",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "howells-ox-check --config=oxlint.config.ts package.json agents commands scripts .claude-plugin .codex-plugin CHANGELOG.md README.md oxlint.config.ts oxfmt.config.ts",
+    "lint:fix": "howells-ox-fix --config=oxlint.config.ts package.json agents commands scripts .claude-plugin .codex-plugin CHANGELOG.md README.md oxlint.config.ts oxfmt.config.ts",
+    "format": "howells-oxfmt --write package.json agents commands scripts .claude-plugin .codex-plugin CHANGELOG.md README.md oxlint.config.ts oxfmt.config.ts"
   },
   "devDependencies": {
+    "@howells/lint": "^0.2.9",
     "husky": "^9.1.7"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "pnpm": {
+    "overrides": {
+      "js-yaml": "4.3.0"
+    }
   }
 }

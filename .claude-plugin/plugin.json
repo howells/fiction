@@ -1,6 +1,6 @@
 {
   "name": "fiction",
-  "version": "1.10.13",
+  "version": "1.10.14",
   "description": "Write complete novels with Claude and Codex. Literary prose, iterative review, and craft-aware feedback.",
   "skills": "./skills/",
   "commands": "./commands/",
