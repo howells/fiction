@@ -227,6 +227,14 @@ Too plain, no voice, mechanical:
 
 **Fix**: The car approached. The engine growled. Her stomach dropped.
 
+### Mannered Prose
+Metaphor and flourish where a direct statement belongs:
+> The question was a dial worth turning, and the afternoon, at last, earned its keep.
+
+The figure exists to display the writer rather than to convey the idea, and readers can tell — it makes them work harder so the writer can perform. It is also imprecise: a metaphor drags in connotations the writer did not choose and cannot control.
+
+**Fix**: Say what you mean. When a literal phrase is available, use it. Keep the figure only where it shows something the plain sentence cannot. See `prose-smells.md` #10.
+
 ### Clichés
 Dead metaphors, stock phrases, predictable descriptions.
 

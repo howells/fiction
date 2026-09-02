@@ -167,6 +167,24 @@ These are not errors. Each pattern has legitimate uses. The problem is frequency
 
 **Fix:** Look at the character. What does *their* false smile actually look like? A practised expression worn smooth from use. A smile that was only mouth. A brightness that stopped short, like a lamp under a shade. The goal is not to find a cleverer way to say the same thing — it's to actually *see* the character and describe what you see.
 
+### 10. The Mannered Metaphor
+
+**Pattern:** A figure substituted for a direct statement the prose could have made plainly. The writer reaches for the image not because it sees more, but because the plain sentence felt too plain.
+
+**Examples:**
+- "a dial worth turning" where the sentence means a thing worth changing
+- "the thought earned its keep" where it means the thought still mattered
+- "her patience was a coin she spent carefully" where it means she was running out of patience
+- "the afternoon paid its debts" for an afternoon that went well
+
+**Why it works (once):** A live metaphor reaches something the literal sentence cannot. It is the engine of the whole form — an image that shows the reader a thing they had not seen, in a way no plain statement could. Fiction without it is a police report.
+
+**Why it stops working:** The mannered figure is not that. It exists to display the writer, not to convey the idea, and readers can tell. That is why mannered prose irritates: it makes the reader work harder so the writer can perform. It is also imprecise. Metaphors drag in connotations the writer did not choose and cannot control — "a dial worth turning" imports a machine, a hand, a calibration, and if none of that belongs in the scene the reader carries it anyway. In a novel the cost compounds: every unchosen connotation is a small wrong note against the world the book has built.
+
+**Threshold:** Not a count, a test. Ask of each figure what the literal claim underneath it is, and whether the image does work the literal claim cannot. If it does, keep it — frequency is not the problem. If it is the same statement in better clothes, cut it. A chapter where every abstract noun has been issued a metaphor has this smell whatever the individual figures are worth.
+
+**Fix:** Say what you mean. When a literal phrase is available, use it. "A dial worth turning" becomes "worth changing"; "earned its keep" becomes "still mattered". Distinct from purple prose, which overwrites a description that was going to happen anyway — the mannered metaphor replaces a statement, and the plain version is usually shorter as well as clearer.
+
 ## When a Smell is Intentional
 
 Some novels use these patterns deliberately as voice signatures. If a manuscript *knowingly* deploys paradoxical pairings as a narrative strategy — say, a protagonist who genuinely cannot reconcile contradictions — then frequency may be appropriate. But this should be a conscious choice documented in the project's tone guide, not an emergent habit.
@@ -174,5 +192,5 @@ Some novels use these patterns deliberately as voice signatures. If a manuscript
 ## Cross-Reference
 
 - `anti-patterns.md` — Higher-level story and prose mistakes
-- `prose-style.md` — Sentence-level craft guidance
+- `prose-style.md` — Sentence-level craft guidance, including the prose anti-patterns this catalogue extends
 - `revision-editing.md` — Editing stages and when to address smells

@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Mannered prose rule** — Guidance against the figure of speech that stands in for a plain statement:
+  - New prose smell #10, *The Mannered Metaphor*, in `references/prose-smells.md`: why a live metaphor earns its place and a mannered one does not, the test to apply, and the fix
+  - New *Mannered Prose* anti-pattern in `references/prose-style.md`, distinguished from purple prose, pointing at the catalogue entry
+  - Row added to the Prose Mistakes table in `references/anti-patterns.md`
 - **Style guide integration** — Comprehensive support for The Chicago Manual of Style (American) and the New Oxford Style Manual (British) in the editing pipeline:
   - Four new reference files in `references/style-guides/`: `shared-rules.md` (common rules), `chicago-manual.md` (CMOS), `oxford-style-manual.md` (NOSM), and `decision-matrix.md` (side-by-side comparison)
   - Covers spelling, punctuation (dash style, quotation marks, comma/period placement, serial comma, ellipsis), number rendering, capitalisation, date formats, and vocabulary
