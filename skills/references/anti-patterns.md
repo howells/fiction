@@ -55,6 +55,7 @@ Common fiction writing mistakes and how to fix them.
 | Problem | Why It's Bad | Fix |
 |---------|--------------|-----|
 | **Purple prose** | Overwritten, self-conscious | Clear, invisible prose |
+| **Mannered metaphor** | A figure standing in for a plain statement; imprecise, and it performs | Say what you mean; keep figures that see more |
 | **Beige prose** | Flat, no voice | Add rhythm, stronger verbs |
 | **Filter words** | "She saw... She felt... She heard..." | Direct perception |
 | **Telling emotions** | "She was angry" | Show through action, physiology |
