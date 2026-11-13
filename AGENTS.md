@@ -6,7 +6,7 @@ Fiction writing plugin for Claude Code and Codex.
 
 ### Issue tracker
 
-Issues live in Linear (howells, FIC). See `docs/agents/issue-tracker.md`.
+Linear, workspace `howells`, team `FIC`. See `~/Sites/home/docs/agents/issue-tracker.md`.
 
 ### Triage labels
 
